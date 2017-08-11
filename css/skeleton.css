@@ -127,30 +127,7 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
 
-  /* Colors */
-/* #F7EACA cream */
-/* #F1C7A8 light orange */
-/* #DE978F red orange */
-/* #806F80 dark purple */
-/* #696998 dark periwinkle */
-/* #AAA9D3 periwinkle */
-body {
-  background-color: #F7EACA;
-}
 
-.project-list ul {
-  list-style-type: none;
-}
-.project-list ul li {
-  display: inline-block;
-}
-.project-list ul li a {
-  color: #DE978F;
-  margin: 10px;
-}
-h1 {
-  color: #AAA9D3;
-}
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
@@ -439,3 +416,33 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+
+  /* Colors */
+/* #F7EACA cream */
+/* #F1C7A8 light orange */
+/* #DE978F red orange */
+/* #806F80 dark purple */
+/* #696998 dark periwinkle */
+/* #AAA9D3 periwinkle */
+body {
+  background-color: #F7EACA;
+}
+
+.project-list ul {
+  list-style-type: none;
+}
+.project-list ul li {
+  display: inline-block;
+}
+.project-list ul li a {
+  color: #DE978F;
+  margin: 10px;
+}
+h1 {
+  color: #AAA9D3;
+  margin-top: 10px;
+}
+h3 {
+  color: #696998;
+}
