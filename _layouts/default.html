@@ -1,0 +1,233 @@
+{% include header.html %}
+    <main class="outer-container">
+            <!-- {% include title-group.html %} -->
+            <form>
+              <input type="radio" id="home" name="slider" title="Welcome!"  checked="checked"/>
+              <input type="radio" id="about" name="slider" title="About Me"/>
+              <input type="radio" id="work" name="slider" title="Recent Work"/>
+              <!-- <input type="radio" id="contact" name="slider" title="Contact"/> -->
+              <div class="labels">
+                <label for="home" id="home" class="Slide" tabindex="-1">
+                  <section class="container">
+                    <div class="row">
+                      <!-- <div class="col-xs-12"> -->
+                        <h1 class="rw-sentence">My name is Shelby
+                            <br />
+                            &amp; I am a
+                            <div class="rotate-words">
+                            <span>developer</span>
+                            <span>designer</span>
+                            <span>css magician</span>
+                            <span>21st century scribe</span>
+                            <span>super mom</span>
+                            <span>multi-tasking ninja</span>
+                            </div>
+                        </h1>
+                    <!-- </div> -->
+                    </div>
+                  </section>
+                  <a href="javascript:;" class="goToNextSec sr-only sr-only-focusable" onClick="goToNextSecFunc('about');">learn more about shelby</a>
+                </label>
+                <label for="about" id="about" class="Slide" tabindex="-1">
+                  <section class="container">
+                        <div class="row">
+                          <!-- <div class="col-xs-12"> -->
+                          <h2 class="sr-only sr-only-focusable">About</h2>
+                    <div class="col-sm-4">
+                        <h3><span class="sr-only sr-only-focusable">Technologies</span><i class="fa fa-code" aria-hidden="true"></i></h3>
+                        <ul class="technologies">
+                          <li class="rating-5">HTML5</li>
+                          <li class="rating-5">CSS</li>
+                          <li class="rating-5">SCSS</li>
+                          <li class="rating-5">LESS</li>
+                          <li class="rating-4">JavaScript</li>
+                          <li class="rating-5">JQuery</li>
+                          <li class="rating-3">AJAX</li>
+                          <li  class="rating-4">JSON</li>
+                          <li class="rating-3">Node.js</li>
+                          <li class="rating-3">NPM/NVM</li>
+                          <li class="rating-4">Gulp</li>
+                          <li class="rating-3">Webpack</li>
+                          <li class="rating-3">Jade</li>
+                          <li class="rating-3">Mustache</li>
+                          <li class="rating-3">Nunjucks</li>
+                          <li class="rating-2">Ruby on rails</li>
+                          <li class="rating-3">Jekyll</li>
+                          <li class="rating-5">Wordpress</li>
+                          <li class="rating-3">Sitecore</li>
+                          <li class="rating-1">Drupal</li>
+                          <li class="rating-1">React</li>
+                          <li class="rating-1">React native</li>
+                          <li class="rating-2">Foundation</li>
+                          <li class="rating-3">Pattern Lab</li>
+                          <li class="rating-5">Bootstrap</li>
+                        </ul>
+                      </div>
+
+                    <div class="col-sm-4">
+                      <h3><span class="sr-only sr-only-focusable">Tools</span><i class="fa fa-keyboard-o" aria-hidden="true"></i></h3>
+                      <ul class="technologies">
+                        <li class="rating-4">Illustrator</li>
+                        <li class="rating-4">Photoshop</li>
+                        <li class="rating-3">Sketch</li>
+                        <li class="rating-3">Visual Studio</li>
+                        <li class="rating-5">Git</li>
+                        <li class="rating-3">SVN</li>
+                        <li class="rating-5">Source tree</li>
+                        <li class="rating-5">Bitbucket</li>
+                        <li class="rating-4">Jira</li>
+                        <li class="rating-3">Xcode</li>
+                        <li class="rating-2">VMware fusion</li>
+                      </ul>
+                    </div>
+                    <div class="col-xs-4 pull-right">
+                      <img src="img/shelby-smith-portfolio.png" alt="shelby smith profile picture" class="img-responsive" />
+                    </div>
+                    <div class="col-sm-8">
+                      <h3>
+                        <span class="sr-only sr-only-focusable">Interests</span>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                      </h3>
+                      <ul class="interests">
+                        <li>fine art,</li>
+                        <li>music festivals,</li>
+                        <li>the color purple,</li>
+                        <li>learning,</li>
+                        <li>Daft Punk,</li>
+                        <li>psychological thrillers,</li>
+                        <li>comedy,</li>
+                        <li>rollercoasters,</li>
+                        <li>sleeping in,</li>
+                        <li>babies,</li>
+                        <li>coffee,</li>
+                        <li>bonfires,</li>
+                        <li>hiking,</li>
+                        <li>traveling,</li>
+                        <li>snowmobiling,</li>
+                        <li>being organized,</li>
+                        <li>napping</li>
+                      </ul>
+                    </div>
+
+                    <!-- </div> -->
+                    </div>
+                  </section>
+                  <a href="javascript:;" class="goToNextSec sr-only sr-only-focusable btn-custom" onClick="goToNextSecFunc('work');">Shelby's recent work</a>
+                </label>
+                <label for="work" id="work" class="Slide" tabindex="-1">
+                  <section class="container">
+                    <div class="row">
+                    <!-- <div class="col-xs-12"> -->
+                    <h2 class="sr-only sr-only-focusable">Recent Work</h2>
+                    <h3><i class="fa fa-laptop" aria-hidden="true"></i></h3>
+                    <div class="project-list">
+                      <ul>
+                        <li>
+                          <a href="https://carillontower.com/" target="_blank">Raymond James Affiliates site</a>
+                        </li>
+                        <li>
+                          <a href="https://www.alexbrown.com/bartlett/" target="_blank">Raymond James Advisor site (theme 6)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.alexbrown.com/adamfrankfort" target="_blank">Raymond James Advisor site (theme 7)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.raymondjames.com/meklerwealth" target="_blank">Raymond James Advisor site (theme 8)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.raymondjames.com/" target="_blank">Raymond James</a>
+                        </li>
+                        <li>
+                          <a href="http://doulamn.com/" target="_blank">Doula MN</a>
+                        </li>
+                        <li>
+                          <a href="http://www.errartistcollective.com/" target="_blank">ERR Artist Collective</a>
+                        </li>
+                        <li>
+                          <a href="http://www.chsinc.com/" target="_blank">CHS Inc</a>
+                        </li>
+                        <li>
+                          <a href="http://www.cenex.com/" target="_blank">Cenex</a>
+                        </li>
+                        <li>
+                          <a href=" https://www.chssource.com/" target="_blank">CHS Source</a>
+                        </li>
+                        <li>
+                          <a href="http://www.aarp-lifeinsurance.com/" target="_blank">New York Life</a>
+                        </li>
+                        <li>
+                          <a href="https://www.starkeyhearingfoundation.org" target="_blank">Starkey Hearing Foundation</a>
+                        </li>
+                        <li>
+                          <a href="https://www.tcfbank.com" target="_blank">TCF bank</a>
+                        </li>
+                        <li>
+                          <a href="http://www.masterbrand.com/" target="_blank">Masterbrand</a>
+                        </li>
+                        <li>
+                          <a href="http://www.aristokraft.com/" target="_blank">Aristokraft</a>
+                        </li>
+                        <li>
+                          <a href="http://www.diamondcabinets.com/" target="_blank">Diamond Cabinets</a>
+                        </li>
+                        <li>
+                          <a href="http://www.kempercabinets.com/" target="_blank">Kemper Cabinets</a>
+                        </li>
+                        <li>
+                          <a href="http://www.schrock.com/" target="_blank">Schrock Cabinets</a>
+                        </li>
+                        <li>
+                          <a href="http://www.decoracabinets.com/" target="_blank">Decora Cabinets</a>
+                        </li>
+                        <li>
+                          <a href="http://www.homecrestcabinetry.com/" target="_blank">Homecrest cabinetry</a>
+                        </li>
+                        <li>
+                          <a href="http://www.kitchencraft.com/" target="_blank">Kitchencraft</a>
+                        </li>
+                        <li>
+                          <a href="https://www.dqcakes.com/#/home" target="_blank">Dairy Queen - build a cake</a>
+                        </li>
+                        <li>
+                            <a href="http://www.altoonahearingaids.com/" target="_blank">Altoona hearing aids</a>
+                        </li>
+                        <li>
+                          <a href="http://www.hearmn.com/" target="_blank">hear mn</a>
+                        </li>
+                        <li>
+                          <a href="http://aplushearingaid.com/" target="_blank">A plus hearing aid</a>
+                        </li>
+                        <li>
+                          <a href="http://www.dynamichearingcare.com/" target="_blank">Dynamic hearing care</a>
+                        </li>
+                        <li>
+                          <a href="http://www.lihearing.com/" target="_blank">Li hearing</a>
+                        </li>
+                        <li>
+                          <a href="http://www.modernhearingpa.com/" target="_blank">Modern hearing PA</a>
+                        </li>
+                        <li>
+                          <a href="http://www.hearingnc.com/" target="_blank">Hearing NC</a>
+                        </li>
+                        <li>
+                          <a href=" http://www.audibelhightech.com/" target="_blank">Audible High Tech</a>
+                        </li>
+                        <li>
+                          <a href=" http://www.audiblehearing.com/" target="_blank">audible heading</a>
+                        </li>
+                        <li>
+                          <a href="http://www.ihearyounow.com/" target="_blank">I hear you now</a>
+                        </li>
+                        <li>
+                          <a href=" http://www.midlandhearing.com/" target="_blank">Midland hearing</a>
+                        </li>
+                      </div>
+                    <!-- </div> -->
+                    </div>
+                    </section>
+                </label>
+              </div>
+            </form>
+          </main>
+
+{% include footer.html %}

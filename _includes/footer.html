@@ -1,0 +1,56 @@
+
+    <footer>
+        <div class="site-footer">
+
+                    <div class="col-xs-12 col-sm-4 align-right">
+                        <h3>
+                            Let's connect!
+                            <i class="fa fa-hand-peace-o" aria-hidden="true"></i>
+                        </h3>
+                        <a href="www.linkedin.com/in/shelbyhellfire" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="https://codepen.io/shelbyhellfire/" target="_blank">
+                            <i class="fa fa-codepen" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/shelbyhellfire" target="_blank">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com/shelbyhellfire" target="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <p class="text-muted">{{ site.data.global.footer_text }}</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                        <h2 class="sr-only sr-only-focusable">Contact</h2>
+                            <form class="" method="POST" action="http://formspree.io/shelby.hellfire@gmail.com">
+                                <div class="form-group">
+                                    <label class="sr-only" for="name">Name</label>
+                                    <input class="form-control input-inline" type="text" name="name" placeholder="Name">
+                                    <label class="sr-only" for="email">Email</label>
+                                    <input class="form-control input-inline" type="email" name="email" placeholder="Email">
+                                    <label class="sr-only" for="message">Message</label>
+                                    <textarea class="form-control" name="message" placeholder="Tell me something interesting!"></textarea>
+                                    <button type="submit" class="btn-custom">Ahoy!</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <a href="javascript:;" class="goToNextSec" onClick="goToNextSecFunc('about');">About Me</a>
+                            <br />
+                            <a href="javascript:;" class="goToNextSec" onClick="goToNextSecFunc('work');">Recent Work</a>
+                        </div>
+                    </div>
+
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/5fe1871d46.js"></script>
+    <script src="{{ site.data.global.url }}/js/power.js"></script>
+
+    </body>
+</html>

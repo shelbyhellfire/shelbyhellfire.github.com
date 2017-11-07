@@ -1,0 +1,10 @@
+# Site Settings
+title: 'Shelby Smith Portfolio'
+description: 'I am a front end developer, developer, designer, css magician, 21st century scribe, super mom, multitasking ninja'
+url: 'http://shelbyhellfire.com/'
+footer_text: '© 2017. All rights reserved.'
+
+# Admin Settings
+admin_name: 'Shelby Smith'
+admin_email: 'shelbyhellfire@gmail.com'
+
