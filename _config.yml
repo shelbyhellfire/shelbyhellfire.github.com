@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Where things are
 source:      .
 destination: ./_site
@@ -62,3 +63,11 @@ kramdown:
 
 
 include: ['_pages']
+=======
+# title: Tactile theme
+# description: Tactile is a theme for GitHub Pages.
+# show_downloads: true
+# google_analytics:
+# theme: jekyll-theme-midnight
+theme: jekyll-theme-tactile
+>>>>>>> origin/master
