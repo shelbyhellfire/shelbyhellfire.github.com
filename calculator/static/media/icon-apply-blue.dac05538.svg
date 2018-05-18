@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="16px" height="16px" viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
+<g id="Icons">
+	<g>
+		<g>
+			<path fill="#007CBE" d="M11,22C4.935,22,0,17.064,0,11C0,4.935,4.935,0,11,0c6.064,0,11,4.935,11,11C22,17.064,17.064,22,11,22z
+				 M11,2c-4.962,0-9,4.038-9,9s4.038,9,9,9s9-4.038,9-9S15.962,2,11,2z"/>
+		</g>
+		<g>
+			<path fill="#007CBE" d="M9.447,14.775c-0.255,0-0.511-0.096-0.706-0.291l-2.447-2.441c-0.391-0.391-0.392-1.023-0.002-1.414
+				s1.022-0.393,1.414-0.002l1.74,1.736l4.847-4.847c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414l-5.553,5.552
+				C9.959,14.68,9.703,14.775,9.447,14.775z"/>
+		</g>
+	</g>
+</g>
+<g id="Grid" display="none">
+</g>
+</svg>
