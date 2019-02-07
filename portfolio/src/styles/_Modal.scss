@@ -1,0 +1,112 @@
+.USBModal {
+    z-index: 1000;
+    overflow:visible;
+    &-open {
+        -webkit-appearance: none;
+        appearance: none;
+        border: 0;
+        background-color: transparent;
+        position: absolute;
+        right: 2rem;
+        top: 1.8rem;
+        > * {
+            color: $gray;
+            height: 3rem; 
+            display: inline;
+            font-size: 1.4rem;
+            line-height: 2.5rem;
+            vertical-align: top;
+        }
+        .USBIcon {
+            fill: $gray;
+
+            svg {
+                height: 1.5rem;
+            }
+
+        }
+    }
+    &--close {
+        position:absolute;
+        top: 2rem;
+        right: 2rem;
+        -webkit-appearance: none;
+        appearance: none;
+        border: 0;
+        background-color: transparent;
+
+        > * {
+            color: $gray;
+            height: 5rem; 
+            display: inline;
+            font-size: 1.6rem;
+            line-height: 5rem;
+            vertical-align: top;
+        }
+        .USBIcon {
+           
+            fill: $gray;
+
+            svg {
+                margin-top: 1rem;
+                margin-left: .5rem;
+                height: 3rem;
+            }
+
+        }
+    }
+    &--body {
+        h2 {
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+    &--container {
+        top: 3rem;
+        padding: 2rem;
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        background-color: $white;
+        display:block;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2000;
+        position: absolute;
+        @media screen and (min-width: 768px) {
+            width: auto;
+            padding: 4rem 8rem 6rem;
+            min-width: 60rem;
+            max-width: 80rem;
+        }
+    }
+&--overlay {
+    background-color: rgba(0,0,0,.75);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+}
+&--isopen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    .USBModal-open {
+        display: none;
+    }
+}
+}
+.col-xs-12.col-md-3.col-md-offset-1 {
+    z-index: -1;
+}
+
+
+// panel modal
+.USBPanel.is-expanded .USBModal-open > * {
+    color: #fff;
+    fill: #fff;
+}

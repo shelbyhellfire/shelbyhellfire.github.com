@@ -1,0 +1,46 @@
+// Want to export this component only?
+// Uncomment these out and hand off the compiled css file in css/!
+
+// @import 'Variables';
+// @import 'Base';
+
+.USBHero {
+    height: calc(90vh - 85.5px);
+    position: relative;
+  }
+  
+  .USBHero:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right:0;
+      z-index: -1;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(to bottom left, rgba(0,0,0,0), rgba(0,0,0,0.11), rgba(0,0,0,0.21),rgba(0,0,0,0.6),  rgba(0,0,0,0.7), rgba(0,0,0,.8));
+  }
+  
+  .USBHero {
+    background-size: cover;
+    /* position: absolute;
+    height:100%;
+    width: 100%; */
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    /* background-size: 100% auto; */
+    background-position: center;
+  
+  }
+  
+  .USBHero .USBHero--content {
+    align-self: flex-end;
+    color: #fff;
+  }
+  
+  .USBHero .USBHero--content,
+  .USBHero .USBHero--content > *,
+  .USBHero .btn-group a {
+    color: white;
+  }

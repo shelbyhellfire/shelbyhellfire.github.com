@@ -1,0 +1,325 @@
+.smallBiz .SBForm {
+    input[type="date"] {
+        // &::-webkit-datetime-edit-text { padding: 0 2rem; }
+        // &::-webkit-datetime-edit-month-field { text-transform: uppercase; }
+        // &::-webkit-datetime-edit-day-field { text-transform: uppercase; }
+        // &::-webkit-datetime-edit-year-field { text-transform: uppercase; }
+
+    }
+    input[type="number"] {
+        // &::-webkit-inner-spin-button { display: none; }
+    }
+    .form-group-float {
+        position: relative;
+        :placeholder-shown:not(:focus) + * {
+        font-size: 1.8rem;
+        top: 1rem;
+        font-weight: normal;
+        }
+        :placeholder-shown:not(:focus) + * + .form-group-float--bar:before {
+        width: 0%;
+        }
+        .form-control--select-container select:not(:focus):valid,
+        .form-control-input:not(:placeholder-shown):not(:focus) {
+            + .form-group-float--label {
+                color: $gray;
+
+                + .form-group-float--bar:before {
+                    width: 0%;
+                }
+            }
+        }
+
+        ::placeholder {
+        opacity: 0;
+        }
+        label {
+            width: 100%;
+            font-weight: normal;
+            white-space: pre-line;
+        }
+        .form-control .form-group-float--label,
+        &--label {
+        top: -1rem;
+        position: absolute;
+        pointer-events: none;
+        left: 0;
+        font-size: 1.2rem;
+        color: $ltblue;
+        transition: all .2s;
+        transform-origin: 0 0;
+        white-space: nowrap;
+        font-weight: bold;
+        width: 100%;
+        }
+        &--bar { 
+        &:before {
+            content: '';
+            border-bottom: 4px solid $ltblue;
+            position: absolute;
+            height: 4px;
+            width: 100%;
+            top: 41px;
+            transition: .3s all ease-out;
+        }
+        }
+        .form-control,
+        input,
+        .form-control--select-container select,
+        select,
+        input:focus,
+        select:focus {
+        width: 100%;
+        font-size: 1.8rem;
+        outline: none;
+        border-radius: 0;
+        border: none;
+        padding-left: 0;
+        background-color: transparent;
+        transition: all 2s;
+        border-bottom: 2px solid #555;
+
+        &:focus {
+            box-shadow: none;
+
+        
+            + .form-group-float--bar:before {
+            width: 100%;
+            } 
+        }
+
+        }
+        &.form-group-completed {
+        .form-control:not(:focus) {
+            + .form-group-float--label {
+                color: $gray;
+            }
+            + * + .form-group-float--bar:before {
+                width: 0%;
+            }
+            }
+        }
+        .form-control--select-container {
+            &:after {
+                right: 0;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.64 10.87"><defs></defs><title>dropdownArrowICON</title><g id="Layer_2" data-name="Layer 2"><g id="LIVE"><g id="Icons"><path className="cls-1" style="fill:#007cbe;" d="M18.16.48a1.64,1.64,0,0,0-2.31,0L9.32,7,2.79.48A1.64,1.64,0,0,0,.48.48a1.62,1.62,0,0,0,0,2.3L8.16,10.4a1.64,1.64,0,0,0,2.31,0l7.69-7.63A1.61,1.61,0,0,0,18.16.48Z"/></g></g></g></svg>');
+                pointer-events: none;
+                background-repeat: no-repeat;
+                bottom: 0;
+            }
+        
+            select {
+            & + .form-group-float--label {
+                font-size: 1.8rem;
+                top: 1rem;
+                font-weight: normal;
+            }
+
+            &:valid + .form-group-float--label,
+            &:focus + .form-group-float--label,
+            &:-webkit-autofill + .form-group-float--label {
+                top: -1rem;
+                position: absolute;
+                pointer-events: none;
+                left: 0;
+                font-size: 1.2rem;
+                color: #007cbe;
+                -webkit-transition: all .2s;
+                -o-transition: all .2s;
+                transition: all .2s;
+                -webkit-transform-origin: 0 0;
+                -ms-transform-origin: 0 0;
+                transform-origin: 0 0;
+                white-space: nowrap;
+                font-weight: bold;
+                width: 100%;
+            }
+            
+            &:invalid + * + .form-group-float--bar:before {
+                width: 0%;
+            }
+
+            &:valid + * + .form-group-float--bar:before,
+            &:focus + * + .form-group-float--bar:before {
+                width: 100%;
+            }
+            }
+        }
+
+        .USBInputDisclaimer {
+            margin-top: .5rem;
+            margin-bottom: -.5rem;
+
+            a {
+                font-weight: bold;
+                color: $ltblue;
+            }
+        }
+        + .USBInputDisclaimer {
+            margin-top: -3rem;
+        }
+
+        .USBTooltip {
+            // padding-right: 20rem;
+            // left: 0;
+            // position: absolute;
+            // &:before {
+            //     left: 1.9rem;
+            // }
+            // &:after {
+            //     left: 3rem;
+            // }
+            > a {
+                font-weight: normal;
+                font-size: 1.2rem;
+                text-decoration: underline;
+            }
+            svg {
+                width: auto;
+                fill: $ltblue;
+                height: 24px;
+            }
+        }
+
+    }
+
+    .USBEditableText {
+        position: relative;
+
+
+
+        &.ReviewGroup--read-only {
+            border-bottom: solid 2px #555;
+            padding-bottom: 2rem;
+            margin-bottom: 3rem;
+
+
+        }
+        .ReviewGroup--label {
+            margin-top: 2rem;
+        }
+
+
+
+        &-label {
+            position: relative;
+
+            &.middleName, &.firstName, &.lastname, &.homeCity, &.homeState, &.homeZip, &.businessCity, &.businessState, &.businessZip {
+                display: inline;
+                width: auto;
+                float: left;
+                clear:right;
+                margin-right: 5px;
+                position: relative;
+            }
+            &.ssn p {
+                -webkit-text-security: value;
+              } 
+
+            &-top {
+                margin-bottom: 0;
+            }
+            p {
+                padding-bottom: 0;
+            }
+            label {
+                font-weight: bold;
+                width: calc(100% - 5rem);
+            }
+            .btn {
+                text-align: right;
+                margin-top: 0 !important;
+                margin-right: 0 !important;
+                width: auto;
+                position:absolute;
+                right: 0;
+                top: 0;
+                background-color: transparent !important;
+                border: 0;
+                padding: 0;
+                color: $ltblue;
+                font-size: 1.4rem;
+                text-decoration: underline;
+            }
+            label {
+                font-size: 1.2rem;
+                }
+        }
+        p {
+            padding: 0 !important;
+        }
+        .form-control {
+            white-space: pre-line;
+            resize: none;
+            line-height: 1;
+        }
+    .form-group-float--label {
+        // display: none;
+    }
+    }
+    .USBError {
+        // position: relative;
+        &--message {
+            margin-top: -2.5rem;
+            margin-bottom: 2.5rem;
+            color: $red;
+            font-size: 1.2rem;
+            line-height: 1;
+
+            span {
+                vertical-align: top;
+                line-height: 1.2rem;
+                margin-top: .5rem;
+            }
+
+            .USBIcon {
+                display: inline-block;
+                margin: -.2rem .5rem 0 0;
+                svg {
+                    height: 1.5rem;
+                }
+            }
+        }
+        &.form-group-nomargin .USBError--message,
+        .form-group-nomargin + .USBError--message {
+            margin: 1rem 0;
+        }
+        
+        
+        .form-control--select-container:after {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.64 10.87"><defs></defs><title>dropdownArrowICON</title><g id="Layer_2" data-name="Layer 2"><g id="LIVE"><g id="Icons"><path className="cls-1" style="fill: #D83B48;" d="M18.16.48a1.64,1.64,0,0,0-2.31,0L9.32,7,2.79.48A1.64,1.64,0,0,0,.48.48a1.62,1.62,0,0,0,0,2.3L8.16,10.4a1.64,1.64,0,0,0,2.31,0l7.69-7.63A1.61,1.61,0,0,0,18.16.48Z"/></g></g></g></svg>') !important;
+        }
+        .form-group-float--bar:before {
+            display: none !important;
+        }
+        .form-group-float,
+        &.form-group-float {
+            *,
+            * *,
+            * * * {
+                border-color: $red !important;
+                
+                border-width: 4px !important;
+                &:focus {
+                    border-color: $red !important;
+                    // color: $red !important;
+                }
+            }
+            &--label {
+                color: $red !important;
+            }
+            .form-control {
+                transition: none;
+            }
+        }
+        .form-group-float + .USBError--message {
+            margin-bottom: 1.5rem;
+        }
+
+    }
+
+    .form-group-float .USBError--message {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+}

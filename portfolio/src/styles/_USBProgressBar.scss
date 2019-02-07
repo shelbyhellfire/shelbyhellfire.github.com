@@ -1,0 +1,307 @@
+@import 'Variables.scss';
+
+/* arrow */
+.progress-component {
+  position: relative;
+
+}
+
+.progress {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: calc(100% - 20px);
+  z-index: -1;
+}
+
+.progress-bar {
+  width: 25%; 
+  /* This needs to be dynamic on the component level -- (( number of items - 1 ) / 100 ) */
+  /* For example -- 5 items would be 25, 50, 75, 100
+  /* 4 items would be 33, 66, 99 */
+}
+
+.progress-steps.progress-steps--arrow {
+  list-style: none;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+.progress-steps.progress-steps--arrow li {
+  background-color: $blue;
+  color: #fff;
+  position: relative;
+  padding: 14px;
+  font-size: 12px;
+  
+  flex: 1;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.progress-steps.progress-steps--arrow li a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.progress-steps.progress-steps--arrow li.active {
+  background-color: $dkblue;
+}
+
+.progress-steps.progress-steps--arrow li.active:after {
+  border-left: 20px solid $dkblue;
+}
+
+
+.progress-steps.progress-steps--arrow li.inactive {
+  background-color: $ltgray;
+  color: $gray;
+}
+.progress-steps.progress-steps--arrow li.inactive a {
+  color: $gray;
+}
+
+.progress-steps.progress-steps--arrow li.inactive:after {
+  border-left: 20px solid $ltgray;
+}
+
+.progress-steps.progress-steps--arrow li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid #fff;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  z-index: 0;
+  
+}
+
+.progress-steps.progress-steps--arrow li:after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid $blue;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  z-index: 1;
+}
+
+.progress-steps.progress-steps--arrow li:first-child {
+  border-radius: 5px 0px 0px 5px; 
+}
+
+.progress-steps.progress-steps--arrow li:first-child:before {
+  display: none;
+}
+
+.progress-steps.progress-steps--arrow li:last-child {
+  margin-right: 20px;
+}
+
+
+/*sphere*/
+ol.progress-steps.progress-steps--sphere{
+    padding-bottom:20px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.progress-steps.progress-steps-sphere {
+    margin-bottom:20px;
+}
+
+.progress-steps--sphere{
+    counter-reset: step;
+}
+
+.progress-steps--sphere li {
+    list-style-type: none;
+    position: relative;
+    margin: 30px 0;
+    height: 5px;
+    flex: 1;
+    text-align: left;
+    background-color: $ltgray;
+}
+
+.progress-steps--sphere li.completed {
+    background-color: $ltgray;
+
+    a {
+        color: $ltblue;
+    }
+}
+
+.progress-steps--sphere li.inactive {
+    background-color: $ltgray;
+}
+
+.progress-steps--sphere li a {
+    text-decoration: none; 
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: normal;
+    position: relative;
+    top: -10px;
+    display: block;
+    width: 63px;
+    text-align: center;
+}
+.progress-steps--sphere li {
+
+    &:first-child a {
+        left: -2px;
+    }
+    &:first-child a,
+    &:nth-child(4) a {
+        width: 30px;
+
+        span {
+            left: -1px;
+
+            &.visible-xs {
+                left: 0;
+            }
+        }
+    }
+    &:last-child span.visible-xs {
+        left: -15px;
+    }
+}
+
+.progress-steps--sphere li:last-of-type {
+    flex: 0;
+    width: 0;
+    padding-right: 20px;
+}
+
+.progress-steps--sphere li a:before {
+    background-color: #fff;
+    color: $blue;
+    width: 20px;
+    height: 20px;
+    line-height: inherit;
+    content: counter(step);
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    counter-increment: step;
+    line-height: 2;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 1rem;
+    color: $gray;
+    margin: 0 0 8px; 
+}
+
+.progress-steps--sphere li.completed {
+    background-color: $blue;
+}
+
+.progress-steps--sphere li.completed a:before {
+    background-color: $blue;
+    content: "\E013";
+    color: white;
+    line-height: 1;
+    font-family: 'Glyphicons Halflings';
+    font-size: 9px;
+    padding-top: 5px;
+}
+.progress-steps--sphere li.inactive a:before {
+    background-color: $ltgray;
+    border-color: $ltgray;
+    color: $gray;
+}
+
+
+.progress-steps--sphere li a span {
+    margin-left: -15px;
+}
+
+
+.progress-steps--sphere li:last-of-type a span {
+    margin-right: 0;
+}
+
+
+
+.progress-steps--sphere li:first-child:after {
+    content: none;
+}
+
+.progress-steps--sphere li.completed {
+    color: $blue;
+}
+
+.progress-steps--sphere li.completed:after {
+    background-color: $blue;
+}
+.progress-steps--sphere li.completed a{
+    position: relative;
+    color:$ltblue;
+}
+
+
+.progress-steps--sphere li.active a{
+    color:$ltblue;
+
+    &:before {
+        border: 4px solid $ltblue;
+        width: 28px;
+        height: 28px;
+    }
+    
+}
+
+.progress-steps--sphere li.active:after {
+    background-color: blue;
+    top:15px;
+}
+.progress-steps--sphere li.inactive a {
+    color: $gray;
+}
+
+.progress-steps--sphere li.inactive a:hover{
+    cursor: not-allowed;
+}
+.progress-steps--sphere li.inactive:before {
+    background-color: $gray;
+}
+.progress-steps--sphere li.inactive:after {
+    background-color: $gray;
+}
+
+.progress-steps--sphere li.completed {
+    background-color: #007CBE;
+  }
+  .progress-steps--sphere li.completed a:before {
+    background-color: #007CBE;
+  }
+  .progress-steps--sphere li a span {
+    white-space: pre-wrap;
+    text-align: center;
+    margin-left: 0;
+    position: absolute;
+    left: -25px;
+    top: 32px;
+
+    &.visible-xs {
+        left: -8px;
+    }
+  }

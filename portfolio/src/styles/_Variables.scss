@@ -1,0 +1,21 @@
+$ltblue: #007cbe;
+$blue: #17409C;
+$dkblue: #0C2074;
+$red: #D83B48;
+$gray: #555;
+$ltgray: #EAEAE4;
+$xltblue: #EEF7FB;
+$white: #fff;
+
+// $tablet: "(min-width: 768px) and (max-width: 1023px)";
+$tabletMax: "(max-width: 767px)";
+$desktopMin: "(min-width: 768px)";
+
+// @media #{$tablet} {}
+
+.block {
+    &__element {
+    }
+    &--modifier {
+    }
+}

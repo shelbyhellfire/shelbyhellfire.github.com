@@ -1,0 +1,1713 @@
+// Want to export this component only?
+// Uncomment these out and hand off the compiled css file in css/!
+// @import 'Variables';
+// @import 'Base';
+$ltblue: #007cbe;
+$blue: #17409C;
+$dkblue: #0C2074;
+$red: #D83B48;
+$gray: #555;
+$ltgray: #EAEAE4;
+$xltblue: #EEF7FB;
+$white: #fff;
+html {
+  overflow-x: hidden;
+}
+.paragraph-xxxs {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 2rem;
+  &:hover {
+    color: #555;
+  }
+}
+.noWrap {
+  white-space: nowrap;
+}
+.email {
+  &-rail {
+    width: 195px;
+    display: inline-block;
+    float: left;
+  }
+  &-main {
+    float: left;
+    
+    @media screen and (min-width: 768px) {
+      width: 80%;
+      width: calc(100% - 390px);
+    }
+    
+  }
+  &-social {
+    height: 44px;
+    width: 159px !important;
+  }
+  .library-header {
+    display: block;
+    float: left;
+    width: 100%;
+    clear: both;
+  }
+  footer {
+    font-size: 12px;
+  }
+}
+.enterapp {
+  @media screen and (max-width: 767px) {
+    z-index: 1000000;
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    img {
+      height: 100vh;
+    }
+  }
+  z-index: 1000000;
+  content: '';
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+    img {
+      width: 100vw;
+    }
+  }
+.smallBiz {
+
+  &.review-submit .USBEditableText {
+    margin-bottom: 2rem;
+  }
+  #mailingadd {
+    .radio-display {
+      pointer-events: auto;
+    }
+    .smallLabel {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    .form-group {
+      position: relative;
+      margin-bottom: 0;
+      &:not(:last-child) {
+        .radio-display {
+          position: absolute;
+          top: 40%;
+          left: -3rem;
+        }
+        .form-control--radio {
+          @extend .USBFormGroupReadOnly;
+          width: calc(100% - 3rem);
+          margin-left: 3rem;
+          padding-bottom: 0;
+          p {
+            font-weight: bold;
+            
+          }
+          
+        }
+
+      }
+
+    }
+  }
+  .inline-block {
+    display: inline-block !important;
+    margin-bottom: 0;
+    padding: 0;
+    width: auto;
+    margin-right: .5rem;
+
+    &.link-btn {
+      padding: 0;
+      margin-bottom: 0;
+      font-size: 1.8rem;
+    }
+  }
+  &--label {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+  p {
+    padding-bottom: 3rem;
+    line-height: 1.5;
+  }
+  .SBForm .USBFormGroupReadOnly {
+    margin-bottom: 4rem;
+    label {
+      font-weight: bold;
+    }
+    p {
+      font-weight: normal;
+    }
+    &.USBFormGroupReadOnly--xmargin {
+      margin-bottom: 6.5rem;
+    }
+    p {
+      padding-bottom: 0;
+    }
+  }
+.form-control--checkbox {
+  margin-top: 1rem;
+
+  .checkbox-display::before {
+    border: 1px solid $gray;
+  }
+}
+
+.USBButton-styleless {
+  position:relative;
+  -webkit-appearance: none;
+  font-size: 1.2rem;
+  border: 0;
+  box-shadow: none;
+  padding-left: 2.2rem;
+    .USBIcon {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    svg {
+      fill: $ltblue;
+      height: 1.5rem;
+
+    }
+  }
+  .btn {
+    margin-top: 1.5rem;
+    min-width: 25rem;
+    line-height: 20px;
+  }
+  .btn-disclaimer,
+  .btn,
+  .link-btn,
+  .svg-flex,
+  .USBAccordion .disclaimer {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: .3s ease all;
+
+    &.active-appear {
+      opacity: 0;
+      transform: translateY(30%);
+    }
+  }
+  .USBPanel,
+  .USBAccordion {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all .3s ease;
+
+    &.active-appear {
+      opacity: 0;
+      transform: translateY(30%);
+    }
+  }
+  .link-btn {
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    color: $ltblue;
+    display: block;
+  }
+  .SBForm {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    opacity: 1;
+    transform: translateY(0%);
+    transition: .3s ease all;
+
+    &.SBForm-nomargin {
+      margin-top: 0;
+    }
+    .SBForm-topmargin {
+      margin-top: 4rem;
+    }
+  
+    &.active-appear {
+      opacity: 0;
+      transform: translateY(30%);
+    }
+    .USBRadioGroup {
+      .form-group {
+        label {
+          margin-bottom: 0;
+        }
+        &:last-child {
+          border: 0;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .form-group-float,
+    .form-control--checkbox,
+    .USBRadioGroup,
+    .USBCheckboxGroup .form-group {
+      margin-bottom: 3.3rem;
+
+      &.form-group-float-nomarg {
+        margin-bottom: 0;
+      }
+    }
+    .form-group .form-control--checkbox {
+      margin-bottom: 0;
+    }
+    .form-group-float {
+      .USBButton-styleless {
+        -webkit-appearance: none;
+        border: 0;
+        box-shadow: none;
+        color: $ltblue;
+        position: absolute;
+        bottom: 2.8rem;
+        right: 0;
+        font-size: 1.4rem;
+
+        &-add-another {
+          margin-bottom: 3.3rem;
+        }
+      }
+
+      // weird edge cases
+      &.form-group-smmargin {
+        margin-bottom: 1rem;
+      }
+      &.form-group-topmargin {
+        margin-top: 3.3rem;
+      }
+      &.form-group-nomargin {
+        margin-bottom: 1rem;
+  
+        + .USBButton-styleless {
+            margin-bottom: 2rem;
+            position:relative;
+            .USBIcon {
+                top: 0;
+            }
+        }
+      }
+      &.form-group-xmargin {
+        margin-bottom: 6rem;
+      }
+      label,
+      .form-control {
+        margin-bottom: 0;
+        font-size: 1.8rem;
+      }
+    }
+    label {
+      width: 100%;
+      font-weight: normal;
+      white-space: pre-line;
+
+      .USBTooltip--content {
+        right: -9rem;
+      }
+      &.form-control--radio,
+      &.form-control--checkbox {
+        margin-left: -1.3rem;
+      }
+    }
+    .forgotID {
+      display: block;
+      margin: -3rem 0 3rem;
+      font-size: 1.2rem;
+    }
+    .USBTooltip > a {
+      color: $gray;
+
+      &:hover {
+        color: $dkblue;
+      }
+
+    }
+    .forgotID {
+      color: $gray;
+    }
+
+
+    &.sb-form-finalize {
+      .form-control--checkbox {
+        margin-bottom: 0;
+        // font-weight: bold;
+      }
+  }
+
+}
+.SBTitleBlock {
+  margin: 3rem 0 2.8rem;
+  opacity: 1;
+  transform: translateY(0%);
+  transition: .3s ease all;
+&--description {
+  padding-top: 2rem;
+  padding-bottom: 0;
+}
+  &--title {
+    padding: 0;
+    margin: 0;
+    & small {
+      display: block;
+      color: #007CBE;
+      margin: 1rem 0;
+    }
+  }
+  &.active-appear {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+}
+.error .SBTitleBlock {
+  opacity: 1 !important;
+  transition: none !important;
+  transform: none !important;
+}
+.btn[disabled] {
+  background-color: #737373;
+  border-color: #737373;
+  pointer-events: none;
+}
+
+h6 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.USBScrollBox {
+  padding: 3rem;
+  height: 700px;
+  overflow-y:scroll;
+  border: solid 1px #555;
+
+  p {
+    padding-bottom: 2rem;
+  }
+
+  &::-webkit-scrollbar {
+    width: 1.5em;
+    &-track {
+      // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      background-color: $ltgray;
+    }
+    &-thumb {
+      background-color: darkgrey;
+      outline: 1px solid slategrey;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  img.pull-right {
+    // margin-top: 7rem;
+    // margin-left: 2rem;
+  }
+  .illustration {
+    max-width: 23rem;
+    margin-left: 2rem;
+  }
+  .SBTitleBlock {
+    margin: 6rem 0 2.8rem;
+  }
+}
+
+.illustration {
+  margin-left: 2rem !important;
+}
+
+
+/* Shame Section */
+address {
+  font-size: 1.8rem;
+}
+
+.progress-component {
+  margin-top: 4rem;
+}
+
+.smallLabel {
+  position: absolute;
+  top: -20px;
+  left: 40px;
+}
+
+.DBA-SS .form-group {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .SBForm .pull-right {
+    // float: none !important;
+    margin: 0 auto;
+    display: block;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 767px) { 
+
+
+  .progress-steps span {
+    display: none;
+  }
+
+  .library-footer,
+  .SBRightRail {
+    margin-top: 0;
+  }
+
+  .SBHeader h6 {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    margin-top: 0;
+  }
+ }
+
+ .DBA-SS .form-control--radio input {
+  height: 0;
+  width: 0;
+}
+
+.DBA-SS label.form-control--radio {
+  padding-left: 40px;
+  margin-left: -15px;
+
+}
+}
+
+.USBHeading--nomargin {
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
+  padding-top: 5rem;
+  border-top: solid 1px #555;
+}
+
+.USBList--tabbed {
+  margin-left: 2rem;
+  margin-top: 1rem;
+
+  li {
+    padding-bottom: 2rem;
+  }
+}
+.bottom-margin {
+  margin-bottom: 3.5rem;
+}
+.illustration {
+  max-width: 25.5rem;
+}
+
+
+
+.form-control--checkbox input[type="checkbox"]:checked + strong + .checkbox-display::after {
+  display: inline-block;
+
+}
+// .form-control--checkbox .checkbox-display::after {
+//     display: none;
+//     position: absolute;
+//     content: '';
+//     background-image: url(/static/media/icon-checkmarkwhite.7f060a6e.svg);
+//     background-repeat: no-repeat;
+//     width: 18px;
+//     height: 18px;
+//     top: 3px;
+//     left: 0;
+// }
+
+
+.more-space {
+  margin-bottom: 6rem !important;
+}
+.smallBiz--label-lg,
+.financial-obligations .USBCheckboxGroup > label {
+  font-weight: bold !important;
+  color: $dkblue;
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+.email-container {
+  height: 60vh;
+  padding-top: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .xmargintop {
+    margin-top: 5rem;
+  }
+}
+
+.dropdown-menu {
+    display: none;
+    // float: left;
+    min-width: 160px;
+    width: 100%;
+    padding: 5px 5px 0;
+    margin: 2px 0 0;
+    font-size: 18px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    ul {
+      padding-left: 0;
+    }
+
+    option {
+      width: auto;
+      &:hover {
+        cursor: pointer;
+        color: #fff;
+        background-color: $ltblue;
+      }
+    }
+
+}
+.SBSfi {
+
+  .USBPanel {
+    &-content {
+      padding: 3rem 0 0;
+      > .smallBiz--label {
+        margin-top: 0;
+      }
+    }
+    .btn {
+      display: block;
+      margin-top: 4rem;
+    }
+  }
+  
+}
+.SBLoanHub {
+  &--message {
+    margin: 0 0 3.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0;
+      
+      .USBIcon {
+        width: 5.5rem;
+        height: 4rem;
+        svg.circleCheck.checked {
+          width: 6rem;
+        }
+      }
+  }
+  &--main {
+    margin-top: 7rem;
+  }
+
+  .paragraph-s {
+    padding-bottom: 0;
+  }
+  &--info {
+    border-left: solid 1px #EAEAE4;
+  }
+  .upload {
+    &--link {
+      position: relative;
+      &:hover,
+      *:hover,
+      input:hover,
+      .upload--text:hover {
+        cursor: pointer;
+      }
+      input {
+        display: block;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      @extend a;
+    }
+    &--text {
+      pointer-events: none;
+    }
+    &--filename {
+      display: block;
+      font-size: 12px;
+    }
+  }
+  .USBAccordion {
+    margin-top: 1rem;
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 3rem;
+
+  .USBPanel {
+    &.is-expanded {
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+
+      .USBPanel-body {
+        margin-top: 1rem;
+      }
+    }
+  }
+    // .is-expanded.USBPanel:first-child {
+    //   margin-top: 0;
+    // }
+
+    .USBPanel-body {
+      margin-bottom: 0;
+    }
+
+  }
+  .USBPanel-body {
+    display: block;
+    float: left;
+    width: 100%;
+    // margin-top: 1rem;
+    // margin-bottom: 3rem;
+    > * {
+     
+    }
+   
+  }
+  .USBPanel .USBContentBlock:not(.USBContentBlock--next-step) .USBIconLink {
+    cursor: not-allowed;
+    a {
+      cursor: not-allowed;
+    }
+    .paragraph-l {
+      color: #737373;
+    }
+    .btn-circle-red {
+      fill: #737373;
+    }
+  }
+  article {
+    border-bottom: solid 1px #DEDEDE;
+    margin: 4rem 0;
+
+    &:first-child {
+      text-align: center;
+      margin-top: 7rem;
+    }
+    &:last-child {
+      border: 0;
+    }
+  }
+  &--description-list {
+    font-size: 1.8rem;
+    dd {
+      margin-bottom: 3rem;
+    }
+  }
+  &--contact {
+    color: $dkblue;
+    a {
+      display: block;
+      text-decoration: none;
+      margin-bottom: 4rem;
+      strong {
+        margin-left: 2rem;
+      }
+     
+    }
+    h4 {
+      margin-bottom: 4rem;
+    }
+    figcaption {
+      display: inline-block;
+      margin-bottom: 3rem;
+      p {
+        margin-left: 2rem;
+      }
+      a {
+        margin-bottom: 0;
+      }
+    }
+    .USBIcon {
+      vertical-align: top;
+      display: inline-block;
+      .branch,
+      .appointment {
+        width: 2rem;
+      }
+      .iconPhone {
+      width: 1.4rem;
+      }
+    }
+  }
+  .USBContentBlock {
+    margin-bottom: 1rem;
+    border: solid 1px #DEDEDE;
+    padding: 2.8rem 3rem 3rem;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      // flex-wrap: wrap;
+      &.USBContentBlock--upload-container {
+        flex-direction: column;
+      }
+      .USBContentBlock--upload {
+        display: flex;
+
+        > div {
+        
+          &.USBContentBlock--left {
+            flex-basis: 45%;
+            padding-right: 30px;
+            border-right: solid 2px $ltgray;
+
+            .btn.USBLink {
+              margin-right: 0;
+            }
+          }
+          &.USBContentBlock--right {
+            flex-basis: 55%;
+            padding-left: 30px;
+          }
+        }
+      }
+      > div {
+        
+        &.USBContentBlock--left {
+          flex-basis: 45%;
+          padding-right: 30px;
+          border-right: solid 2px $ltgray;
+        }
+        &.USBContentBlock--right {
+          flex-basis: 55%;
+          padding-left: 30px;
+        }
+      }
+      > .paragraph-m {
+        flex-basis: 100%;
+      }
+    }
+
+    &--right {
+      a {
+        font-family: HelveticaNeueLTW06-75Bold;
+        font-size: 1.6rem;
+        color: $ltblue;
+      }
+      p {
+        font-size: 16px;
+        padding-bottom: 0;
+      }
+
+      ul {
+        padding-left: 1rem;
+        li {
+        font-size: 1.6rem;
+        list-style-type: disc;
+        margin: 1rem 0 0 2rem;
+        position: relative;
+
+      }
+    }
+    }
+    &--left {
+      .heading-xxs {
+        margin-top: 0;
+      }
+      .paragraph-small {
+        font-size: 1.2rem;
+        padding-bottom: 0;
+      }
+      .paragraph-s {
+        margin-top: 2.5rem;
+      }
+    }
+
+
+    &--completed-steps {
+      display: block;
+      clear: both;
+      float: left;
+      width: 100%;
+      .USBHeading h6 {
+        margin-top: 0;
+      }
+      .USBIcon {
+        height: 20px;
+        margin-right: 10px;
+        width: 4rem;
+
+        svg {
+          width: 6rem;
+        }
+      }
+      .USBIcon,
+      .USBHeading {
+        display: inline-block;
+        float: left;
+      }
+      p {
+        font-size: 1.2rem;
+        padding-bottom: 0;
+      }
+    }
+    &--purchase {
+      li {
+        width:calc(100% + 2rem);
+      }
+    }
+    &--next-step {
+      &.USBContentBlock {
+        margin-top: 1rem;
+
+        &--left {
+          .paragraph-small {
+            padding-bottom: 1.5rem;
+          }
+        }
+      }
+
+      .btn {
+        width: 100%;
+        @media screen and (min-width: 768px) {
+          max-width: 25rem;
+        }
+      }
+
+      .upload {
+        display: block;
+        float: left;
+        clear: both;
+      }
+      span {
+        display: inline;
+      }
+      svg {
+        width: 2.4rem;
+      }
+    }
+  
+    .paragraph-l {
+      font-size: 1.9rem;
+    }
+
+    > * {
+      width: auto;
+    }
+    > p {
+      width: 100%;
+      display: block;
+      float: left;
+    }
+
+  }
+.SBProgress {
+  height: 170px;
+  width: 170px;
+  position: relative;
+  &--owner,
+  &--owner-fill,
+  &--coowner,
+  &--coowner-fill {
+    position: absolute;
+    width: 170px;
+    height: 85px;
+    background-color: transparent;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 15px solid #007CBE;
+    border-bottom: 0;
+  }
+  &--owner {
+    top: 0;
+    border-color: #EEF7FB;
+    &-fill {
+      top: 0;
+      border-bottom-right-radius: 2em 5em;
+    border-bottom-left-radius: 2em 5em;
+    }
+  }
+  &--coowner {
+      bottom: 0;
+      border-color: #EEF7FB;
+      transform: rotate(180deg);
+
+    &-fill {
+      bottom: 0;
+      transform: rotate(180deg);
+
+    }
+  }
+}
+.USBProgressCircle {
+  // stroke-width: .30rem;
+  // position: relative;
+  // display: grid;
+  // justify-content: center;
+  // align-items: center;
+  // height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 4rem;
+  svg {
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    path {
+      // transform: translate(0, -15.674);
+    }
+  }
+  &--info {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    margin-left: 5px;
+
+
+    &-primary {
+      border-bottom: solid 2px #EAEAE4;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+
+    }
+
+
+    span {
+      display: block;
+      font-size: 1.9rem;
+      font-weight: bold;
+      color: $blue;
+      &.USBProgressCircle--info-name {
+        font-size: 1.2rem;
+        font-weight: normal;
+      }
+    }
+
+  }
+  &--primary {
+    transform: rotate(180deg);
+    transform-origin: 50% 50%;
+    width: 100%;
+    
+  }
+
+&--primary-path {
+  will-change: auto;
+  stroke-width: 15px;
+  stroke-miterlimit: round;
+  transition: stroke-dashoffset 850ms ease-in-out;
+  fill: none;
+  stroke: $xltblue;
+
+}
+
+.USBProgress--primary-path-fill {
+  stroke: $ltblue;
+  stroke-dasharray: 350px; 
+  stroke-dashoffset: 0;
+
+  &-30 {
+    stroke-dashoffset: -170px;
+  }
+  &-40 {
+    stroke-dashoffset: -150px;
+  }
+  &-55 {
+    stroke-dashoffset: -130px;
+  }
+  &-70 {
+    stroke-dashoffset: -75px;
+  }
+  &-75 {
+    stroke-dashoffset: -60px;
+  }
+  &-95 {
+    stroke-dashoffset: -30px;
+  }
+  &-100 {
+    stroke-dashoffset: 0;
+  }
+}
+.USBProgress--secondary-path-fill {
+  stroke: $blue;
+  stroke-dasharray: 350px; 
+  stroke-dashoffset: 0;
+
+  &-30 {
+    stroke-dashoffset: 280px;
+  }
+  &-40 {
+    stroke-dashoffset: 260px;
+  }
+  &-60 {
+    stroke-dashoffset: 220px;
+  }
+  &-90 {
+    stroke-dashoffset: 155px;
+  }
+  &-100 {
+    stroke-dashoffset: 100px;
+  }
+
+}
+
+}
+.USBProgress {
+  stroke-width: .30rem;
+position: relative;
+.paragraph-m {
+  top: 25%;
+  left: 45%;
+  position: absolute;
+  color: dkblue;
+}
+.paragraph-desktop.paragraph-m {
+  left: 41%;
+}
+
+svg {
+  // height: $progress-bar-size;
+  transform: rotate(-90deg);
+  // width: $progress-bar-size;
+  // width: 16rem;
+  margin: 0 auto;
+  display: block;
+}
+
+.progress-bar__background {
+  fill: none;
+  stroke: #EEF7FB;
+  stroke-width: .30rem;
+}
+
+.progress-bar__progress {
+  fill: none;
+  // stroke: #e2eff0;
+  stroke: #007CBE;
+  stroke-dasharray: 100 100;
+  stroke-dashoffset: 100;
+  // stroke-linecap: round;
+  // stroke-width: $progress-bar-stroke-width;
+  transition: stroke-dashoffset 1s ease-in-out;
+  stroke-dashoffset: 40px;
+}
+}
+.USBContentBlock--next-step {
+  .disclaimer {
+    margin: 0;
+  }
+  
+  .heading-xxs {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .paragraph-m {
+    position: relative;
+    padding-left: 4.5rem;
+    padding-bottom: 0;
+    margin-top: 2rem;
+    @media screen and (max-width: 767px) {
+      .SBLoanHub--success {
+        margin-left: 10px;
+      }
+    }
+
+    .boldblue {
+      margin-left: 10px;
+      white-space: nowrap;
+    }
+    .USBIcon {
+      left: 0;
+      top: .5rem;
+      svg {
+        width: 5rem;
+      }
+    }
+  }
+  .upload-docs {
+    .paragraph-m,
+    > div {
+      width: calc(100% - 2.6rem);
+      font-size: 1.6rem;
+      position: relative;
+      padding-bottom: 2rem;
+      display: block;
+      float: left;
+      clear: both;
+      transition: margin-left .5s ease, width .5s ease;
+      &:last-child {
+        padding-bottom: 0;
+      }
+      a {
+        color: #007CBE;
+        text-decoration: underline;
+      }
+      &.uploaded {
+        font-weight: normal;
+        color: #555;
+        // width: 100%;
+        margin-left: 2.6rem;
+        
+      }
+
+  .checkmark .USBIcon {
+    width: 0;
+    position: absolute;
+    left: -2.6rem;
+    top: .5rem;
+
+    .circleCheck {
+      .circle {
+        fill: #EAEAE4;
+      }
+      .check {
+        fill:none;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        width: auto;
+        stroke: none;
+        transition: width .5s ease;
+      }
+      &.unchecked {
+        width: 0;
+        .circle {
+          width: 0;
+        }
+      }
+    &.checked {
+      width: 2.6rem;
+      .circle {
+        width: 2.6rem;
+      }
+      .circle {
+        fill:#5ebf51;
+      }
+      .check {
+        stroke:#5ebf51;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+        stroke-width:1.5px;
+        animation: svgDraw 1.0s ease-in forwards;
+      }
+    }
+    }
+  }
+}
+}
+}
+.paragraph-m .USBIcon {
+  position: absolute;
+  left: 0;
+}
+.circleCheck {
+  .circle {
+    fill: #EAEAE4;
+  }
+  .check {
+    fill:none;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    width: auto;
+    stroke: none;
+    transition: width .5s ease;
+  }
+  &.unchecked {
+    width: 0;
+    .circle {
+      width: 0;
+    }
+  }
+&.checked {
+  width: 2.6rem;
+  .circle {
+    width: 2.6rem;
+  }
+  .circle {
+    fill:#5ebf51;
+  }
+  .check {
+    stroke:#5ebf51;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width:1.5px;
+    animation: svgDraw 1.0s ease-in forwards;
+  }
+}
+}
+.USBMobileNavBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 2rem .5rem;
+  background-color: $blue;
+  z-index: 10000;
+  .USBIcon {
+    display: block;
+  }
+  svg {
+    fill: $white;
+    // stroke: $white;
+    height: 3rem;
+  }
+  nav {
+    display: flex;
+    text-align: center;
+  }
+
+  div {
+    text-decoration: none;
+    margin: 0 auto;
+    color: $white;
+    width: 50%;
+    font-size: 1.2rem;
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}
+.container {
+  position: relative;
+}
+&--close {
+  display: flex;
+
+  .USBIcon,
+  a {
+    display: inline-block;
+  }
+  &-link {
+    position: absolute;
+    top: -1.5rem;
+    right: 2rem;
+    text-decoration: none;
+    color: #555;
+    font-size: 1.6rem;
+
+    span {
+      margin-right: 6px;
+      margin-top: 4px;
+    }
+  }
+  a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #555;
+    vertical-align: top;
+  }
+  svg {
+    fill: #555;
+    height: 3rem;
+  }
+}
+}
+
+@keyframes svgDraw {
+  from {
+      stroke-dashoffset: 1000;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+
+.SBLoanHubTwo {
+  .USBProgress .progress-bar__progress {
+    stroke-dashoffset: 30px;
+  }
+  .USBContentBlock--next-step {
+
+    .btn-primary {
+      margin-bottom: 2rem;
+    }
+    @media screen and (min-width: 992px) {
+      .disclaimer-margin {
+        margin-top: 10rem;
+      }
+    }
+
+    dl {
+      font-size: 1.8rem;
+      dt {
+        font-weight: normal;
+      }
+      dd {
+        font-weight: bold;
+        color: $dkblue;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.logout-hub {
+float: right;
+text-decoration: none;
+vertical-align: top;
+font-size: 1.4rem;
+  color: #fff;
+  
+}
+.paragraph-tooltip {
+  a {
+    font-size: 1.8rem;
+    text-decoration: underline;
+    color: #007CBE !important;
+    font-weight: bold;
+  }
+  .USBTooltip {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+}
+.USBTooltip--large {
+  .USBTooltip--content {
+    width: 35rem;
+    right: -14rem;
+  }
+}
+.USBTooltip--content,
+.USBTooltip--content * {
+  padding-bottom: 0 !important;
+  font-size: 1.2rem !important;
+    line-height: 1.5 !important;
+}
+.USBTooltip--content {
+  padding: 10px 20px !important;
+}
+.btn-disabled,
+.btn-disabled:hover {
+  background-color: #737373 !important;
+  border-color: #737373 !important;
+  opacity: 1 !important;
+}
+
+@media screen and (max-width: 767px) {
+  .SBLoanHubThree .USBContentBlock--next-step div > div:first-child,
+  .SBLoanHubTwo .USBContentBlock--next-step > div:first-child {
+    order: 2;
+  }
+   
+}
+.SBLoanHubHalfHalf {
+  .USBProgress .progress-bar__progress {
+    stroke-dashoffset: 65px;
+  }
+}
+.SBLoanHubHalf {
+  .USBProgress .progress-bar__progress {
+    stroke-dashoffset: 30px;
+  }
+}
+.SBLoanHubThreeQuarter {
+  .USBProgress .progress-bar__progress {
+    stroke-dashoffset: 55px;
+  }
+}
+.SBLoanHubTwo {
+  .USBProgress .progress-bar__progress {
+    stroke-dashoffset: 25px;
+  }
+}
+.SBLoanHubThree {
+  .USBProgress .progress-bar__progress {
+    stroke-dashoffset: 15px;
+  }
+}
+.USBIconList--inline {
+  padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-align: center;
+
+    svg {
+      width: 5rem;
+    }
+
+}
+
+.SBForm {
+   .USBIconLink {
+     * {
+       font-size: 1.9rem;
+       padding-top: 0;
+       padding-bottom: 0;
+     }
+
+     svg {
+       width: 2.4rem;
+     }
+   }
+}
+// application status
+.no-padding {
+  padding-bottom: .5rem !important;
+}
+.nono-padding {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+.USBFlexTwo {
+  h5 {
+    padding-bottom: 0;
+  }
+    > * {
+      padding: 2rem 3rem 3rem;
+    }
+  
+  }
+
+  .form-group-float-tooltip {
+    .USBTooltip {
+      position: absolute;
+      right: 0;
+      top: 1rem;
+
+      &--content {
+        right: -9rem;
+      }
+    }
+  }
+
+  .SBHeader--applicationstat {
+    height: 9rem;
+  }
+
+  .svg-flex {
+    display: flex;
+    margin-top: 3.5rem;
+
+    .USBIcon {
+      width: 8rem;
+      height: 3rem;
+    }
+  }
+
+
+.USBTooltip .USBIcon {
+  fill: #007CBE;
+}
+.form-group-float .USBInputDisclaimer .USBTooltip a {
+  color: #007CBE;
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .SBLoanHub .USBContentBlock--next-step .paragraph-m .USBIcon {
+    left: 0;
+  }
+  .SBLoanHub .USBContentBlock--next-step .paragraph-m {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3.5rem;
+  }
+  img.illustration {
+    float: none !important;
+    margin: 0 auto 30px;
+  }
+
+  .SBLoanHubTwo .USBContentBlock--next-step .paragraph-small + .paragraph-s {
+    border-bottom: solid 1px #DEDEDE;
+    margin-bottom: 2.5rem;
+  }
+
+  .SBLoanHub .USBContentBlock--next-step > div {
+    display: block;
+  }
+  .SBLoanHub .USBAccordion .USBPanel .USBTooltip .USBIcon {
+    width: 2rem;
+  }
+  .SBLoanHub article:first-child {
+    text-align: left;
+  }
+
+  .SBLoanHub .USBContentBlock--next-step > div > div {
+    padding-left: 0;
+  }
+
+  .SBLoanHub .USBProgress .paragraph-m {
+    left: 41%;
+  }
+  .circleCheck {
+    width: 50px;
+  }
+  .xmargintop {
+    float: none !important;
+    img {
+      display: block;
+      margin: 1rem auto;
+    }
+  }
+  .form-group-float-tooltip .USBTooltip--content {
+    right: -1rem;
+    &:before {
+      left: auto;
+      right: 5px;
+    }
+    &:after {
+      left: auto;
+      right: 7px;
+    }
+  }
+}
+
+.SBLoanHubMobile {
+  margin-top: 4rem;
+}
+
+.heading-xs.nono-padding {
+  margin-top: 0;
+}
+
+.boldblue {
+  font-weight: bold;
+  color: #007CBE;
+  text-decoration: underline;
+}
+@media screen and (max-width: 767px) {
+  .SBHeader h6 {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+}
+.USBIconList--inline {
+margin-bottom: 4rem;
+}
+
+.fake {
+  .btn-primary {
+    white-space: normal;
+  }
+  &-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+@media screen and (min-width: 769px) {
+  img {
+    width: 100%;
+  }
+}
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,.4);
+      content: '';
+    }
+  }
+  .container {
+    position: relative;
+  }
+  &-content {
+    position: absolute;
+    bottom:200px;
+    left: 0;
+    z-index: 100;
+
+    h6 {
+          font-family: HelveticaNeueLTW04-55Roman,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px!important;
+    line-height: 1!important;
+    font-weight: 400!important;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    }
+    > * {
+      color: $white;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &-content {
+      h1 {
+        font-size: 3.2rem;
+        line-height: 1.2;
+      }
+    }
+  &-banner {
+
+    img {
+    width: auto;
+    height: 100vh;
+  }
+  }
+}
+}
+.USBList--circleCheck {
+  list-style-type: none;
+  padding-left: 30px;
+  margin-bottom: 50px;
+  li {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .USBIcon {
+    position: absolute;
+    left: -30px;
+    top: 2px;
+  }
+}
+.circleCheckFull {
+  fill: $ltblue;
+  width: 35px;
+  .check {
+    stroke: $ltblue;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.5px;
+    fill: none;
+  }
+}
+.nomargin {
+  padding-bottom: 0;
+}
+
+.img-padding {
+  padding: 30px 0 20px 20px;
+}
+.modal--body p:last-of-type {
+  padding-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+    .illustration-last {
+      margin-top: 50px;
+      margin-left: 10px;
+    }
+  .btn-flex {
+    display: flex;
+  }
+}
+
+.disabled-select {
+  pointer-events: none;
+}

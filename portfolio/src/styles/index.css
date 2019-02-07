@@ -1,0 +1,4493 @@
+@font-face {
+  font-family: "HelveticaNeueLTW06-75Bold";
+  src: url("../fonts/HelveticaNeueLTW06-75Bold.eot?#iefix");
+  src: url("../fonts/HelveticaNeueLTW06-75Bold.eot?#iefix") format("eot"), url("../fonts/HelveticaNeueLTW06-75Bold.woff2") format("woff2"), url("../fonts/HelveticaNeueLTW06-75Bold.woff") format("woff"), url("../fonts/HelveticaNeueLTW06-75Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "HelveticaNeueLTW04-55Roman";
+  src: url("../fonts/HelveticaNeueLTW04-55Roman.eot?#iefix");
+  src: url("../fonts/HelveticaNeueLTW04-55Roman.eot?#iefix") format("eot"), url("../fonts/HelveticaNeueLTW04-55Roman.woff2") format("woff2"), url("../fonts/HelveticaNeueLTW04-55Roman.woff") format("woff"), url("../fonts/HelveticaNeueLTW04-55Roman.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "HelveticaNeueLTW04-56Italic";
+  src: url("../fonts/HelveticaNeueLTW04-56Italic.eot?#iefix");
+  src: url("../fonts/HelveticaNeueLTW04-56Italic.eot?#iefix") format("eot"), url("../fonts/HelveticaNeueLTW04-56Italic.woff2") format("woff2"), url("../fonts/HelveticaNeueLTW04-56Italic.woff") format("woff"), url("../fonts/HelveticaNeueLTW04-56Italic.ttf") format("truetype"); }
+
+@media screen and (max-width: 1000px) {
+  .background-primary .icon-container {
+    display: none; } }
+
+.background-primary {
+  background-color: #0C2074;
+  color: #ffffff; }
+
+body {
+  overflow-x: hidden;
+  color: #555;
+  font-size: 10px !important; }
+
+html {
+  font-family: "HelveticaNeueLTW04-55Roman", "Helvetica neue", Helvetica, Arial, Sans-serif;
+  font-size: 10px; }
+
+html.typeSmall {
+  font-size: 8px; }
+
+html.typeMedium {
+  font-size: 10px; }
+
+html.typeLarge {
+  font-size: 12px; }
+
+.disclaimer {
+  font-size: 1.4rem;
+  line-height: 1.2; }
+
+/* Default Styles */
+.disabled {
+  cursor: not-allowed;
+  text-decoration: line-through; }
+
+.disabled:hover {
+  cursor: not-allowed;
+  text-decoration: line-through; }
+
+/* icons */
+.chevronDown {
+  fill: #007cbe;
+  width: 23px; }
+
+.error > * {
+  fill: #D83B48; }
+
+.fg-xltblue,
+.btn--xltblue {
+  color: #EEF7FB; }
+
+.fg-ltblue,
+.btn--ltblue {
+  color: #007cbe; }
+
+.fg-blue,
+.btn--blue {
+  color: #17409C; }
+
+.fg-dkblue,
+.btn--dkblue {
+  color: #0C2074; }
+
+.fg-red,
+.btn--red {
+  color: #D83B48; }
+
+.fg-white,
+.btn--white {
+  color: #fff; }
+
+section.fg-white *:not(button) {
+  color: #fff; }
+
+.bg-xltblue,
+.btn-bg-xltblue {
+  background-color: #EEF7FB; }
+
+.bg-ltblue,
+.btn-bg-ltblue {
+  background-color: #007cbe; }
+
+.bg-blue,
+.btn-bg-blue {
+  background-color: #17409C;
+  color: #fff; }
+
+.bg-dkblue,
+.btn-bg-dkblue {
+  background-color: #0C2074; }
+
+.bg-red,
+.btn-bg-red {
+  background-color: #D83B48; }
+
+.bg-gray,
+.btn-bg-gray {
+  background-color: #555; }
+
+.bg-ltgray,
+.btn-bg-ltgray {
+  background-color: #EAEAE4; }
+
+.bg-white,
+.btn-bg-white {
+  background-color: #fff; }
+
+.bg-usbCoolGrey,
+.btn-bg-usbCoolGrey {
+  background-color: #EEF7FB; }
+
+.gray {
+  color: #555; }
+
+/* Style Guide Styles */
+.style-guide {
+  position: relative; }
+
+.library-stage > section {
+  margin-top: 2rem; }
+
+.vertical-label {
+  writing-mode: vertical-lr;
+  position: absolute;
+  left: -60px;
+  top: 0;
+  z-index: -1;
+  transform: rotate(180deg); }
+
+.vertical-label > * {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.telescoped {
+  display: flex;
+  justify-content: space-between; }
+
+.telescoped > * {
+  margin-top: -1rem; }
+
+.tag-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  align-self: center; }
+
+.tag-list li {
+  display: inline;
+  margin-left: 1rem; }
+
+.tag-list li a, .tag-list li .SBLoanHub .upload--link, .SBLoanHub .tag-list li .upload--link {
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid #0C2074; }
+
+a, .SBLoanHub .upload--link {
+  cursor: pointer;
+  color: #0C2074;
+  text-decoration: underline;
+  font-size: 1.8rem; }
+
+.USBIcon {
+  fill: #0C2074; }
+
+.USBIconLink a, .USBIconLink .SBLoanHub .upload--link, .SBLoanHub .USBIconLink .upload--link {
+  text-decoration: none;
+  color: #555;
+  font-weight: 700; }
+
+ul li {
+  font-size: 1.8rem; }
+
+li > a, .SBLoanHub li > .upload--link,
+li > h3 > a, .SBLoanHub
+li > h3 > .upload--link,
+.USBTooltip > a, .SBLoanHub
+.USBTooltip > .upload--link {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold; }
+
+p {
+  font-family: "HelveticaNeueLTW04-55Roman", "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0rem; }
+
+.USBHeading > * > a, .SBLoanHub .USBHeading > * > .upload--link {
+  color: #007CBE;
+  text-decoration: none; }
+
+.USBHeading > * > a:hover, .SBLoanHub .USBHeading > * > .upload--link:hover {
+  text-decoration: underline; }
+
+p.heading-m {
+  padding-bottom: 0; }
+
+[class^="paragraph--callout"] {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  padding-bottom: 30px; }
+
+h1, h2, h3, h4, h5, h6, [class^="heading-"] {
+  font-family: "HelveticaNeueLTW06-75Bold", "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #0c2074; }
+
+h1, .heading-xxl {
+  font-size: 10rem;
+  line-height: 9.8rem;
+  padding-bottom: 4rem; }
+
+h2, .heading-xl {
+  font-size: 6rem;
+  line-height: 6.1rem;
+  padding-bottom: 3rem; }
+
+h3, .heading-l {
+  font-size: 5.2rem;
+  line-height: 5.7rem;
+  padding-bottom: 3rem; }
+
+h4, .heading-m {
+  font-size: 3.6rem;
+  line-height: 4rem;
+  padding-bottom: 2rem; }
+
+h5, .heading-s {
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  padding-bottom: 2rem; }
+
+h6, .heading-xs {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  padding-bottom: 2rem; }
+
+.heading-xxs {
+  font-size: 1.9rem;
+  line-height: 2.2rem;
+  padding-bottom: 2rem; }
+
+.paragraph--callout {
+  font-size: 3.7rem;
+  line-height: 4.9rem; }
+
+.paragraph--callout-s {
+  font-size: 2.4rem;
+  line-height: 3.6rem; }
+
+.paragraph-l {
+  font-size: 2.4rem;
+  line-height: 3.3rem;
+  padding-bottom: 4rem; }
+
+.paragraph-m {
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  padding-bottom: 4rem; }
+
+.paragraph-s {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding-bottom: 3rem; }
+
+.paragraph-xs {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  padding-bottom: 3rem; }
+
+.paragraph-xxs {
+  font-size: 1rem;
+  line-height: 1.7rem;
+  padding-bottom: 2rem; }
+
+.paragraph-xxxs {
+  font-size: 1rem;
+  line-height: 1.7rem;
+  padding-bottom: 2rem; }
+
+.paragraph-xxxxs {
+  font-size: .8rem;
+  line-height: 1.5rem;
+  padding-bottom: 2rem; }
+
+@media screen and (max-width: 767px) {
+  h1,
+  .heading-xxl,
+  h2,
+  .heading-xl {
+    font-size: 5.4rem;
+    line-height: 5.9rem;
+    padding-bottom: 3rem; }
+  h3,
+  .heading-l,
+  h4,
+  .heading-m {
+    font-size: 3.6rem;
+    line-height: 4rem;
+    padding-bottom: 2rem; }
+  h5,
+  .heading-s {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    padding-bottom: 2rem; }
+  h6,
+  .heading-xs {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    padding-bottom: 2rem; }
+  .heading-xxs {
+    font-size: 1.9rem;
+    line-height: 2.2rem;
+    padding-bottom: 2rem; }
+  .heading-xxxs {
+    font-size: 1.4rem; } }
+  @media screen and (max-width: 767px) and (min-width: 768px) {
+    .heading-xxxs {
+      font-size: 2.4rem; } }
+
+@media screen and (max-width: 767px) {
+  .paragraph--callout {
+    font-size: 3.7rem;
+    line-height: 4.9rem; }
+  .paragraph--callout-s {
+    font-size: 2.4rem;
+    line-height: 3.6rem; }
+  .paragraph-l {
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    padding-bottom: 4rem; }
+  .paragraph-m {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    padding-bottom: 4rem; }
+  .paragraph-s {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding-bottom: 3rem; }
+  .paragraph-xs {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    padding-bottom: 3rem; }
+  .paragraph-xxs {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    padding-bottom: 2rem; }
+  .paragraph-xxxs {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    padding-bottom: 2rem; }
+  .paragraph-xxxxs {
+    font-size: .8rem;
+    line-height: 1.5rem;
+    padding-bottom: 2rem; } }
+
+/* Temp helper stuff */
+.icon-container img {
+  width: 100%; }
+
+.opacity-0 {
+  opacity: 0; }
+
+@media screen and (max-width: 1000px) {
+  .background-primary .icon-container {
+    display: none; } }
+
+/* Default Element Styling */
+/* SVG Styles */
+.circle-btn {
+  width: 36px;
+  height: 36px; }
+
+.btn-circle-red {
+  fill: #D93F4D; }
+
+/* Color Examples */
+.color-block {
+  display: table-row;
+  margin: 1rem 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-spacing: 5px 12px; }
+
+.color-block > * {
+  /* flex-grow: 1; */
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 2em;
+  text-align: left; }
+
+.color-block > .color-example {
+  background-color: red;
+  padding: 2rem 0;
+  width: 50px; }
+
+/* Footer */
+.library-footer {
+  background-color: #0C2074;
+  color: white;
+  padding: 6rem 0;
+  width: 100%;
+  box-sizing: border-box; }
+
+.library-footer img {
+  width: 100%; }
+
+/* Section Styling */
+.USBSection > .container > .USBHeading {
+  text-align: center; }
+
+.section {
+  padding: 2rem; }
+
+.section-split {
+  display: flex;
+  padding: 0;
+  margin: 2rem 0; }
+
+@media screen and (max-width: 1000px) {
+  .section-split {
+    flex-direction: column; } }
+
+/* Container Styles */
+.block-inset {
+  background-color: grey;
+  padding: 1rem;
+  flex-grow: 1;
+  transition: all ease-in-out .3s; }
+
+.block-inset:hover {
+  text-decoration: none; }
+
+.block-inset .block-inset--content {
+  border: 1px solid white;
+  color: white;
+  padding: 2rem;
+  margin: 2rem;
+  text-align: center;
+  transition: all ease-in-out .3s; }
+
+.block-inset:hover .block-inset--content {
+  margin: 1rem;
+  padding: 3rem; }
+
+/* Stage */
+.library-main-stage {
+  margin-top: 2rem; }
+
+.library-stage {
+  margin-top: 1rem; }
+
+.stage-description {
+  margin-bottom: 4rem;
+  position: relative; }
+
+.stage-description.stage-description--live-example {
+  min-height: 20rem; }
+
+.stage-description .stage-title {
+  font-size: 6rem;
+  font-family: "HelveticaNeueLTW04-55Roman", "Helvetica neue", Helvetica, Arial, Sans-serif;
+  padding-bottom: 0; }
+
+.stage-description .stage-description {
+  font-size: 2rem;
+  font-family: 'Roboto Slab',serif; }
+
+.stage-description .stage-title--small {
+  font-size: 4rem; }
+
+/* Typography */
+/* Nuke the top margin on the first element in the typography so that it aligns with the top padding.*/
+.styleguide-typography > *:first-child > * {
+  margin-top: 0; }
+
+/* Buttons */
+.btn {
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-right: 2rem;
+  width: 100%; }
+  .btn-full {
+    width: 100%; }
+  .btn-wrapper {
+    margin-right: 12px; }
+    .btn-wrapper svg {
+      margin-right: 12px; }
+    .btn-wrapper a, .btn-wrapper .SBLoanHub .upload--link, .SBLoanHub .btn-wrapper .upload--link {
+      display: flex;
+      align-items: center;
+      padding: 1rem 0; }
+    .btn-wrapper .btn-center {
+      justify-content: center; }
+    .btn-wrapper p {
+      padding-bottom: 0; }
+  .btn-primary {
+    background-color: #D83B48;
+    color: #ffffff;
+    border-color: #D83B48; }
+  .btn-secondary {
+    background-color: #ffffff;
+    color: #D83B48;
+    border-color: #D83B48; }
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn:active + focus {
+  background-color: #991027;
+  border-color: #991027;
+  color: #ffffff; }
+
+.btn-primary:active:focus {
+  background-color: #991027;
+  border-color: #991027;
+  color: #ffffff; }
+
+.btn-disabled {
+  background-color: #737373;
+  color: #ffffff; }
+
+.btn-secondary:hover,
+.btn-disabled:hover {
+  color: #ffffff; }
+
+.btn-circle {
+  position: relative;
+  padding: 0; }
+
+.btn-circle:hover {
+  background-color: transparent; }
+
+/* Push Menu */
+.push-menu,
+.push-menu-levelTwo {
+  position: fixed;
+  top: 0;
+  box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.2);
+  height: calc(100vh - 86px);
+  left: -400px;
+  height: 100vh;
+  width: 400px;
+  transition: all .3s ease-in-out;
+  z-index: 1000; }
+
+.push-menu .push-menu--header {
+  padding: 0 20px;
+  border-bottom: 3px solid #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.push-menu .push-menu--header small {
+  display: block;
+  padding: .5rem 0; }
+
+.push-menu .push-menu--list {
+  overflow: scroll; }
+
+.push-menu .push-menu--list > * {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid #eeeeee; }
+
+.push-menu.toggled {
+  background-color: rgba(255, 255, 255, 0.9);
+  left: 0; }
+
+.push-menu-levelTwo.toggled {
+  left: 400px; }
+
+.USBIconList {
+  list-style-type: none;
+  padding-left: 2rem; }
+
+.USBIconList li {
+  margin-bottom: 2rem;
+  position: relative; }
+
+.USBIconList li:before {
+  content: '';
+  background-image: url("../img/icon-apply-blue.svg");
+  position: absolute;
+  left: -2.2rem;
+  top: .5rem;
+  width: 16px;
+  height: 16px; }
+
+.USBLink.inline {
+  margin-right: 20px; }
+
+/* link list */
+.USBLinkList {
+  list-style-type: none;
+  padding-left: 0; }
+
+.USBLinkList li {
+  display: inline-block;
+  margin-right: 10px; }
+
+.USBLinkListLine li:after {
+  content: '|';
+  padding-left: 10px; }
+
+.USBBreadcrumb li:after {
+  content: '/';
+  padding-left: 10px; }
+
+.USBLinkListLine li:last-child:after,
+.USBBreadcrumb li:last-child:after {
+  display: none; }
+
+.USBMedia {
+  display: flex;
+  flex-wrap: wrap; }
+
+.USBMedia > * {
+  flex: 1 1 250px;
+  margin: 10px; }
+
+.USBMedia.text-center .circle-btn {
+  float: none; }
+
+/* Fake Live Header */
+.mast-head {
+  background-color: #0c2074;
+  margin-bottom: 40px; }
+
+.mast-head .container-bookend {
+  -ms-flex: 1 1;
+  flex: 1 1;
+  padding: 20px 10px; }
+
+.mast-head--left, .mast-head .container-bookend {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.mast-head .logo {
+  max-width: 127px; }
+
+.mast-head .logo.wealth {
+  width: 200px;
+  height: 40px; }
+
+.mast-head a, .mast-head .SBLoanHub .upload--link, .SBLoanHub .mast-head .upload--link {
+  color: #fff; }
+
+.mast-head .inline-list li {
+  font-size: 14px;
+  line-height: 28px; }
+
+.inline-list {
+  margin-top: auto;
+  padding-left: 20px; }
+
+.inline-list li {
+  display: inline;
+  padding: 1rem; }
+
+.mast-head .glyphicon {
+  font-size: 25px; }
+
+.FlexTwoImg img {
+  margin: 0 auto;
+  display: block;
+  width: 17.5rem;
+  height: 17.5rem; }
+
+@media screen and (min-width: 768px) {
+  .FlexTwoImg {
+    margin-top: 7rem;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center; }
+    .FlexTwoImg img {
+      margin: 0;
+      width: 10rem;
+      height: 10rem; } }
+    @media screen and (min-width: 768px) and (max-width: 767px) {
+      .FlexTwoImg img {
+        width: 7rem;
+        height: 7rem; } }
+
+@media screen and (min-width: 768px) {
+    .FlexTwoImg h5 {
+      padding-left: 3rem; }
+  .USBFlexTwo {
+    display: flex;
+    margin-bottom: 5rem; }
+    .USBFlexTwo > * {
+      padding: 2rem 3rem 3rem;
+      width: 50%; }
+    .USBFlexTwo > *:first-child {
+      margin-right: 1rem; }
+    .USBFlexTwo > *:last-child {
+      margin-left: 1rem; }
+  .btn {
+    width: auto; } }
+
+@media screen and (min-width: 992px) {
+  .library-footer {
+    margin-top: 200px; } }
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+.visible--fade {
+  animation: fadeInDown .5s; }
+
+@-webkit-keyframes fadeOutUp {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); } }
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); } }
+
+.hidden--fade {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+  display: none; }
+
+/* Styles for the Pattern Library / Styleguide */
+/* A11yJumpBanner */
+.A11yJumpBanner {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between; }
+
+.AllyJumpBanner-LinkList {
+  display: inline;
+  padding-left: 1rem; }
+
+.mobile-menu--accordion .USBAccordion .USBPanel .chevronDown,
+.USBPanel .chevronDown {
+  display: none; }
+
+.USBAccordion.USBAccordion--mob-nav > li > .USBPanel > .USBPanel-body > .is-hidden {
+  display: block; }
+
+.USBPanel {
+  position: relative; }
+  .USBPanel .USBPanel-head {
+    display: flex;
+    background-color: #007cbe;
+    width: 100%; }
+  .USBPanel .USBIcon {
+    pointer-events: none; }
+  .USBPanel .USBPanel-title {
+    pointer-events: none;
+    color: #fff;
+    padding-bottom: 0;
+    line-height: 1.5;
+    padding-left: 20px; }
+  .USBPanel.bgwhite {
+    border: solid 1px #555; }
+    .USBPanel.bgwhite .USBPanel-body {
+      background-color: #fff; }
+
+.USBAccordion ul {
+  padding: 0;
+  margin: 0; }
+  .USBAccordion ul li {
+    list-style-type: none; }
+
+.USBAccordion .USBPanel {
+  margin-top: 1rem; }
+  .USBAccordion .USBPanel-content {
+    margin-top: 1rem; }
+  .USBAccordion .USBPanel-body {
+    background-color: #fff;
+    padding: 0; }
+  .USBAccordion .USBPanel-head {
+    border: 0;
+    border-bottom: 1px solid #EAEAE4;
+    background-color: #fff;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    -webkit-appearance: none; }
+    .USBAccordion .USBPanel-head .USBIcon {
+      width: 4rem; }
+  .USBAccordion .USBPanel-title {
+    padding-left: 0; }
+  .USBAccordion .USBPanel .chevronDown {
+    width: 1.1rem;
+    margin: 0 auto;
+    display: block;
+    transform: rotate(0deg);
+    transition: all .5s linear; }
+  .USBAccordion .USBPanel-title {
+    font-weight: 400;
+    color: #007cbe;
+    text-align: left; }
+  .USBAccordion .USBPanel.first-load > .USBPanel-body {
+    max-height: 0;
+    opacity: 0; }
+    .USBAccordion .USBPanel.first-load > .USBPanel-body > .is-hidden {
+      display: none; }
+  .USBAccordion .USBPanel.is-expanded .chevronDown {
+    transform: rotate(-90deg);
+    transition: all .5s linear; }
+  .USBAccordion .USBPanel.is-expanded .USBPanel-title {
+    font-weight: 500; }
+  .USBAccordion .USBPanel.is-expanded-body {
+    margin-top: 1rem; }
+  .USBAccordion .USBPanel.is-expanded > .USBPanel-body {
+    max-height: 2000px;
+    opacity: 1;
+    transition: max-height 1.25s ease-in-out, opacity 1.25s ease-in-out;
+    animation-fill-mode: forwards; }
+    .USBAccordion .USBPanel.is-expanded > .USBPanel-body .is-hidden,
+    .USBAccordion .USBPanel.is-expanded > .USBPanel-body .is-visible {
+      display: block; }
+  .USBAccordion .USBPanel.is-collapsed > .USBPanel-body {
+    margin-bottom: 0;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 1.25s cubic-bezier(0, 1, 0, 1), opacity 1.25s ease-in-out; }
+    .USBAccordion .USBPanel.is-collapsed > .USBPanel-body > .is-hidden {
+      display: none; }
+
+.USBAccordion--warmgray .USBPanel-head {
+  background-color: #EAEAE4;
+  border-bottom: solid 1px #fff; }
+
+.USBAccordion--warmgray .USBPanel-title {
+  color: #007cbe; }
+
+.USBAccordion--warmgray .USBPanel.is-expanded .USBPanel-head {
+  background-color: #555; }
+
+.USBAccordion--warmgray .USBPanel.is-expanded .chevronDown {
+  fill: #fff; }
+
+.USBAccordion--warmgray .USBPanel.is-expanded .USBPanel-title {
+  color: #fff; }
+
+.USBAccordion--warmgray-mediumblue .USBPanel-head {
+  background-color: #EAEAE4;
+  border-bottom: solid 1px #fff; }
+
+.USBAccordion--warmgray-mediumblue .USBPanel-title {
+  color: #007cbe; }
+
+.USBAccordion--warmgray-mediumblue .USBPanel.is-expanded .USBPanel-head {
+  background-color: #007cbe; }
+
+.USBAccordion--warmgray-mediumblue .USBPanel.is-expanded .chevronDown {
+  fill: #fff; }
+
+.USBAccordion--warmgray-mediumblue .USBPanel.is-expanded .USBPanel-title {
+  color: #fff; }
+
+.USBAccordion--warmgray-blue .USBPanel-head {
+  background-color: #EAEAE4;
+  border-bottom: solid 1px #fff; }
+
+.USBAccordion--warmgray-blue .USBPanel-title {
+  color: #007cbe; }
+
+.USBAccordion--warmgray-blue .USBPanel.is-expanded .USBPanel-head {
+  background-color: #17409C; }
+
+.USBAccordion--warmgray-blue .USBPanel.is-expanded .chevronDown {
+  fill: #fff; }
+
+.USBAccordion--warmgray-blue .USBPanel.is-expanded .USBPanel-title {
+  color: #fff; }
+
+.USBAccordion--coolgray-mediumblue .USBPanel-head {
+  background-color: #EEF7FB; }
+
+.USBAccordion--coolgray-mediumblue .USBPanel-title {
+  color: #007cbe; }
+
+.USBAccordion--coolgray-mediumblue .USBPanel.is-expanded .USBPanel-head {
+  background-color: #007cbe; }
+
+.USBAccordion--coolgray-mediumblue .USBPanel.is-expanded .USBPanel-title {
+  color: #fff; }
+
+.USBAccordion--coolgray-mediumblue .USBPanel.is-expanded .chevronDown {
+  fill: #fff; }
+
+.USBAccordion--coolgray-blue .USBPanel-head {
+  background-color: #EEF7FB; }
+
+.USBAccordion--coolgray-blue .USBPanel-title {
+  color: #007cbe; }
+
+.USBAccordion--coolgray-blue .USBPanel.is-expanded .USBPanel-head {
+  background-color: #17409C; }
+
+.USBAccordion--coolgray-blue .USBPanel.is-expanded .USBPanel-title {
+  color: #fff; }
+
+.USBAccordion--coolgray-blue .USBPanel.is-expanded .chevronDown {
+  fill: #fff; }
+
+.USBAccordion--warmgray-mediumblue .USBPanel-head {
+  background-color: #EAEAE4; }
+
+.USBAccordion--warmgray-mediumblue .USBPanel-title {
+  color: #007cbe; }
+
+.USBAccordion--warmgray-mediumblue .USBPanel.is-expanded .USBPanel-head {
+  background-color: #007cbe; }
+
+.USBAccordion.moreopacity .USBPanel.is-collapsed > .USBPanel-body {
+  animation: accordionCollapseMoreOpac 1.25s forwards cubic-bezier(0, 1, 0, 1); }
+
+.USBAccordion.moreopacity .USBPanel.is-expanded > .USBPanel-body {
+  animation: accordionExpandMoreOpac 1.25s forwards ease-in-out; }
+
+.SBSfi .USBAccordion--coolgray-mediumblue .USBPanel-head {
+  width: calc(100% - 119px); }
+
+.SBSfi .USBAccordion--coolgray-mediumblue .USBModal-open {
+  height: 60px;
+  top: 0;
+  right: 0;
+  width: 113px;
+  background-color: #EEF7FB; }
+
+@media screen and (max-width: 767px) {
+  .SBSfi .USBAccordion--coolgray-mediumblue .USBPanel .USBPanel-head {
+    width: calc(100% - 46px); }
+  .SBSfi .USBAccordion--coolgray-mediumblue .USBPanel .USBModal-open {
+    width: 40px; }
+    .SBSfi .USBAccordion--coolgray-mediumblue .USBPanel .USBModal-open span {
+      display: none; }
+  .SBSfi .USBAccordion--coolgray-mediumblue .USBPanel .USBIcon svg {
+    height: 2rem;
+    vertical-align: bottom; } }
+
+.SBSfi .USBAccordion--coolgray-mediumblue .USBPanel.is-expanded .USBModal-open {
+  background-color: #007cbe; }
+
+.USBTab--nav ul {
+  padding-left: 0;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.USBTab--content > div[role="tabpanel"][aria-hidden="true"] {
+  display: none; }
+
+.USBTab--content {
+  padding: 2rem 0; }
+
+/* homepage specific */
+.USBTab--homepage .USBTab--nav a, .USBTab--homepage .USBTab--nav .SBLoanHub .upload--link, .SBLoanHub .USBTab--homepage .USBTab--nav .upload--link {
+  width: 100%;
+  font-size: 2rem;
+  background-color: #EDEEF1;
+  border-right: 1px solid #FFF;
+  border-left: 1px solid #FFF;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  color: #737378; }
+
+.USBTab--homepage .USBTab--nav a:hover, .USBTab--homepage .USBTab--nav .SBLoanHub .upload--link:hover, .SBLoanHub .USBTab--homepage .USBTab--nav .upload--link:hover,
+.USBTab--homepage .USBTab--nav a[aria-selected="true"],
+.USBTab--homepage .USBTab--nav .SBLoanHub [aria-selected="true"].upload--link, .SBLoanHub
+.USBTab--homepage .USBTab--nav [aria-selected="true"].upload--link {
+  background-color: #0c2074; }
+
+.USBTab--homepage .USBTab--nav li:hover a, .USBTab--homepage .USBTab--nav li:hover .SBLoanHub .upload--link, .SBLoanHub .USBTab--homepage .USBTab--nav li:hover .upload--link,
+.USBTab--homepage .USBTab--nav a[aria-selected="true"],
+.USBTab--homepage .USBTab--nav .SBLoanHub [aria-selected="true"].upload--link, .SBLoanHub
+.USBTab--homepage .USBTab--nav [aria-selected="true"].upload--link,
+.USBTab--homepage .USBTab--nav a[aria-selected="true"]:focus,
+.USBTab--homepage .USBTab--nav .SBLoanHub [aria-selected="true"].upload--link:focus, .SBLoanHub
+.USBTab--homepage .USBTab--nav [aria-selected="true"].upload--link:focus {
+  color: #fff;
+  text-decoration: none; }
+
+@media screen and (min-width: 768px) {
+  .USBTab--nav li {
+    flex-grow: 1;
+    flex-basis: 0; }
+  *[className*='USBTab--btn'] {
+    display: none; }
+  .USBTabs.USBTab--homepage .USBTab--nav a, .USBTabs.USBTab--homepage .USBTab--nav .SBLoanHub .upload--link, .SBLoanHub .USBTabs.USBTab--homepage .USBTab--nav .upload--link {
+    padding: 3rem;
+    height: 100%; }
+  .USBTabs.USBTab--homepage .USBTab--nav a[aria-selected="true"]:after, .USBTabs.USBTab--homepage .USBTab--nav .SBLoanHub [aria-selected="true"].upload--link:after, .SBLoanHub .USBTabs.USBTab--homepage .USBTab--nav [aria-selected="true"].upload--link:after {
+    position: absolute;
+    bottom: -19px;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 26px solid transparent;
+    border-top: 19px solid #0c2074; }
+  .USBTabs.USBTab--homepage .USBTab--nav li:nth-child(n+5):after {
+    border-right: 0px solid transparent;
+    border-left: 26px solid transparent;
+    left: auto;
+    right: 0; } }
+
+@media screen and (max-width: 767px) {
+  .mobile-menu--accordion .USBAccordion.USBAccordion--mob-nav > .USBPanel > .USBPanel-head > .USBIcon > .chevronDown {
+    display: block; }
+  /* to change stacking order */
+  .USBTabs {
+    display: table;
+    width: 100%; }
+  .USBTabs .USBTab--nav {
+    display: table-footer-group; }
+  .USBTabs .USBTab--nav ul {
+    justify-content: center; }
+  .USBTabs .USBTab--nav a, .USBTabs .USBTab--nav .SBLoanHub .upload--link, .SBLoanHub .USBTabs .USBTab--nav .upload--link,
+  .USBTabs .USBTab--nav button {
+    font-size: 0;
+    margin: 10px;
+    font-size: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 16px;
+    line-height: 16px;
+    padding: 0;
+    border: 0;
+    vertical-align: middle; }
+  .USBTabs .USBTab--nav button {
+    background-color: #007CBE;
+    margin-top: 5px;
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    line-height: 24px; }
+  .USBTabs .USBTab--nav li:focus {
+    border: 1px solid #10a6e8; } }
+
+.USBHero {
+  height: calc(90vh - 85.5px);
+  position: relative; }
+
+.USBHero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom left, transparent, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)); }
+
+.USBHero {
+  background-size: cover;
+  /* position: absolute;
+    height:100%;
+    width: 100%; */
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  /* background-size: 100% auto; */
+  background-position: center; }
+
+.USBHero .USBHero--content {
+  align-self: flex-end;
+  color: #fff; }
+
+.USBHero .USBHero--content,
+.USBHero .USBHero--content > *,
+.USBHero .btn-group a,
+.USBHero .btn-group .SBLoanHub .upload--link, .SBLoanHub
+.USBHero .btn-group .upload--link {
+  color: white; }
+
+form {
+  margin-bottom: 2rem; }
+
+fieldset > label {
+  margin-bottom: 1.5rem; }
+
+.form-control {
+  font-size: 1.8rem; }
+
+.form-group {
+  margin-bottom: 1.5rem; }
+  .form-group--inline > * {
+    margin-right: 2rem; }
+  .form-group .form-control {
+    box-shadow: none;
+    border-radius: 0;
+    font-size: 1.8rem;
+    height: 4.5rem;
+    border-radius: 4px;
+    border: 1px solid #737373;
+    margin-bottom: 20px;
+    padding: 1.5rem; }
+
+label {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #555555; }
+
+.form-control {
+  font-size: 1.8rem;
+  box-shadow: none;
+  border-radius: 0;
+  height: 4.5rem;
+  border-radius: 4px;
+  border: 1px solid #737373;
+  margin-bottom: 20px;
+  padding: 1.5rem; }
+  .form-control:focus {
+    border: 2px solid #10a6e8;
+    box-shadow: 0 0 2px #10a6e8; }
+  .form-control--radio {
+    display: inline-block;
+    position: relative;
+    padding-left: 4rem;
+    font-weight: normal;
+    color: #555555;
+    font-size: 1.6rem !important; }
+    .form-control--radio input[type="radio"] {
+      opacity: 0;
+      width: 0; }
+      .form-control--radio input[type="radio"]:focus + .radio-display::before {
+        outline: thin dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px; }
+      .form-control--radio input[type="radio"]:checked + .radio-display::after,
+      .form-control--radio input[type="radio"]:checked + * + .radio-display::before {
+        border: 2px solid #007CBE;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        background-color: #007CBE; }
+      .form-control--radio input[type="radio"]:disabled + .radio-display {
+        opacity: .65; }
+        .form-control--radio input[type="radio"]:disabled + .radio-display::before {
+          cursor: not-allowed; }
+    .form-control--radio .radio-display {
+      position: absolute;
+      left: 1.3rem;
+      top: .3rem;
+      pointer-events: none; }
+      .form-control--radio .radio-display::after {
+        display: inline-block;
+        position: absolute;
+        content: " ";
+        width: 1rem;
+        height: 1rem;
+        left: .4rem;
+        top: .4rem;
+        border-radius: 50%;
+        background-color: #007CBE;
+        transform: scale(0, 0);
+        transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33); }
+      .form-control--radio .radio-display::before {
+        content: "";
+        display: inline-block;
+        position: relative;
+        width: 1.8rem;
+        height: 1.8rem;
+        border: 1px solid #555555;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: border .15s ease-in-out; }
+    .form-control--radio:hover .radio-display::before {
+      border: 2px solid #007CBE; }
+  .form-control--checkbox label {
+    font-size: 1.6rem !important;
+    position: relative;
+    padding-left: 2.5rem;
+    font-weight: normal;
+    color: #555555;
+    padding-left: 3rem; }
+  .form-control--checkbox .USBTooltip {
+    padding-left: 5px; }
+    .form-control--checkbox .USBTooltip .USBTooltip--content {
+      right: -9rem; }
+  .form-control--checkbox-label {
+    display: block; }
+    .form-control--checkbox-label-wtooltip {
+      display: inline-block; }
+  .form-control--checkbox input[type="checkbox"] {
+    width: 0;
+    opacity: 0; }
+    .form-control--checkbox input[type="checkbox"]:focus + .checkbox-display::before {
+      outline: thin dotted;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+    .form-control--checkbox input[type="checkbox"]:checked + .checkbox-display::before,
+    .form-control--checkbox input[type="checkbox"]:checked + * + .checkbox-display::before {
+      border: 2px solid #007CBE;
+      background-color: #007CBE; }
+    .form-control--checkbox input[type="checkbox"]:checked + .checkbox-display::after {
+      display: inline-block; }
+    .form-control--checkbox input[type="checkbox"]:disabled + .checkbox-display {
+      opacity: .65; }
+      .form-control--checkbox input[type="checkbox"]:disabled + .checkbox-display::before {
+        cursor: not-allowed; }
+  .form-control--checkbox .checkbox-display {
+    position: absolute;
+    left: 0;
+    top: .3rem; }
+    .form-control--checkbox .checkbox-display::before {
+      content: "";
+      display: inline-block;
+      position: relative;
+      width: 1.8rem;
+      height: 1.8rem;
+      border-radius: 4px;
+      border: 1px solid #555555;
+      background-color: #fff;
+      transition: border .15s ease-in-out;
+      border: 2px solid #007CBE; }
+    .form-control--checkbox .checkbox-display::after {
+      display: none;
+      position: absolute;
+      content: '';
+      background-image: url("../img/svg/icon-checkmarkwhite.svg");
+      background-repeat: no-repeat;
+      width: 18px;
+      height: 18px;
+      top: 3px;
+      left: 0; }
+
+.form-control--select-container {
+  position: relative; }
+  .form-control--select-container select.form-control {
+    appearance: none;
+    padding: 0 1.5rem; }
+  .form-control--select-container:after {
+    content: '';
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 20px;
+    top: 14px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iV29ya2luZ19hcmVhIiBkYXRhLW5hbWU9IldvcmtpbmcgYXJlYSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTIuNjggMTIuNjgiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojNTU1O308L3N0eWxlPjwvZGVmcz48dGl0bGU+aWNvbi1mb3JtZHJvcGRvd248L3RpdGxlPjxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSI2LjM0IDEwLjI0IDEyLjY4IDMuODggMTEuMjQgMi40NCA2LjM0IDcuMzcgMS40NCAyLjQ0IDAgMy44OCA2LjM0IDEwLjI0Ii8+PC9zdmc+); }
+
+.USBInputDisclaimer,
+.USBInputDisclaimer > * {
+  font-size: 1.2rem; }
+
+.USBFormGroupReadOnly, .smallBiz #mailingadd .form-group:not(:last-child) .form-control--radio {
+  position: relative;
+  background-color: #EAEAE4;
+  padding: 1rem; }
+  .USBFormGroupReadOnly label, .smallBiz #mailingadd .form-group:not(:last-child) .form-control--radio label {
+    font-size: 1.2rem; }
+  .USBFormGroupReadOnly p, .smallBiz #mailingadd .form-group:not(:last-child) .form-control--radio p {
+    padding-bottom: 0;
+    font-weight: bold; }
+  .USBFormGroupReadOnly:after, .smallBiz #mailingadd .form-group:not(:last-child) .form-control--radio:after {
+    border-bottom: #555555 solid 2px;
+    content: '';
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px; }
+
+.USBCheckbox--bold {
+  font-weight: bold !important; }
+  .USBCheckbox--bold-nomargin {
+    font-weight: bold !important;
+    margin-bottom: 0 !important; }
+
+.smallBiz .SBForm .form-group-float {
+  position: relative; }
+  .smallBiz .SBForm .form-group-float :placeholder-shown:not(:focus) + * {
+    font-size: 1.8rem;
+    top: 1rem;
+    font-weight: normal; }
+  .smallBiz .SBForm .form-group-float :placeholder-shown:not(:focus) + * + .form-group-float--bar:before {
+    width: 0%; }
+  .smallBiz .SBForm .form-group-float .form-control--select-container select:not(:focus):valid + .form-group-float--label,
+  .smallBiz .SBForm .form-group-float .form-control-input:not(:placeholder-shown):not(:focus) + .form-group-float--label {
+    color: #555; }
+    .smallBiz .SBForm .form-group-float .form-control--select-container select:not(:focus):valid + .form-group-float--label + .form-group-float--bar:before,
+    .smallBiz .SBForm .form-group-float .form-control-input:not(:placeholder-shown):not(:focus) + .form-group-float--label + .form-group-float--bar:before {
+      width: 0%; }
+  .smallBiz .SBForm .form-group-float ::placeholder {
+    opacity: 0; }
+  .smallBiz .SBForm .form-group-float label {
+    width: 100%;
+    font-weight: normal;
+    white-space: pre-line; }
+  .smallBiz .SBForm .form-group-float .form-control .form-group-float--label, .smallBiz .SBForm .form-group-float--label {
+    top: -1rem;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    font-size: 1.2rem;
+    color: #007cbe;
+    transition: all .2s;
+    transform-origin: 0 0;
+    white-space: nowrap;
+    font-weight: bold;
+    width: 100%; }
+  .smallBiz .SBForm .form-group-float--bar:before {
+    content: '';
+    border-bottom: 4px solid #007cbe;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    top: 41px;
+    transition: .3s all ease-out; }
+  .smallBiz .SBForm .form-group-float .form-control,
+  .smallBiz .SBForm .form-group-float input,
+  .smallBiz .SBForm .form-group-float .form-control--select-container select,
+  .smallBiz .SBForm .form-group-float select,
+  .smallBiz .SBForm .form-group-float input:focus,
+  .smallBiz .SBForm .form-group-float select:focus {
+    width: 100%;
+    font-size: 1.8rem;
+    outline: none;
+    border-radius: 0;
+    border: none;
+    padding-left: 0;
+    background-color: transparent;
+    transition: all 2s;
+    border-bottom: 2px solid #555; }
+    .smallBiz .SBForm .form-group-float .form-control:focus,
+    .smallBiz .SBForm .form-group-float input:focus,
+    .smallBiz .SBForm .form-group-float .form-control--select-container select:focus,
+    .smallBiz .SBForm .form-group-float select:focus,
+    .smallBiz .SBForm .form-group-float input:focus:focus,
+    .smallBiz .SBForm .form-group-float select:focus:focus {
+      box-shadow: none; }
+      .smallBiz .SBForm .form-group-float .form-control:focus + .form-group-float--bar:before,
+      .smallBiz .SBForm .form-group-float input:focus + .form-group-float--bar:before,
+      .smallBiz .SBForm .form-group-float .form-control--select-container select:focus + .form-group-float--bar:before,
+      .smallBiz .SBForm .form-group-float select:focus + .form-group-float--bar:before,
+      .smallBiz .SBForm .form-group-float input:focus:focus + .form-group-float--bar:before,
+      .smallBiz .SBForm .form-group-float select:focus:focus + .form-group-float--bar:before {
+        width: 100%; }
+  .smallBiz .SBForm .form-group-float.form-group-completed .form-control:not(:focus) + .form-group-float--label {
+    color: #555; }
+  .smallBiz .SBForm .form-group-float.form-group-completed .form-control:not(:focus) + * + .form-group-float--bar:before {
+    width: 0%; }
+  .smallBiz .SBForm .form-group-float .form-control--select-container:after {
+    right: 0;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.64 10.87"><defs></defs><title>dropdownArrowICON</title><g id="Layer_2" data-name="Layer 2"><g id="LIVE"><g id="Icons"><path className="cls-1" style="fill:#007cbe;" d="M18.16.48a1.64,1.64,0,0,0-2.31,0L9.32,7,2.79.48A1.64,1.64,0,0,0,.48.48a1.62,1.62,0,0,0,0,2.3L8.16,10.4a1.64,1.64,0,0,0,2.31,0l7.69-7.63A1.61,1.61,0,0,0,18.16.48Z"/></g></g></g></svg>');
+    pointer-events: none;
+    background-repeat: no-repeat;
+    bottom: 0; }
+  .smallBiz .SBForm .form-group-float .form-control--select-container select + .form-group-float--label {
+    font-size: 1.8rem;
+    top: 1rem;
+    font-weight: normal; }
+  .smallBiz .SBForm .form-group-float .form-control--select-container select:valid + .form-group-float--label,
+  .smallBiz .SBForm .form-group-float .form-control--select-container select:focus + .form-group-float--label,
+  .smallBiz .SBForm .form-group-float .form-control--select-container select:-webkit-autofill + .form-group-float--label {
+    top: -1rem;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    font-size: 1.2rem;
+    color: #007cbe;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    white-space: nowrap;
+    font-weight: bold;
+    width: 100%; }
+  .smallBiz .SBForm .form-group-float .form-control--select-container select:invalid + * + .form-group-float--bar:before {
+    width: 0%; }
+  .smallBiz .SBForm .form-group-float .form-control--select-container select:valid + * + .form-group-float--bar:before,
+  .smallBiz .SBForm .form-group-float .form-control--select-container select:focus + * + .form-group-float--bar:before {
+    width: 100%; }
+  .smallBiz .SBForm .form-group-float .USBInputDisclaimer {
+    margin-top: .5rem;
+    margin-bottom: -.5rem; }
+    .smallBiz .SBForm .form-group-float .USBInputDisclaimer a, .smallBiz .SBForm .form-group-float .USBInputDisclaimer .SBLoanHub .upload--link, .SBLoanHub .smallBiz .SBForm .form-group-float .USBInputDisclaimer .upload--link {
+      font-weight: bold;
+      color: #007cbe; }
+  .smallBiz .SBForm .form-group-float + .USBInputDisclaimer {
+    margin-top: -3rem; }
+  .smallBiz .SBForm .form-group-float .USBTooltip > a, .smallBiz .SBForm .form-group-float .SBLoanHub .USBTooltip > .upload--link, .SBLoanHub .smallBiz .SBForm .form-group-float .USBTooltip > .upload--link {
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-decoration: underline; }
+  .smallBiz .SBForm .form-group-float .USBTooltip svg {
+    width: auto;
+    fill: #007cbe;
+    height: 24px; }
+
+.smallBiz .SBForm .USBEditableText {
+  position: relative; }
+  .smallBiz .SBForm .USBEditableText.ReviewGroup--read-only {
+    border-bottom: solid 2px #555;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem; }
+  .smallBiz .SBForm .USBEditableText .ReviewGroup--label {
+    margin-top: 2rem; }
+  .smallBiz .SBForm .USBEditableText-label {
+    position: relative; }
+    .smallBiz .SBForm .USBEditableText-label.middleName, .smallBiz .SBForm .USBEditableText-label.firstName, .smallBiz .SBForm .USBEditableText-label.lastname, .smallBiz .SBForm .USBEditableText-label.homeCity, .smallBiz .SBForm .USBEditableText-label.homeState, .smallBiz .SBForm .USBEditableText-label.homeZip, .smallBiz .SBForm .USBEditableText-label.businessCity, .smallBiz .SBForm .USBEditableText-label.businessState, .smallBiz .SBForm .USBEditableText-label.businessZip {
+      display: inline;
+      width: auto;
+      float: left;
+      clear: right;
+      margin-right: 5px;
+      position: relative; }
+    .smallBiz .SBForm .USBEditableText-label.ssn p {
+      -webkit-text-security: value; }
+    .smallBiz .SBForm .USBEditableText-label-top {
+      margin-bottom: 0; }
+    .smallBiz .SBForm .USBEditableText-label p {
+      padding-bottom: 0; }
+    .smallBiz .SBForm .USBEditableText-label label {
+      font-weight: bold;
+      width: calc(100% - 5rem); }
+    .smallBiz .SBForm .USBEditableText-label .btn {
+      text-align: right;
+      margin-top: 0 !important;
+      margin-right: 0 !important;
+      width: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: transparent !important;
+      border: 0;
+      padding: 0;
+      color: #007cbe;
+      font-size: 1.4rem;
+      text-decoration: underline; }
+    .smallBiz .SBForm .USBEditableText-label label {
+      font-size: 1.2rem; }
+  .smallBiz .SBForm .USBEditableText p {
+    padding: 0 !important; }
+  .smallBiz .SBForm .USBEditableText .form-control {
+    white-space: pre-line;
+    resize: none;
+    line-height: 1; }
+
+.smallBiz .SBForm .USBError--message {
+  margin-top: -2.5rem;
+  margin-bottom: 2.5rem;
+  color: #D83B48;
+  font-size: 1.2rem;
+  line-height: 1; }
+  .smallBiz .SBForm .USBError--message span {
+    vertical-align: top;
+    line-height: 1.2rem;
+    margin-top: .5rem; }
+  .smallBiz .SBForm .USBError--message .USBIcon {
+    display: inline-block;
+    margin: -.2rem .5rem 0 0; }
+    .smallBiz .SBForm .USBError--message .USBIcon svg {
+      height: 1.5rem; }
+
+.smallBiz .SBForm .USBError.form-group-nomargin .USBError--message,
+.smallBiz .SBForm .USBError .form-group-nomargin + .USBError--message {
+  margin: 1rem 0; }
+
+.smallBiz .SBForm .USBError .form-control--select-container:after {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.64 10.87"><defs></defs><title>dropdownArrowICON</title><g id="Layer_2" data-name="Layer 2"><g id="LIVE"><g id="Icons"><path className="cls-1" style="fill: #D83B48;" d="M18.16.48a1.64,1.64,0,0,0-2.31,0L9.32,7,2.79.48A1.64,1.64,0,0,0,.48.48a1.62,1.62,0,0,0,0,2.3L8.16,10.4a1.64,1.64,0,0,0,2.31,0l7.69-7.63A1.61,1.61,0,0,0,18.16.48Z"/></g></g></g></svg>') !important; }
+
+.smallBiz .SBForm .USBError .form-group-float--bar:before {
+  display: none !important; }
+
+.smallBiz .SBForm .USBError .form-group-float *,
+.smallBiz .SBForm .USBError .form-group-float * *,
+.smallBiz .SBForm .USBError .form-group-float * * *, .smallBiz .SBForm .USBError.form-group-float *,
+.smallBiz .SBForm .USBError.form-group-float * *,
+.smallBiz .SBForm .USBError.form-group-float * * * {
+  border-color: #D83B48 !important;
+  border-width: 4px !important; }
+  .smallBiz .SBForm .USBError .form-group-float *:focus,
+  .smallBiz .SBForm .USBError .form-group-float * *:focus,
+  .smallBiz .SBForm .USBError .form-group-float * * *:focus, .smallBiz .SBForm .USBError.form-group-float *:focus,
+  .smallBiz .SBForm .USBError.form-group-float * *:focus,
+  .smallBiz .SBForm .USBError.form-group-float * * *:focus {
+    border-color: #D83B48 !important; }
+
+.smallBiz .SBForm .USBError .form-group-float--label, .smallBiz .SBForm .USBError.form-group-float--label {
+  color: #D83B48 !important; }
+
+.smallBiz .SBForm .USBError .form-group-float .form-control, .smallBiz .SBForm .USBError.form-group-float .form-control {
+  transition: none; }
+
+.smallBiz .SBForm .USBError .form-group-float + .USBError--message {
+  margin-bottom: 1.5rem; }
+
+.smallBiz .SBForm .form-group-float .USBError--message {
+  margin-top: 1rem;
+  margin-bottom: 0; }
+
+.USBFauxTable,
+.USBFauxTable--row,
+.USBFauxTable--cell {
+  display: block; }
+
+.USBFauxTable--row:nth-child(odd) {
+  background-color: #fff; }
+
+.USBFauxTable--cell:before {
+  content: attr(data-label); }
+
+.USBFauxTable--header .USBFauxTable--cell {
+  font-size: 2.4rem;
+  background-color: #eaeae4; }
+
+.USBFauxTable--cell:before {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-color: rgba(234, 234, 228, 0.5); }
+
+.USBFauxTable--cell:before {
+  display: block;
+  padding: 20px; }
+
+.USBFauxTable--header {
+  display: none; }
+
+@media screen and (max-width: 767px) {
+  .USBFauxTable--mobile-stacked .USBFauxTable--row:nth-child(n + 1) .USBFauxTable--cell:first-child:before {
+    display: none; }
+  .USBFauxTable .USBContentBlock {
+    padding: 20px; }
+  .USBFauxTable--mobile-stacked .USBFauxTable--cell {
+    position: relative; }
+  .USBFauxTable--mobile-stacked .USBFauxTable--row {
+    margin-top: 6rem; }
+  .USBFauxTable--mobile-stacked .USBFauxTable--row .USBFauxTable--cell:first-child .USBHeading {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background-color: #eaeae4;
+    width: 100%;
+    padding: 20px; }
+  .USBFauxTable--mobile-stacked .USBFauxTable--row .USBFauxTable--cell:first-child .USBHeading > * {
+    padding-bottom: 0;
+    margin: 0; } }
+
+@media screen and (min-width: 768px) {
+  .USBFauxTable--cell {
+    vertical-align: top;
+    padding: 2rem 5rem;
+    outline: solid 1px #fff; }
+  .USBFauxTable--header .USBFauxTable--cell h5 {
+    padding-bottom: 0; }
+  .USBFauxTable--header .USBFauxTable--cell {
+    padding: 4rem 5rem; }
+  .USBFauxTable--row {
+    background-color: #f7f7f4; }
+  .USBFauxTable--header {
+    display: block; }
+  .USBTable tr,
+  .USBFauxTable--row {
+    display: table-row; }
+  .USBFauxTable {
+    display: table;
+    table-layout: fixed;
+    width: 100%; }
+  .USBFauxTable--cell {
+    display: table-cell; }
+  .USBFauxTable--cell:before {
+    display: none; } }
+
+/* Header Styles */
+.library-header.library-header--dark {
+  background-color: #0C2074; }
+
+.library-header.library-header--dark * {
+  color: #FFFFFF; }
+
+.library-header {
+  position: relative;
+  padding: 2.6rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.2); }
+
+.library-header--constrain {
+  display: flex;
+  flex: 1 1;
+  justify-content: space-between; }
+
+.library-header--constrain .left-group > * {
+  float: left; }
+
+.library-header--logo {
+  width: 134px;
+  margin-right: 60px; }
+
+.library-header--logo img {
+  width: 100%; }
+
+.library-header ol {
+  margin-bottom: 0;
+  padding-top: 5px; }
+
+.library-header--navigation li {
+  display: inline;
+  padding-right: 60px; }
+
+.library-header--utility > * {
+  position: relative; }
+
+.library-header--utility .glyphicon {
+  font-size: 2rem; }
+
+.library-header--utility li {
+  display: inline;
+  padding-right: 20px; }
+
+.library-header .library-header--navigation ul {
+  display: flex; }
+
+.library-header--mobile-menu {
+  transition: all 300ms ease-in-out;
+  overflow: hidden; }
+
+.library-header--mobile-menu.mobileMenu-hide {
+  opacity: 0;
+  height: 0; }
+
+.library-header--mobile-menu.mobileMenu-show {
+  opacity: 1;
+  height: 115px; }
+
+.library-header--mobile-menu ol {
+  display: flex;
+  flex: 1 1;
+  text-align: center;
+  justify-content: center;
+  margin: 3rem 0 1rem;
+  padding-left: 0; }
+
+.library-header--mobile-menu li {
+  display: inline; }
+
+.library-header--mobile-menu .icon-container {
+  height: 4rem;
+  width: 4.5rem;
+  margin: 0 auto 20px; }
+
+.library-header--mobile-menu .icon-container img {
+  height: 100%; }
+
+.library-header--mobile-menu li:hover img {
+  opacity: .8; }
+
+/* Temporary Mobile Hiding */
+@media screen and (max-width: 1000px) {
+  .library-header--navigation {
+    display: none; } }
+
+/* Atomic Hamburger */
+.library-header--utility .atomic-hamburger-container {
+  margin-left: 3rem;
+  display: none; }
+
+@media screen and (max-width: 1000px) {
+  .library-header--utility .atomic-hamburger-container {
+    display: inline; } }
+
+@media screen and (min-width: 1000px) {
+  .library-header--mobile-menu {
+    display: none !important; } }
+
+.atomic-hamburger {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  transition: all 300ms cubic-bezier(0.61, 0.01, 0.42, 1);
+  cursor: pointer;
+  background: transparent;
+  border: 0px; }
+
+.atomic-hamburger span {
+  height: 0px;
+  border: 1.5px solid #0C2074;
+  width: 2.2rem;
+  display: block;
+  position: absolute;
+  transition: all 300ms cubic-bezier(0.61, 0.01, 0.42, 1); }
+
+.atomic-hamburger.active {
+  transition-delay: 100ms; }
+
+.atomic-hamburger.active span:nth-child(3):before {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #F26451; }
+
+.atomic-hamburger.active span {
+  border: 2px solid #0C2074;
+  height: .9rem;
+  border-radius: 50%;
+  margin-left: -1px;
+  margin-top: 2px;
+  animation: atom 300ms linear 1;
+  width: 2.5rem;
+  top: 0px; }
+
+.atomic-hamburger:focus {
+  outline: 0px; }
+
+.atomic-hamburger span:nth-child(1) {
+  top: 0px; }
+
+.atomic-hamburger span:nth-child(2) {
+  top: .8rem; }
+
+.atomic-hamburger span:nth-child(3) {
+  top: 1.6rem; }
+
+.atomic-hamburger span:nth-child(3):before {
+  opacity: 0;
+  animation: ball 1.5s linear infinite;
+  content: '';
+  border: 3px solid #0C2074;
+  display: block;
+  position: relative;
+  top: 0.25px; }
+
+.atomic-hamburger.active span:nth-child(1) {
+  transform: rotate(-33deg); }
+
+.atomic-hamburger.active span:nth-child(2) {
+  transform: rotate(90deg); }
+
+.atomic-hamburger.active span:nth-child(3) {
+  transform: rotate(33deg); }
+
+.atomic-hamburger.active span:nth-child(3):before {
+  opacity: 1;
+  transition: opacity 600ms cubic-bezier(0.61, 0.01, 0.42, 1); }
+
+.atomic-hamburger.active {
+  top: 0px; }
+
+.atomic-hamburger.active span {
+  top: .8rem; }
+
+@keyframes atom {
+  0% {
+    transform: rotate(180deg); } }
+
+@keyframes division {
+  0% {
+    transform: rotate(180deg); } }
+
+@keyframes ball {
+  0% {
+    left: -20%;
+    top: 10%; }
+  10% {
+    left: 10%;
+    top: -35%; }
+  25% {
+    left: 45%;
+    top: -50%; }
+  40% {
+    left: 80%;
+    top: -20%; }
+  50% {
+    left: 98%;
+    top: 18%; }
+  60% {
+    left: 80%;
+    top: 50%; }
+  75% {
+    left: 45%;
+    top: 75%; }
+  90% {
+    left: 0%;
+    top: 50%; }
+  100% {
+    left: -20%;
+    top: 10%; } }
+
+/* Sidebar Styles */
+.library-sidebar {
+  margin-top: 1rem; }
+
+.library-sidebar > * {
+  position: relative; }
+
+.library-sidebar li {
+  padding-bottom: .5rem; }
+
+.library-sidebar ul {
+  list-style: none;
+  padding-left: 0; }
+
+.library-sidebar--label {
+  position: relative;
+  margin-top: 0;
+  padding-bottom: 0; }
+
+.library-sidebar--icon {
+  position: absolute;
+  top: -.2rem;
+  left: -3rem; }
+
+.library-sidebar--icon > * {
+  width: 2rem; }
+
+.USBAccordion .library-sidebar--label + .USBPanel .USBPanel-title a, .USBAccordion .library-sidebar--label + .USBPanel .USBPanel-title .SBLoanHub .upload--link, .SBLoanHub .USBAccordion .library-sidebar--label + .USBPanel .USBPanel-title .upload--link {
+  padding: 0 0 0 3rem; }
+
+.mobile-menu--panel .USBAccordion .USBPanel {
+  position: relative; }
+
+.mobile-menu--panel .USBPanel-title > img {
+  width: 2.5rem;
+  margin-right: 10px;
+  transition: transform 1s; }
+
+.mobile-menu--panel .USBAccordion .USBPanel .USBPanel-head {
+  border: 0;
+  padding: 0; }
+
+.mobile-menu--panel .USBAccordion.USBAccordion--desk-nav .USBPanel .USBPanel-body {
+  padding: 0; }
+
+.mobile-menu--panel .USBAccordion.USBAccordion--desk-nav .USBPanel .USBPanel-title a:after, .mobile-menu--panel .USBAccordion.USBAccordion--desk-nav .USBPanel .USBPanel-title .SBLoanHub .upload--link:after, .SBLoanHub .mobile-menu--panel .USBAccordion.USBAccordion--desk-nav .USBPanel .USBPanel-title .upload--link:after {
+  background-image: none; }
+
+.mobile-menu--panel .USBAccordion .USBPanel .USBPanel-head .USBPanel-title {
+  color: #0C2074;
+  padding-left: 1rem; }
+
+.mobile-menu--panel .USBAccordion .USBPanel .USBPanel-head .USBPanel-title img {
+  display: inline-block; }
+
+.mobile-menu--panel .USBAccordion .USBPanel .USBPanel-head:hover img,
+.mobile-menu--panel .USBAccordion .USBPanel.is-expanded > .USBPanel-head img {
+  transform: scale(1.5); }
+
+.mobile-menu--accordion .USBAccordion .USBAccordion {
+  padding-left: 4rem; }
+
+@media screen and (min-width: 768px) {
+  .mobile-menu--panel .USBAccordion.USBAccordion--mob-nav .USBPanel-head {
+    /* display: block !important; */ }
+  #mobilemenuid {
+    display: none; }
+  #mobilemenuhref > .is-hidden {
+    display: block; }
+  #mobilemenuhref {
+    max-height: none !important;
+    animation: none;
+    overflow: visible;
+    opacity: 1 !important; }
+  .mobile-menu--panel .USBAccordion--mob-nav .USBPanel-body {
+    position: relative; }
+  .mobile-menu--panel .USBAccordion.USBAccordion--desk-nav {
+    padding-left: 0; } }
+
+.USBAccordion--desk-nav .USBPanel-body ul li {
+  padding-left: 5rem; }
+
+.disclaimer {
+  margin-top: 5rem; }
+
+.disclaimer * {
+  font-size: 1.4rem;
+  line-height: 1.5; }
+
+.disclaimer ul {
+  padding-left: 1.5rem; }
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 5rem; }
+
+.spacer {
+  height: 200px;
+  clear: both;
+  display: block;
+  width: 100%; }
+
+.USBCalculator {
+  position: relative; }
+  .USBCalculator .paragraph-xs {
+    padding-bottom: 1rem; }
+  .USBCalculator.USBCalculator2 {
+    float: left; }
+  .USBCalculator h1,
+  .USBCalculator h3,
+  .USBCalculator h6 {
+    text-align: center;
+    padding: 0;
+    margin-top: 0; }
+  .USBCalculator h1,
+  .USBCalculator h3 {
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center; }
+  .USBCalculator h6 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: normal; }
+  .USBCalculator h1 {
+    font-size: 6rem; }
+    .USBCalculator h1.threeNum .card-flip-container {
+      width: 39%; }
+    .USBCalculator h1.fourNum .card-flip-container {
+      width: 49%; }
+    .USBCalculator h1.fiveNum .card-flip-container {
+      width: 62%; }
+    .USBCalculator h1.sixNum .card-flip-container {
+      width: 69%; }
+    .USBCalculator h1 .USBIcon {
+      height: 2rem;
+      width: 2rem;
+      vertical-align: top;
+      line-height: 2rem; }
+    .USBCalculator h1 .month {
+      align-self: flex-end;
+      padding-bottom: 0; }
+  .USBCalculator .card-flip-container {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    perspective: 1000px;
+    transition: width 1s;
+    height: 6.5rem; }
+    .USBCalculator .card-flip-container,
+    .USBCalculator .card-flip-container .front,
+    .USBCalculator .card-flip-container .back {
+      background-color: #fff; }
+    .USBCalculator .card-flip-container .front,
+    .USBCalculator .card-flip-container .back {
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      width: auto;
+      left: 0;
+      right: 0;
+      transition: 1s ease-in-out;
+      transform-style: preserve-3d; }
+    .USBCalculator .card-flip-container .front {
+      transform: rotateX(0deg);
+      z-index: 2; }
+    .USBCalculator .card-flip-container .back {
+      transform: rotateX(180deg); }
+    .USBCalculator .card-flip-container .card-flip {
+      transform-origin: 100% 3rem;
+      transition: 1s;
+      transform-style: preserve-3d;
+      position: relative; }
+      .USBCalculator .card-flip-container .card-flip.animate {
+        transform: rotateX(180deg); }
+      .USBCalculator .card-flip-container .card-flip.invisible {
+        transform: none; }
+    .USBCalculator .card-flip-container .noanimate {
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: auto;
+      right: 0;
+      z-index: 10000; }
+    .USBCalculator .card-flip-container .invisible {
+      visibility: hidden;
+      transform: none;
+      transition: none; }
+  .USBCalculator h3 .card-flip-container {
+    width: 20%;
+    height: 4rem; }
+    .USBCalculator h3 .card-flip-container .card-flip {
+      transform-origin: 100% 1.6rem; }
+  .USBCalculator h3 .USBIcon svg {
+    height: 2.3rem; }
+  .USBCalculator .form-control--checkbox {
+    margin-left: -10px; }
+  .USBCalculator .USBAside {
+    background-color: lightgray;
+    height: 4000px; }
+
+@media screen and (min-width: 768px) {
+  .USBCalculator h1 {
+    font-size: 8rem; }
+    .USBCalculator h1 .USBIcon {
+      height: 3rem;
+      width: 3rem;
+      line-height: 3rem; }
+    .USBCalculator h1.threeNum .card-flip-container {
+      width: 42%; }
+    .USBCalculator h1.fourNum .card-flip-container {
+      width: 54%; }
+    .USBCalculator h1.fiveNum .card-flip-container {
+      width: 65%; }
+    .USBCalculator h1.sixNum .card-flip-container {
+      width: 77%; }
+  .USBCalculator .card-flip-container {
+    height: 8rem; }
+    .USBCalculator .card-flip-container .card-flip {
+      transform-origin: 100% 4rem; }
+  .USBCalculator h3 {
+    font-size: 4.2rem; }
+    .USBCalculator h3 .card-flip-container {
+      width: 22%;
+      height: 4.2rem; }
+      .USBCalculator h3 .card-flip-container .card-flip {
+        transform-origin: 100% 2.1rem; }
+    .USBCalculator h3 .USBIcon svg {
+      height: 3rem; }
+  .USBCalculator--cta {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+  .USBCalculator--form {
+    border-right: solid 1px #555; }
+  .USBCalculator .disclaimer {
+    margin-bottom: 2rem; }
+  .USBCalculator .form-group label {
+    font-size: 2.4rem; } }
+
+@media screen and (min-width: 1200px) {
+  .USBCalculator h1 {
+    font-size: 10rem; }
+    .USBCalculator h1 .USBIcon {
+      height: 4rem;
+      width: 4rem;
+      line-height: 4rem; }
+    .USBCalculator h1 .card-flip-container {
+      height: 10rem; }
+      .USBCalculator h1 .card-flip-container .card-flip {
+        transform-origin: 100% 5rem; } }
+
+@media screen and (max-width: 767px) {
+  .USBCalculator {
+    display: table; }
+    .USBCalculator h1,
+    .USBCalculator h3 {
+      max-width: 320px;
+      margin: 0 auto; }
+    .USBCalculator h5 {
+      font-size: 2rem; }
+  .USBCalculator .USBCalculator--result {
+    display: table-header-group; } }
+
+.SBLoanHub .USBContentBlock--next-step .USBTooltip .USBIcon {
+  position: relative !important;
+  top: .25rem;
+  left: .8rem; }
+
+.SBLoanHub .USBContentBlock--next-step .USBTooltip,
+.USBTooltip {
+  height: 2rem;
+  position: relative;
+  border-radius: 9px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  cursor: default; }
+  .SBLoanHub .USBContentBlock--next-step .USBTooltip .USBIcon,
+  .USBTooltip .USBIcon {
+    position: relative !important;
+    right: auto;
+    bottom: auto; }
+    .SBLoanHub .USBContentBlock--next-step .USBTooltip .USBIcon svg,
+    .USBTooltip .USBIcon svg {
+      width: 1.5rem; }
+  .SBLoanHub .USBContentBlock--next-step .USBTooltip a, .SBLoanHub .USBContentBlock--next-step .USBTooltip .upload--link,
+  .USBTooltip a,
+  .USBTooltip .SBLoanHub .upload--link, .SBLoanHub
+  .USBTooltip .upload--link {
+    text-align: center; }
+  .SBLoanHub .USBContentBlock--next-step .USBTooltip--content,
+  .USBTooltip--content {
+    z-index: 9999 !important;
+    display: block;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1;
+    opacity: .40;
+    width: 20rem;
+    padding: 5px 20px;
+    position: absolute;
+    bottom: 3rem;
+    right: -9.5rem;
+    border-radius: 6px;
+    border: solid 1px #ccc;
+    font: 16px; }
+    .SBLoanHub .USBContentBlock--next-step .USBTooltip--content:after,
+    .USBTooltip--content:after {
+      content: '';
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-top-color: #fff;
+      border-width: 10px;
+      margin-left: -10px;
+      pointer-events: none; }
+    .SBLoanHub .USBContentBlock--next-step .USBTooltip--content:before,
+    .USBTooltip--content:before {
+      pointer-events: none;
+      position: absolute;
+      content: '';
+      left: calc(50% - 11px);
+      top: 100%;
+      border: solid transparent;
+      border-top-color: #ccc;
+      border-width: 11px; }
+    .SBLoanHub .USBContentBlock--next-step .USBTooltip--content.tooltip-visible,
+    .USBTooltip--content.tooltip-visible {
+      display: block;
+      opacity: 1; }
+  .SBLoanHub .USBContentBlock--next-step .USBTooltip--overlay,
+  .USBTooltip--overlay {
+    top: -500%;
+    left: -500%;
+    right: -500%;
+    bottom: -500%; }
+    .SBLoanHub .USBContentBlock--next-step .USBTooltip--overlay.open,
+    .USBTooltip--overlay.open {
+      cursor: pointer;
+      position: fixed; }
+
+@keyframes odsoky {
+  0% {
+    transform: translateY(6px); }
+  100% {
+    transform: translateY(1px); } }
+
+.USBModal {
+  z-index: 1000;
+  overflow: visible; }
+  .USBModal-open {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    right: 2rem;
+    top: 1.8rem; }
+    .USBModal-open > * {
+      color: #555;
+      height: 3rem;
+      display: inline;
+      font-size: 1.4rem;
+      line-height: 2.5rem;
+      vertical-align: top; }
+    .USBModal-open .USBIcon {
+      fill: #555; }
+      .USBModal-open .USBIcon svg {
+        height: 1.5rem; }
+  .USBModal--close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 0;
+    background-color: transparent; }
+    .USBModal--close > * {
+      color: #555;
+      height: 5rem;
+      display: inline;
+      font-size: 1.6rem;
+      line-height: 5rem;
+      vertical-align: top; }
+    .USBModal--close .USBIcon {
+      fill: #555; }
+      .USBModal--close .USBIcon svg {
+        margin-top: 1rem;
+        margin-left: .5rem;
+        height: 3rem; }
+  .USBModal--body h2 {
+    margin-top: 0;
+    padding-top: 0; }
+  .USBModal--container {
+    top: 3rem;
+    padding: 2rem;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    background-color: #fff;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2000;
+    position: absolute; }
+    @media screen and (min-width: 768px) {
+      .USBModal--container {
+        width: auto;
+        padding: 4rem 8rem 6rem;
+        min-width: 60rem;
+        max-width: 80rem; } }
+  .USBModal--overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 1000; }
+  .USBModal--isopen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw; }
+    .USBModal--isopen .USBModal-open {
+      display: none; }
+
+.col-xs-12.col-md-3.col-md-offset-1 {
+  z-index: -1; }
+
+.USBPanel.is-expanded .USBModal-open > * {
+  color: #fff;
+  fill: #fff; }
+
+/* arrow */
+.progress-component {
+  position: relative; }
+
+.progress {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: calc(100% - 20px);
+  z-index: -1; }
+
+.progress-bar {
+  width: 25%;
+  /* This needs to be dynamic on the component level -- (( number of items - 1 ) / 100 ) */
+  /* For example -- 5 items would be 25, 50, 75, 100
+  /* 4 items would be 33, 66, 99 */ }
+
+.progress-steps.progress-steps--arrow {
+  list-style: none;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-left: 0;
+  overflow: hidden; }
+
+.progress-steps.progress-steps--arrow li {
+  background-color: #17409C;
+  color: #fff;
+  position: relative;
+  padding: 14px;
+  font-size: 12px;
+  flex: 1;
+  margin-right: 10px;
+  text-align: center; }
+
+.progress-steps.progress-steps--arrow li a, .progress-steps.progress-steps--arrow li .SBLoanHub .upload--link, .SBLoanHub .progress-steps.progress-steps--arrow li .upload--link {
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px; }
+
+.progress-steps.progress-steps--arrow li.active {
+  background-color: #0C2074; }
+
+.progress-steps.progress-steps--arrow li.active:after {
+  border-left: 20px solid #0C2074; }
+
+.progress-steps.progress-steps--arrow li.inactive {
+  background-color: #EAEAE4;
+  color: #555; }
+
+.progress-steps.progress-steps--arrow li.inactive a, .progress-steps.progress-steps--arrow li.inactive .SBLoanHub .upload--link, .SBLoanHub .progress-steps.progress-steps--arrow li.inactive .upload--link {
+  color: #555; }
+
+.progress-steps.progress-steps--arrow li.inactive:after {
+  border-left: 20px solid #EAEAE4; }
+
+.progress-steps.progress-steps--arrow li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid #fff;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  z-index: 0; }
+
+.progress-steps.progress-steps--arrow li:after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid #17409C;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  z-index: 1; }
+
+.progress-steps.progress-steps--arrow li:first-child {
+  border-radius: 5px 0px 0px 5px; }
+
+.progress-steps.progress-steps--arrow li:first-child:before {
+  display: none; }
+
+.progress-steps.progress-steps--arrow li:last-child {
+  margin-right: 20px; }
+
+/*sphere*/
+ol.progress-steps.progress-steps--sphere {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-bottom: 0; }
+
+.progress-steps.progress-steps-sphere {
+  margin-bottom: 20px; }
+
+.progress-steps--sphere {
+  counter-reset: step; }
+
+.progress-steps--sphere li {
+  list-style-type: none;
+  position: relative;
+  margin: 30px 0;
+  height: 5px;
+  flex: 1;
+  text-align: left;
+  background-color: #EAEAE4; }
+
+.progress-steps--sphere li.completed {
+  background-color: #EAEAE4; }
+  .progress-steps--sphere li.completed a, .progress-steps--sphere li.completed .SBLoanHub .upload--link, .SBLoanHub .progress-steps--sphere li.completed .upload--link {
+    color: #007cbe; }
+
+.progress-steps--sphere li.inactive {
+  background-color: #EAEAE4; }
+
+.progress-steps--sphere li a, .progress-steps--sphere li .SBLoanHub .upload--link, .SBLoanHub .progress-steps--sphere li .upload--link {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+  position: relative;
+  top: -10px;
+  display: block;
+  width: 63px;
+  text-align: center; }
+
+.progress-steps--sphere li:first-child a, .progress-steps--sphere li:first-child .SBLoanHub .upload--link, .SBLoanHub .progress-steps--sphere li:first-child .upload--link {
+  left: -2px; }
+
+.progress-steps--sphere li:first-child a, .progress-steps--sphere li:first-child .SBLoanHub .upload--link, .SBLoanHub .progress-steps--sphere li:first-child .upload--link,
+.progress-steps--sphere li:nth-child(4) a,
+.progress-steps--sphere li:nth-child(4) .SBLoanHub .upload--link, .SBLoanHub
+.progress-steps--sphere li:nth-child(4) .upload--link {
+  width: 30px; }
+  .progress-steps--sphere li:first-child a span, .progress-steps--sphere li:first-child .SBLoanHub .upload--link span, .SBLoanHub .progress-steps--sphere li:first-child .upload--link span,
+  .progress-steps--sphere li:nth-child(4) a span,
+  .progress-steps--sphere li:nth-child(4) .SBLoanHub .upload--link span, .SBLoanHub
+  .progress-steps--sphere li:nth-child(4) .upload--link span {
+    left: -1px; }
+    .progress-steps--sphere li:first-child a span.visible-xs, .progress-steps--sphere li:first-child .SBLoanHub .upload--link span.visible-xs, .SBLoanHub .progress-steps--sphere li:first-child .upload--link span.visible-xs,
+    .progress-steps--sphere li:nth-child(4) a span.visible-xs,
+    .progress-steps--sphere li:nth-child(4) .SBLoanHub .upload--link span.visible-xs, .SBLoanHub
+    .progress-steps--sphere li:nth-child(4) .upload--link span.visible-xs {
+      left: 0; }
+
+.progress-steps--sphere li:last-child span.visible-xs {
+  left: -15px; }
+
+.progress-steps--sphere li:last-of-type {
+  flex: 0;
+  width: 0;
+  padding-right: 20px; }
+
+.progress-steps--sphere li a:before, .progress-steps--sphere li .SBLoanHub .upload--link:before, .SBLoanHub .progress-steps--sphere li .upload--link:before {
+  background-color: #fff;
+  color: #17409C;
+  width: 20px;
+  height: 20px;
+  line-height: inherit;
+  content: counter(step);
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  counter-increment: step;
+  line-height: 2;
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 1rem;
+  color: #555;
+  margin: 0 0 8px; }
+
+.progress-steps--sphere li.completed {
+  background-color: #17409C; }
+
+.progress-steps--sphere li.completed a:before, .progress-steps--sphere li.completed .SBLoanHub .upload--link:before, .SBLoanHub .progress-steps--sphere li.completed .upload--link:before {
+  background-color: #17409C;
+  content: "\E013";
+  color: white;
+  line-height: 1;
+  font-family: 'Glyphicons Halflings';
+  font-size: 9px;
+  padding-top: 5px; }
+
+.progress-steps--sphere li.inactive a:before, .progress-steps--sphere li.inactive .SBLoanHub .upload--link:before, .SBLoanHub .progress-steps--sphere li.inactive .upload--link:before {
+  background-color: #EAEAE4;
+  border-color: #EAEAE4;
+  color: #555; }
+
+.progress-steps--sphere li a span, .progress-steps--sphere li .SBLoanHub .upload--link span, .SBLoanHub .progress-steps--sphere li .upload--link span {
+  margin-left: -15px; }
+
+.progress-steps--sphere li:last-of-type a span, .progress-steps--sphere li:last-of-type .SBLoanHub .upload--link span, .SBLoanHub .progress-steps--sphere li:last-of-type .upload--link span {
+  margin-right: 0; }
+
+.progress-steps--sphere li:first-child:after {
+  content: none; }
+
+.progress-steps--sphere li.completed {
+  color: #17409C; }
+
+.progress-steps--sphere li.completed:after {
+  background-color: #17409C; }
+
+.progress-steps--sphere li.completed a, .progress-steps--sphere li.completed .SBLoanHub .upload--link, .SBLoanHub .progress-steps--sphere li.completed .upload--link {
+  position: relative;
+  color: #007cbe; }
+
+.progress-steps--sphere li.active a, .progress-steps--sphere li.active .SBLoanHub .upload--link, .SBLoanHub .progress-steps--sphere li.active .upload--link {
+  color: #007cbe; }
+  .progress-steps--sphere li.active a:before, .progress-steps--sphere li.active .SBLoanHub .upload--link:before, .SBLoanHub .progress-steps--sphere li.active .upload--link:before {
+    border: 4px solid #007cbe;
+    width: 28px;
+    height: 28px; }
+
+.progress-steps--sphere li.active:after {
+  background-color: blue;
+  top: 15px; }
+
+.progress-steps--sphere li.inactive a, .progress-steps--sphere li.inactive .SBLoanHub .upload--link, .SBLoanHub .progress-steps--sphere li.inactive .upload--link {
+  color: #555; }
+
+.progress-steps--sphere li.inactive a:hover, .progress-steps--sphere li.inactive .SBLoanHub .upload--link:hover, .SBLoanHub .progress-steps--sphere li.inactive .upload--link:hover {
+  cursor: not-allowed; }
+
+.progress-steps--sphere li.inactive:before {
+  background-color: #555; }
+
+.progress-steps--sphere li.inactive:after {
+  background-color: #555; }
+
+.progress-steps--sphere li.completed {
+  background-color: #007CBE; }
+
+.progress-steps--sphere li.completed a:before, .progress-steps--sphere li.completed .SBLoanHub .upload--link:before, .SBLoanHub .progress-steps--sphere li.completed .upload--link:before {
+  background-color: #007CBE; }
+
+.progress-steps--sphere li a span, .progress-steps--sphere li .SBLoanHub .upload--link span, .SBLoanHub .progress-steps--sphere li .upload--link span {
+  white-space: pre-wrap;
+  text-align: center;
+  margin-left: 0;
+  position: absolute;
+  left: -25px;
+  top: 32px; }
+  .progress-steps--sphere li a span.visible-xs, .progress-steps--sphere li .SBLoanHub .upload--link span.visible-xs, .SBLoanHub .progress-steps--sphere li .upload--link span.visible-xs {
+    left: -8px; }
+
+html {
+  overflow-x: hidden; }
+
+.paragraph-xxxs {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 2rem; }
+  .paragraph-xxxs:hover {
+    color: #555; }
+
+.noWrap {
+  white-space: nowrap; }
+
+.email-rail {
+  width: 195px;
+  display: inline-block;
+  float: left; }
+
+.email-main {
+  float: left; }
+  @media screen and (min-width: 768px) {
+    .email-main {
+      width: 80%;
+      width: calc(100% - 390px); } }
+
+.email-social {
+  height: 44px;
+  width: 159px !important; }
+
+.email .library-header {
+  display: block;
+  float: left;
+  width: 100%;
+  clear: both; }
+
+.email footer {
+  font-size: 12px; }
+
+.enterapp {
+  z-index: 1000000;
+  content: '';
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  @media screen and (max-width: 767px) {
+    .enterapp {
+      z-index: 1000000;
+      content: '';
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0; }
+      .enterapp img {
+        height: 100vh; } }
+  .enterapp img {
+    width: 100vw; }
+
+.smallBiz {
+  /* Shame Section */ }
+  .smallBiz.review-submit .USBEditableText {
+    margin-bottom: 2rem; }
+  .smallBiz #mailingadd .radio-display {
+    pointer-events: auto; }
+  .smallBiz #mailingadd .smallLabel {
+    position: relative;
+    top: 0;
+    left: 0; }
+  .smallBiz #mailingadd .form-group {
+    position: relative;
+    margin-bottom: 0; }
+    .smallBiz #mailingadd .form-group:not(:last-child) .radio-display {
+      position: absolute;
+      top: 40%;
+      left: -3rem; }
+    .smallBiz #mailingadd .form-group:not(:last-child) .form-control--radio {
+      width: calc(100% - 3rem);
+      margin-left: 3rem;
+      padding-bottom: 0; }
+      .smallBiz #mailingadd .form-group:not(:last-child) .form-control--radio p {
+        font-weight: bold; }
+  .smallBiz .inline-block {
+    display: inline-block !important;
+    margin-bottom: 0;
+    padding: 0;
+    width: auto;
+    margin-right: .5rem; }
+    .smallBiz .inline-block.link-btn {
+      padding: 0;
+      margin-bottom: 0;
+      font-size: 1.8rem; }
+  .smallBiz--label {
+    margin-top: 1rem;
+    margin-bottom: 3rem; }
+  .smallBiz p {
+    padding-bottom: 3rem;
+    line-height: 1.5; }
+  .smallBiz .SBForm .USBFormGroupReadOnly, .smallBiz .SBForm #mailingadd .form-group:not(:last-child) .form-control--radio, .smallBiz #mailingadd .form-group:not(:last-child) .SBForm .form-control--radio {
+    margin-bottom: 4rem; }
+    .smallBiz .SBForm .USBFormGroupReadOnly label, .smallBiz .SBForm #mailingadd .form-group:not(:last-child) .form-control--radio label, .smallBiz #mailingadd .form-group:not(:last-child) .SBForm .form-control--radio label {
+      font-weight: bold; }
+    .smallBiz .SBForm .USBFormGroupReadOnly p, .smallBiz .SBForm #mailingadd .form-group:not(:last-child) .form-control--radio p, .smallBiz #mailingadd .form-group:not(:last-child) .SBForm .form-control--radio p {
+      font-weight: normal; }
+    .smallBiz .SBForm .USBFormGroupReadOnly.USBFormGroupReadOnly--xmargin, .smallBiz .SBForm #mailingadd .form-group:not(:last-child) .USBFormGroupReadOnly--xmargin.form-control--radio, .smallBiz #mailingadd .form-group:not(:last-child) .SBForm .USBFormGroupReadOnly--xmargin.form-control--radio {
+      margin-bottom: 6.5rem; }
+    .smallBiz .SBForm .USBFormGroupReadOnly p, .smallBiz .SBForm #mailingadd .form-group:not(:last-child) .form-control--radio p, .smallBiz #mailingadd .form-group:not(:last-child) .SBForm .form-control--radio p {
+      padding-bottom: 0; }
+  .smallBiz .form-control--checkbox {
+    margin-top: 1rem; }
+    .smallBiz .form-control--checkbox .checkbox-display::before {
+      border: 1px solid #555; }
+  .smallBiz .USBButton-styleless {
+    position: relative;
+    -webkit-appearance: none;
+    font-size: 1.2rem;
+    border: 0;
+    box-shadow: none;
+    padding-left: 2.2rem; }
+    .smallBiz .USBButton-styleless .USBIcon {
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .smallBiz .USBButton-styleless svg {
+      fill: #007cbe;
+      height: 1.5rem; }
+  .smallBiz .btn {
+    margin-top: 1.5rem;
+    min-width: 25rem;
+    line-height: 20px; }
+  .smallBiz .btn-disclaimer,
+  .smallBiz .btn,
+  .smallBiz .link-btn,
+  .smallBiz .svg-flex,
+  .smallBiz .USBAccordion .disclaimer {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: .3s ease all; }
+    .smallBiz .btn-disclaimer.active-appear,
+    .smallBiz .btn.active-appear,
+    .smallBiz .link-btn.active-appear,
+    .smallBiz .svg-flex.active-appear,
+    .smallBiz .USBAccordion .disclaimer.active-appear {
+      opacity: 0;
+      transform: translateY(30%); }
+  .smallBiz .USBPanel,
+  .smallBiz .USBAccordion {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all .3s ease; }
+    .smallBiz .USBPanel.active-appear,
+    .smallBiz .USBAccordion.active-appear {
+      opacity: 0;
+      transform: translateY(30%); }
+  .smallBiz .link-btn {
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    color: #007cbe;
+    display: block; }
+  .smallBiz .SBForm {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    opacity: 1;
+    transform: translateY(0%);
+    transition: .3s ease all; }
+    .smallBiz .SBForm.SBForm-nomargin {
+      margin-top: 0; }
+    .smallBiz .SBForm .SBForm-topmargin {
+      margin-top: 4rem; }
+    .smallBiz .SBForm.active-appear {
+      opacity: 0;
+      transform: translateY(30%); }
+    .smallBiz .SBForm .USBRadioGroup .form-group label {
+      margin-bottom: 0; }
+    .smallBiz .SBForm .USBRadioGroup .form-group:last-child {
+      border: 0;
+      margin-bottom: 0; }
+    .smallBiz .SBForm .form-group-float,
+    .smallBiz .SBForm .form-control--checkbox,
+    .smallBiz .SBForm .USBRadioGroup,
+    .smallBiz .SBForm .USBCheckboxGroup .form-group {
+      margin-bottom: 3.3rem; }
+      .smallBiz .SBForm .form-group-float.form-group-float-nomarg,
+      .smallBiz .SBForm .form-control--checkbox.form-group-float-nomarg,
+      .smallBiz .SBForm .USBRadioGroup.form-group-float-nomarg,
+      .smallBiz .SBForm .USBCheckboxGroup .form-group.form-group-float-nomarg {
+        margin-bottom: 0; }
+    .smallBiz .SBForm .form-group .form-control--checkbox {
+      margin-bottom: 0; }
+    .smallBiz .SBForm .form-group-float .USBButton-styleless {
+      -webkit-appearance: none;
+      border: 0;
+      box-shadow: none;
+      color: #007cbe;
+      position: absolute;
+      bottom: 2.8rem;
+      right: 0;
+      font-size: 1.4rem; }
+      .smallBiz .SBForm .form-group-float .USBButton-styleless-add-another {
+        margin-bottom: 3.3rem; }
+    .smallBiz .SBForm .form-group-float.form-group-smmargin {
+      margin-bottom: 1rem; }
+    .smallBiz .SBForm .form-group-float.form-group-topmargin {
+      margin-top: 3.3rem; }
+    .smallBiz .SBForm .form-group-float.form-group-nomargin {
+      margin-bottom: 1rem; }
+      .smallBiz .SBForm .form-group-float.form-group-nomargin + .USBButton-styleless {
+        margin-bottom: 2rem;
+        position: relative; }
+        .smallBiz .SBForm .form-group-float.form-group-nomargin + .USBButton-styleless .USBIcon {
+          top: 0; }
+    .smallBiz .SBForm .form-group-float.form-group-xmargin {
+      margin-bottom: 6rem; }
+    .smallBiz .SBForm .form-group-float label,
+    .smallBiz .SBForm .form-group-float .form-control {
+      margin-bottom: 0;
+      font-size: 1.8rem; }
+    .smallBiz .SBForm label {
+      width: 100%;
+      font-weight: normal;
+      white-space: pre-line; }
+      .smallBiz .SBForm label .USBTooltip--content {
+        right: -9rem; }
+      .smallBiz .SBForm label.form-control--radio, .smallBiz .SBForm label.form-control--checkbox {
+        margin-left: -1.3rem; }
+    .smallBiz .SBForm .forgotID {
+      display: block;
+      margin: -3rem 0 3rem;
+      font-size: 1.2rem; }
+    .smallBiz .SBForm .USBTooltip > a, .smallBiz .SBForm .SBLoanHub .USBTooltip > .upload--link, .SBLoanHub .smallBiz .SBForm .USBTooltip > .upload--link {
+      color: #555; }
+      .smallBiz .SBForm .USBTooltip > a:hover, .smallBiz .SBForm .SBLoanHub .USBTooltip > .upload--link:hover, .SBLoanHub .smallBiz .SBForm .USBTooltip > .upload--link:hover {
+        color: #0C2074; }
+    .smallBiz .SBForm .forgotID {
+      color: #555; }
+    .smallBiz .SBForm.sb-form-finalize .form-control--checkbox {
+      margin-bottom: 0; }
+  .smallBiz .SBTitleBlock {
+    margin: 3rem 0 2.8rem;
+    opacity: 1;
+    transform: translateY(0%);
+    transition: .3s ease all; }
+    .smallBiz .SBTitleBlock--description {
+      padding-top: 2rem;
+      padding-bottom: 0; }
+    .smallBiz .SBTitleBlock--title {
+      padding: 0;
+      margin: 0; }
+      .smallBiz .SBTitleBlock--title small {
+        display: block;
+        color: #007CBE;
+        margin: 1rem 0; }
+    .smallBiz .SBTitleBlock.active-appear {
+      opacity: 0;
+      transform: translateY(30%); }
+  .smallBiz .error .SBTitleBlock {
+    opacity: 1 !important;
+    transition: none !important;
+    transform: none !important; }
+  .smallBiz .btn[disabled] {
+    background-color: #737373;
+    border-color: #737373;
+    pointer-events: none; }
+  .smallBiz h6 {
+    padding-bottom: 0;
+    margin-bottom: 0; }
+  .smallBiz .USBScrollBox {
+    padding: 3rem;
+    height: 700px;
+    overflow-y: scroll;
+    border: solid 1px #555; }
+    .smallBiz .USBScrollBox p {
+      padding-bottom: 2rem; }
+    .smallBiz .USBScrollBox::-webkit-scrollbar {
+      width: 1.5em; }
+      .smallBiz .USBScrollBox::-webkit-scrollbar-track {
+        background-color: #EAEAE4; }
+      .smallBiz .USBScrollBox::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        outline: 1px solid slategrey; }
+  @media screen and (min-width: 768px) {
+    .smallBiz .illustration {
+      max-width: 23rem;
+      margin-left: 2rem; }
+    .smallBiz .SBTitleBlock {
+      margin: 6rem 0 2.8rem; } }
+  .smallBiz .illustration {
+    margin-left: 2rem !important; }
+  .smallBiz address {
+    font-size: 1.8rem; }
+  .smallBiz .progress-component {
+    margin-top: 4rem; }
+  .smallBiz .smallLabel {
+    position: absolute;
+    top: -20px;
+    left: 40px; }
+  .smallBiz .DBA-SS .form-group {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem; }
+  @media screen and (max-width: 1024px) {
+    .smallBiz .SBForm .pull-right {
+      margin: 0 auto;
+      display: block;
+      margin-top: 2rem; } }
+  @media screen and (max-width: 767px) {
+    .smallBiz .progress-steps span {
+      display: none; }
+    .smallBiz .library-footer,
+    .smallBiz .SBRightRail {
+      margin-top: 0; }
+    .smallBiz .SBHeader h6 {
+      font-size: 1.4rem;
+      letter-spacing: 2px;
+      margin-top: 0; } }
+  .smallBiz .DBA-SS .form-control--radio input {
+    height: 0;
+    width: 0; }
+  .smallBiz .DBA-SS label.form-control--radio {
+    padding-left: 40px;
+    margin-left: -15px; }
+
+.USBHeading--nomargin {
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
+  padding-top: 5rem;
+  border-top: solid 1px #555; }
+
+.USBList--tabbed {
+  margin-left: 2rem;
+  margin-top: 1rem; }
+  .USBList--tabbed li {
+    padding-bottom: 2rem; }
+
+.bottom-margin {
+  margin-bottom: 3.5rem; }
+
+.illustration {
+  max-width: 25.5rem; }
+
+.form-control--checkbox input[type="checkbox"]:checked + strong + .checkbox-display::after {
+  display: inline-block; }
+
+.more-space {
+  margin-bottom: 6rem !important; }
+
+.smallBiz--label-lg,
+.financial-obligations .USBCheckboxGroup > label {
+  font-weight: bold !important;
+  color: #0C2074;
+  font-size: 1.8rem;
+  margin-bottom: 0; }
+
+.email-container {
+  height: 60vh;
+  padding-top: 4rem; }
+
+@media screen and (min-width: 768px) {
+  .xmargintop {
+    margin-top: 5rem; } }
+
+.dropdown-menu {
+  display: none;
+  min-width: 160px;
+  width: 100%;
+  padding: 5px 5px 0;
+  margin: 2px 0 0;
+  font-size: 18px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); }
+  .dropdown-menu ul {
+    padding-left: 0; }
+  .dropdown-menu option {
+    width: auto; }
+    .dropdown-menu option:hover {
+      cursor: pointer;
+      color: #fff;
+      background-color: #007cbe; }
+
+.SBSfi .USBPanel-content {
+  padding: 3rem 0 0; }
+  .SBSfi .USBPanel-content > .smallBiz--label {
+    margin-top: 0; }
+
+.SBSfi .USBPanel .btn {
+  display: block;
+  margin-top: 4rem; }
+
+.SBLoanHub--message {
+  margin: 0 0 3.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0; }
+  .SBLoanHub--message .USBIcon {
+    width: 5.5rem;
+    height: 4rem; }
+    .SBLoanHub--message .USBIcon svg.circleCheck.checked {
+      width: 6rem; }
+
+.SBLoanHub--main {
+  margin-top: 7rem; }
+
+.SBLoanHub .paragraph-s {
+  padding-bottom: 0; }
+
+.SBLoanHub--info {
+  border-left: solid 1px #EAEAE4; }
+
+.SBLoanHub .upload--link {
+  position: relative; }
+  .SBLoanHub .upload--link:hover,
+  .SBLoanHub .upload--link *:hover,
+  .SBLoanHub .upload--link input:hover,
+  .SBLoanHub .upload--link .upload--text:hover {
+    cursor: pointer; }
+  .SBLoanHub .upload--link input {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+.SBLoanHub .upload--text {
+  pointer-events: none; }
+
+.SBLoanHub .upload--filename {
+  display: block;
+  font-size: 12px; }
+
+.SBLoanHub .USBAccordion {
+  margin-top: 1rem;
+  display: block;
+  float: left;
+  width: 100%;
+  margin-bottom: 3rem; }
+  .SBLoanHub .USBAccordion .USBPanel.is-expanded {
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
+    .SBLoanHub .USBAccordion .USBPanel.is-expanded .USBPanel-body {
+      margin-top: 1rem; }
+  .SBLoanHub .USBAccordion .USBPanel-body {
+    margin-bottom: 0; }
+
+.SBLoanHub .USBPanel-body {
+  display: block;
+  float: left;
+  width: 100%; }
+
+.SBLoanHub .USBPanel .USBContentBlock:not(.USBContentBlock--next-step) .USBIconLink {
+  cursor: not-allowed; }
+  .SBLoanHub .USBPanel .USBContentBlock:not(.USBContentBlock--next-step) .USBIconLink a, .SBLoanHub .USBPanel .USBContentBlock:not(.USBContentBlock--next-step) .USBIconLink .upload--link {
+    cursor: not-allowed; }
+  .SBLoanHub .USBPanel .USBContentBlock:not(.USBContentBlock--next-step) .USBIconLink .paragraph-l {
+    color: #737373; }
+  .SBLoanHub .USBPanel .USBContentBlock:not(.USBContentBlock--next-step) .USBIconLink .btn-circle-red {
+    fill: #737373; }
+
+.SBLoanHub article {
+  border-bottom: solid 1px #DEDEDE;
+  margin: 4rem 0; }
+  .SBLoanHub article:first-child {
+    text-align: center;
+    margin-top: 7rem; }
+  .SBLoanHub article:last-child {
+    border: 0; }
+
+.SBLoanHub--description-list {
+  font-size: 1.8rem; }
+  .SBLoanHub--description-list dd {
+    margin-bottom: 3rem; }
+
+.SBLoanHub--contact {
+  color: #0C2074; }
+  .SBLoanHub--contact a, .SBLoanHub--contact .SBLoanHub .upload--link, .SBLoanHub .SBLoanHub--contact .upload--link {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 4rem; }
+    .SBLoanHub--contact a strong, .SBLoanHub--contact .SBLoanHub .upload--link strong, .SBLoanHub .SBLoanHub--contact .upload--link strong {
+      margin-left: 2rem; }
+  .SBLoanHub--contact h4 {
+    margin-bottom: 4rem; }
+  .SBLoanHub--contact figcaption {
+    display: inline-block;
+    margin-bottom: 3rem; }
+    .SBLoanHub--contact figcaption p {
+      margin-left: 2rem; }
+    .SBLoanHub--contact figcaption a, .SBLoanHub--contact figcaption .SBLoanHub .upload--link, .SBLoanHub .SBLoanHub--contact figcaption .upload--link {
+      margin-bottom: 0; }
+  .SBLoanHub--contact .USBIcon {
+    vertical-align: top;
+    display: inline-block; }
+    .SBLoanHub--contact .USBIcon .branch,
+    .SBLoanHub--contact .USBIcon .appointment {
+      width: 2rem; }
+    .SBLoanHub--contact .USBIcon .iconPhone {
+      width: 1.4rem; }
+
+.SBLoanHub .USBContentBlock {
+  margin-bottom: 1rem;
+  border: solid 1px #DEDEDE;
+  padding: 2.8rem 3rem 3rem; }
+  @media screen and (min-width: 768px) {
+    .SBLoanHub .USBContentBlock {
+      display: flex; }
+      .SBLoanHub .USBContentBlock.USBContentBlock--upload-container {
+        flex-direction: column; }
+      .SBLoanHub .USBContentBlock .USBContentBlock--upload {
+        display: flex; }
+        .SBLoanHub .USBContentBlock .USBContentBlock--upload > div.USBContentBlock--left {
+          flex-basis: 45%;
+          padding-right: 30px;
+          border-right: solid 2px #EAEAE4; }
+          .SBLoanHub .USBContentBlock .USBContentBlock--upload > div.USBContentBlock--left .btn.USBLink {
+            margin-right: 0; }
+        .SBLoanHub .USBContentBlock .USBContentBlock--upload > div.USBContentBlock--right {
+          flex-basis: 55%;
+          padding-left: 30px; }
+      .SBLoanHub .USBContentBlock > div.USBContentBlock--left {
+        flex-basis: 45%;
+        padding-right: 30px;
+        border-right: solid 2px #EAEAE4; }
+      .SBLoanHub .USBContentBlock > div.USBContentBlock--right {
+        flex-basis: 55%;
+        padding-left: 30px; }
+      .SBLoanHub .USBContentBlock > .paragraph-m {
+        flex-basis: 100%; } }
+  .SBLoanHub .USBContentBlock--right a, .SBLoanHub .USBContentBlock--right .upload--link {
+    font-family: HelveticaNeueLTW06-75Bold;
+    font-size: 1.6rem;
+    color: #007cbe; }
+  .SBLoanHub .USBContentBlock--right p {
+    font-size: 16px;
+    padding-bottom: 0; }
+  .SBLoanHub .USBContentBlock--right ul {
+    padding-left: 1rem; }
+    .SBLoanHub .USBContentBlock--right ul li {
+      font-size: 1.6rem;
+      list-style-type: disc;
+      margin: 1rem 0 0 2rem;
+      position: relative; }
+  .SBLoanHub .USBContentBlock--left .heading-xxs {
+    margin-top: 0; }
+  .SBLoanHub .USBContentBlock--left .paragraph-small {
+    font-size: 1.2rem;
+    padding-bottom: 0; }
+  .SBLoanHub .USBContentBlock--left .paragraph-s {
+    margin-top: 2.5rem; }
+  .SBLoanHub .USBContentBlock--completed-steps {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%; }
+    .SBLoanHub .USBContentBlock--completed-steps .USBHeading h6 {
+      margin-top: 0; }
+    .SBLoanHub .USBContentBlock--completed-steps .USBIcon {
+      height: 20px;
+      margin-right: 10px;
+      width: 4rem; }
+      .SBLoanHub .USBContentBlock--completed-steps .USBIcon svg {
+        width: 6rem; }
+    .SBLoanHub .USBContentBlock--completed-steps .USBIcon,
+    .SBLoanHub .USBContentBlock--completed-steps .USBHeading {
+      display: inline-block;
+      float: left; }
+    .SBLoanHub .USBContentBlock--completed-steps p {
+      font-size: 1.2rem;
+      padding-bottom: 0; }
+  .SBLoanHub .USBContentBlock--purchase li {
+    width: calc(100% + 2rem); }
+  .SBLoanHub .USBContentBlock--next-step.USBContentBlock {
+    margin-top: 1rem; }
+    .SBLoanHub .USBContentBlock--next-step.USBContentBlock--left .paragraph-small {
+      padding-bottom: 1.5rem; }
+  .SBLoanHub .USBContentBlock--next-step .btn {
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .SBLoanHub .USBContentBlock--next-step .btn {
+        max-width: 25rem; } }
+  .SBLoanHub .USBContentBlock--next-step .upload {
+    display: block;
+    float: left;
+    clear: both; }
+  .SBLoanHub .USBContentBlock--next-step span {
+    display: inline; }
+  .SBLoanHub .USBContentBlock--next-step svg {
+    width: 2.4rem; }
+  .SBLoanHub .USBContentBlock .paragraph-l {
+    font-size: 1.9rem; }
+  .SBLoanHub .USBContentBlock > * {
+    width: auto; }
+  .SBLoanHub .USBContentBlock > p {
+    width: 100%;
+    display: block;
+    float: left; }
+
+.SBLoanHub .SBProgress {
+  height: 170px;
+  width: 170px;
+  position: relative; }
+  .SBLoanHub .SBProgress--owner, .SBLoanHub .SBProgress--owner-fill, .SBLoanHub .SBProgress--coowner, .SBLoanHub .SBProgress--coowner-fill {
+    position: absolute;
+    width: 170px;
+    height: 85px;
+    background-color: transparent;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 15px solid #007CBE;
+    border-bottom: 0; }
+  .SBLoanHub .SBProgress--owner {
+    top: 0;
+    border-color: #EEF7FB; }
+    .SBLoanHub .SBProgress--owner-fill {
+      top: 0;
+      border-bottom-right-radius: 2em 5em;
+      border-bottom-left-radius: 2em 5em; }
+  .SBLoanHub .SBProgress--coowner {
+    bottom: 0;
+    border-color: #EEF7FB;
+    transform: rotate(180deg); }
+    .SBLoanHub .SBProgress--coowner-fill {
+      bottom: 0;
+      transform: rotate(180deg); }
+
+.SBLoanHub .USBProgressCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 4rem; }
+  .SBLoanHub .USBProgressCircle svg {
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .SBLoanHub .USBProgressCircle--info {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    margin-left: 5px; }
+    .SBLoanHub .USBProgressCircle--info-primary {
+      border-bottom: solid 2px #EAEAE4;
+      padding-bottom: 5px;
+      margin-bottom: 5px; }
+    .SBLoanHub .USBProgressCircle--info span {
+      display: block;
+      font-size: 1.9rem;
+      font-weight: bold;
+      color: #17409C; }
+      .SBLoanHub .USBProgressCircle--info span.USBProgressCircle--info-name {
+        font-size: 1.2rem;
+        font-weight: normal; }
+  .SBLoanHub .USBProgressCircle--primary {
+    transform: rotate(180deg);
+    transform-origin: 50% 50%;
+    width: 100%; }
+  .SBLoanHub .USBProgressCircle--primary-path {
+    will-change: auto;
+    stroke-width: 15px;
+    stroke-miterlimit: round;
+    transition: stroke-dashoffset 850ms ease-in-out;
+    fill: none;
+    stroke: #EEF7FB; }
+  .SBLoanHub .USBProgressCircle .USBProgress--primary-path-fill {
+    stroke: #007cbe;
+    stroke-dasharray: 350px;
+    stroke-dashoffset: 0; }
+    .SBLoanHub .USBProgressCircle .USBProgress--primary-path-fill-30 {
+      stroke-dashoffset: -170px; }
+    .SBLoanHub .USBProgressCircle .USBProgress--primary-path-fill-40 {
+      stroke-dashoffset: -150px; }
+    .SBLoanHub .USBProgressCircle .USBProgress--primary-path-fill-55 {
+      stroke-dashoffset: -130px; }
+    .SBLoanHub .USBProgressCircle .USBProgress--primary-path-fill-70 {
+      stroke-dashoffset: -75px; }
+    .SBLoanHub .USBProgressCircle .USBProgress--primary-path-fill-75 {
+      stroke-dashoffset: -60px; }
+    .SBLoanHub .USBProgressCircle .USBProgress--primary-path-fill-95 {
+      stroke-dashoffset: -30px; }
+    .SBLoanHub .USBProgressCircle .USBProgress--primary-path-fill-100 {
+      stroke-dashoffset: 0; }
+  .SBLoanHub .USBProgressCircle .USBProgress--secondary-path-fill {
+    stroke: #17409C;
+    stroke-dasharray: 350px;
+    stroke-dashoffset: 0; }
+    .SBLoanHub .USBProgressCircle .USBProgress--secondary-path-fill-30 {
+      stroke-dashoffset: 280px; }
+    .SBLoanHub .USBProgressCircle .USBProgress--secondary-path-fill-40 {
+      stroke-dashoffset: 260px; }
+    .SBLoanHub .USBProgressCircle .USBProgress--secondary-path-fill-60 {
+      stroke-dashoffset: 220px; }
+    .SBLoanHub .USBProgressCircle .USBProgress--secondary-path-fill-90 {
+      stroke-dashoffset: 155px; }
+    .SBLoanHub .USBProgressCircle .USBProgress--secondary-path-fill-100 {
+      stroke-dashoffset: 100px; }
+
+.SBLoanHub .USBProgress {
+  stroke-width: .30rem;
+  position: relative; }
+  .SBLoanHub .USBProgress .paragraph-m {
+    top: 25%;
+    left: 45%;
+    position: absolute;
+    color: dkblue; }
+  .SBLoanHub .USBProgress .paragraph-desktop.paragraph-m {
+    left: 41%; }
+  .SBLoanHub .USBProgress svg {
+    transform: rotate(-90deg);
+    margin: 0 auto;
+    display: block; }
+  .SBLoanHub .USBProgress .progress-bar__background {
+    fill: none;
+    stroke: #EEF7FB;
+    stroke-width: .30rem; }
+  .SBLoanHub .USBProgress .progress-bar__progress {
+    fill: none;
+    stroke: #007CBE;
+    stroke-dasharray: 100 100;
+    stroke-dashoffset: 100;
+    transition: stroke-dashoffset 1s ease-in-out;
+    stroke-dashoffset: 40px; }
+
+.SBLoanHub .USBContentBlock--next-step .disclaimer {
+  margin: 0; }
+
+.SBLoanHub .USBContentBlock--next-step .heading-xxs {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 0; }
+
+.SBLoanHub .USBContentBlock--next-step .paragraph-m {
+  position: relative;
+  padding-left: 4.5rem;
+  padding-bottom: 0;
+  margin-top: 2rem; }
+  @media screen and (max-width: 767px) {
+    .SBLoanHub .USBContentBlock--next-step .paragraph-m .SBLoanHub--success {
+      margin-left: 10px; } }
+  .SBLoanHub .USBContentBlock--next-step .paragraph-m .boldblue {
+    margin-left: 10px;
+    white-space: nowrap; }
+  .SBLoanHub .USBContentBlock--next-step .paragraph-m .USBIcon {
+    left: 0;
+    top: .5rem; }
+    .SBLoanHub .USBContentBlock--next-step .paragraph-m .USBIcon svg {
+      width: 5rem; }
+
+.SBLoanHub .USBContentBlock--next-step .upload-docs .paragraph-m,
+.SBLoanHub .USBContentBlock--next-step .upload-docs > div {
+  width: calc(100% - 2.6rem);
+  font-size: 1.6rem;
+  position: relative;
+  padding-bottom: 2rem;
+  display: block;
+  float: left;
+  clear: both;
+  transition: margin-left .5s ease, width .5s ease; }
+  .SBLoanHub .USBContentBlock--next-step .upload-docs .paragraph-m:last-child,
+  .SBLoanHub .USBContentBlock--next-step .upload-docs > div:last-child {
+    padding-bottom: 0; }
+  .SBLoanHub .USBContentBlock--next-step .upload-docs .paragraph-m a, .SBLoanHub .USBContentBlock--next-step .upload-docs .paragraph-m .upload--link,
+  .SBLoanHub .USBContentBlock--next-step .upload-docs > div a, .SBLoanHub .USBContentBlock--next-step .upload-docs > div .upload--link {
+    color: #007CBE;
+    text-decoration: underline; }
+  .SBLoanHub .USBContentBlock--next-step .upload-docs .paragraph-m.uploaded,
+  .SBLoanHub .USBContentBlock--next-step .upload-docs > div.uploaded {
+    font-weight: normal;
+    color: #555;
+    margin-left: 2.6rem; }
+  .SBLoanHub .USBContentBlock--next-step .upload-docs .paragraph-m .checkmark .USBIcon,
+  .SBLoanHub .USBContentBlock--next-step .upload-docs > div .checkmark .USBIcon {
+    width: 0;
+    position: absolute;
+    left: -2.6rem;
+    top: .5rem; }
+    .SBLoanHub .USBContentBlock--next-step .upload-docs .paragraph-m .checkmark .USBIcon .circleCheck .circle,
+    .SBLoanHub .USBContentBlock--next-step .upload-docs > div .checkmark .USBIcon .circleCheck .circle {
+      fill: #EAEAE4; }
+    .SBLoanHub .USBContentBlock--next-step .upload-docs .paragraph-m .checkmark .USBIcon .circleCheck .check,
+    .SBLoanHub .USBContentBlock--next-step .upload-docs > div .checkmark .USBIcon .circleCheck .check {
+      fill: none;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      width: auto;
+      stroke: none;
+      transition: width .5s ease; }
+    .SBLoanHub .USBContentBlock--next-step .upload-docs .paragraph-m .checkmark .USBIcon .circleCheck.unchecked,
+    .SBLoanHub .USBContentBlock--next-step .upload-docs > div .checkmark .USBIcon .circleCheck.unchecked {
+      width: 0; }
+      .SBLoanHub .USBContentBlock--next-step .upload-docs .paragraph-m .checkmark .USBIcon .circleCheck.unchecked .circle,
+      .SBLoanHub .USBContentBlock--next-step .upload-docs > div .checkmark .USBIcon .circleCheck.unchecked .circle {
+        width: 0; }
+    .SBLoanHub .USBContentBlock--next-step .upload-docs .paragraph-m .checkmark .USBIcon .circleCheck.checked,
+    .SBLoanHub .USBContentBlock--next-step .upload-docs > div .checkmark .USBIcon .circleCheck.checked {
+      width: 2.6rem; }
+      .SBLoanHub .USBContentBlock--next-step .upload-docs .paragraph-m .checkmark .USBIcon .circleCheck.checked .circle,
+      .SBLoanHub .USBContentBlock--next-step .upload-docs > div .checkmark .USBIcon .circleCheck.checked .circle {
+        width: 2.6rem; }
+      .SBLoanHub .USBContentBlock--next-step .upload-docs .paragraph-m .checkmark .USBIcon .circleCheck.checked .circle,
+      .SBLoanHub .USBContentBlock--next-step .upload-docs > div .checkmark .USBIcon .circleCheck.checked .circle {
+        fill: #5ebf51; }
+      .SBLoanHub .USBContentBlock--next-step .upload-docs .paragraph-m .checkmark .USBIcon .circleCheck.checked .check,
+      .SBLoanHub .USBContentBlock--next-step .upload-docs > div .checkmark .USBIcon .circleCheck.checked .check {
+        stroke: #5ebf51;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+        animation: svgDraw 1.0s ease-in forwards; }
+
+.SBLoanHub .paragraph-m .USBIcon {
+  position: absolute;
+  left: 0; }
+
+.SBLoanHub .circleCheck .circle {
+  fill: #EAEAE4; }
+
+.SBLoanHub .circleCheck .check {
+  fill: none;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  width: auto;
+  stroke: none;
+  transition: width .5s ease; }
+
+.SBLoanHub .circleCheck.unchecked {
+  width: 0; }
+  .SBLoanHub .circleCheck.unchecked .circle {
+    width: 0; }
+
+.SBLoanHub .circleCheck.checked {
+  width: 2.6rem; }
+  .SBLoanHub .circleCheck.checked .circle {
+    width: 2.6rem; }
+  .SBLoanHub .circleCheck.checked .circle {
+    fill: #5ebf51; }
+  .SBLoanHub .circleCheck.checked .check {
+    stroke: #5ebf51;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.5px;
+    animation: svgDraw 1.0s ease-in forwards; }
+
+.SBLoanHub .USBMobileNavBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 2rem .5rem;
+  background-color: #17409C;
+  z-index: 10000; }
+  .SBLoanHub .USBMobileNavBar .USBIcon {
+    display: block; }
+  .SBLoanHub .USBMobileNavBar svg {
+    fill: #fff;
+    height: 3rem; }
+  .SBLoanHub .USBMobileNavBar nav {
+    display: flex;
+    text-align: center; }
+  .SBLoanHub .USBMobileNavBar div {
+    text-decoration: none;
+    margin: 0 auto;
+    color: #fff;
+    width: 50%;
+    font-size: 1.2rem; }
+    .SBLoanHub .USBMobileNavBar div a, .SBLoanHub .USBMobileNavBar div .upload--link {
+      text-decoration: none;
+      color: #fff; }
+
+.SBLoanHub .container {
+  position: relative; }
+
+.SBLoanHub--close {
+  display: flex; }
+  .SBLoanHub--close .USBIcon,
+  .SBLoanHub--close a,
+  .SBLoanHub--close .SBLoanHub .upload--link, .SBLoanHub
+  .SBLoanHub--close .upload--link {
+    display: inline-block; }
+  .SBLoanHub--close-link {
+    position: absolute;
+    top: -1.5rem;
+    right: 2rem;
+    text-decoration: none;
+    color: #555;
+    font-size: 1.6rem; }
+    .SBLoanHub--close-link span {
+      margin-right: 6px;
+      margin-top: 4px; }
+  .SBLoanHub--close a, .SBLoanHub--close .SBLoanHub .upload--link, .SBLoanHub .SBLoanHub--close .upload--link {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #555;
+    vertical-align: top; }
+  .SBLoanHub--close svg {
+    fill: #555;
+    height: 3rem; }
+
+@keyframes svgDraw {
+  from {
+    stroke-dashoffset: 1000; }
+  to {
+    stroke-dashoffset: 0; } }
+
+.SBLoanHubTwo .USBProgress .progress-bar__progress {
+  stroke-dashoffset: 30px; }
+
+.SBLoanHubTwo .USBContentBlock--next-step .btn-primary {
+  margin-bottom: 2rem; }
+
+@media screen and (min-width: 992px) {
+  .SBLoanHubTwo .USBContentBlock--next-step .disclaimer-margin {
+    margin-top: 10rem; } }
+
+.SBLoanHubTwo .USBContentBlock--next-step dl {
+  font-size: 1.8rem; }
+  .SBLoanHubTwo .USBContentBlock--next-step dl dt {
+    font-weight: normal; }
+  .SBLoanHubTwo .USBContentBlock--next-step dl dd {
+    font-weight: bold;
+    color: #0C2074;
+    margin-bottom: 2rem; }
+
+.logout-hub {
+  float: right;
+  text-decoration: none;
+  vertical-align: top;
+  font-size: 1.4rem;
+  color: #fff; }
+
+.paragraph-tooltip a, .paragraph-tooltip .SBLoanHub .upload--link, .SBLoanHub .paragraph-tooltip .upload--link {
+  font-size: 1.8rem;
+  text-decoration: underline;
+  color: #007CBE !important;
+  font-weight: bold; }
+
+.paragraph-tooltip .USBTooltip {
+  font-size: 1.2rem;
+  line-height: 1.5; }
+
+.USBTooltip--large .USBTooltip--content {
+  width: 35rem;
+  right: -14rem; }
+
+.USBTooltip--content,
+.USBTooltip--content * {
+  padding-bottom: 0 !important;
+  font-size: 1.2rem !important;
+  line-height: 1.5 !important; }
+
+.USBTooltip--content {
+  padding: 10px 20px !important; }
+
+.btn-disabled,
+.btn-disabled:hover {
+  background-color: #737373 !important;
+  border-color: #737373 !important;
+  opacity: 1 !important; }
+
+@media screen and (max-width: 767px) {
+  .SBLoanHubThree .USBContentBlock--next-step div > div:first-child,
+  .SBLoanHubTwo .USBContentBlock--next-step > div:first-child {
+    order: 2; } }
+
+.SBLoanHubHalfHalf .USBProgress .progress-bar__progress {
+  stroke-dashoffset: 65px; }
+
+.SBLoanHubHalf .USBProgress .progress-bar__progress {
+  stroke-dashoffset: 30px; }
+
+.SBLoanHubThreeQuarter .USBProgress .progress-bar__progress {
+  stroke-dashoffset: 55px; }
+
+.SBLoanHubTwo .USBProgress .progress-bar__progress {
+  stroke-dashoffset: 25px; }
+
+.SBLoanHubThree .USBProgress .progress-bar__progress {
+  stroke-dashoffset: 15px; }
+
+.USBIconList--inline {
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  text-align: center; }
+  .USBIconList--inline svg {
+    width: 5rem; }
+
+.SBForm .USBIconLink * {
+  font-size: 1.9rem;
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.SBForm .USBIconLink svg {
+  width: 2.4rem; }
+
+.no-padding {
+  padding-bottom: .5rem !important; }
+
+.nono-padding {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important; }
+
+.USBFlexTwo h5 {
+  padding-bottom: 0; }
+
+.USBFlexTwo > * {
+  padding: 2rem 3rem 3rem; }
+
+.form-group-float-tooltip .USBTooltip {
+  position: absolute;
+  right: 0;
+  top: 1rem; }
+  .form-group-float-tooltip .USBTooltip--content {
+    right: -9rem; }
+
+.SBHeader--applicationstat {
+  height: 9rem; }
+
+.svg-flex {
+  display: flex;
+  margin-top: 3.5rem; }
+  .svg-flex .USBIcon {
+    width: 8rem;
+    height: 3rem; }
+
+.USBTooltip .USBIcon {
+  fill: #007CBE; }
+
+.form-group-float .USBInputDisclaimer .USBTooltip a, .form-group-float .USBInputDisclaimer .USBTooltip .SBLoanHub .upload--link, .SBLoanHub .form-group-float .USBInputDisclaimer .USBTooltip .upload--link {
+  color: #007CBE;
+  font-weight: bold; }
+
+@media screen and (max-width: 767px) {
+  .SBLoanHub .USBContentBlock--next-step .paragraph-m .USBIcon {
+    left: 0; }
+  .SBLoanHub .USBContentBlock--next-step .paragraph-m {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3.5rem; }
+  img.illustration {
+    float: none !important;
+    margin: 0 auto 30px; }
+  .SBLoanHubTwo .USBContentBlock--next-step .paragraph-small + .paragraph-s {
+    border-bottom: solid 1px #DEDEDE;
+    margin-bottom: 2.5rem; }
+  .SBLoanHub .USBContentBlock--next-step > div {
+    display: block; }
+  .SBLoanHub .USBAccordion .USBPanel .USBTooltip .USBIcon {
+    width: 2rem; }
+  .SBLoanHub article:first-child {
+    text-align: left; }
+  .SBLoanHub .USBContentBlock--next-step > div > div {
+    padding-left: 0; }
+  .SBLoanHub .USBProgress .paragraph-m {
+    left: 41%; }
+  .circleCheck {
+    width: 50px; }
+  .xmargintop {
+    float: none !important; }
+    .xmargintop img {
+      display: block;
+      margin: 1rem auto; }
+  .form-group-float-tooltip .USBTooltip--content {
+    right: -1rem; }
+    .form-group-float-tooltip .USBTooltip--content:before {
+      left: auto;
+      right: 5px; }
+    .form-group-float-tooltip .USBTooltip--content:after {
+      left: auto;
+      right: 7px; } }
+
+.SBLoanHubMobile {
+  margin-top: 4rem; }
+
+.heading-xs.nono-padding {
+  margin-top: 0; }
+
+.boldblue {
+  font-weight: bold;
+  color: #007CBE;
+  text-decoration: underline; }
+
+@media screen and (max-width: 767px) {
+  .SBHeader h6 {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    margin: 0; } }
+
+.USBIconList--inline {
+  margin-bottom: 4rem; }
+
+.fake .btn-primary {
+  white-space: normal; }
+
+.fake-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100; }
+  .fake-nav img {
+    width: 100%;
+    height: auto; }
+
+.fake-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  @media screen and (min-width: 769px) {
+    .fake-banner img {
+      width: 100%; } }
+  .fake-banner:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    content: ''; }
+
+.fake .container {
+  position: relative; }
+
+.fake-content {
+  position: absolute;
+  bottom: 200px;
+  left: 0;
+  z-index: 100; }
+  .fake-content h6 {
+    font-family: HelveticaNeueLTW04-55Roman,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px !important;
+    line-height: 1 !important;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 10px; }
+  .fake-content > * {
+    color: #fff; }
+
+@media screen and (max-width: 767px) {
+  .fake-content h1 {
+    font-size: 3.2rem;
+    line-height: 1.2; }
+  .fake-banner img {
+    width: auto;
+    height: 100vh; } }
+
+.USBList--circleCheck {
+  list-style-type: none;
+  padding-left: 30px;
+  margin-bottom: 50px; }
+  .USBList--circleCheck li {
+    position: relative;
+    margin-bottom: 20px; }
+  .USBList--circleCheck .USBIcon {
+    position: absolute;
+    left: -30px;
+    top: 2px; }
+
+.circleCheckFull {
+  fill: #007cbe;
+  width: 35px; }
+  .circleCheckFull .check {
+    stroke: #007cbe;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.5px;
+    fill: none; }
+
+.nomargin {
+  padding-bottom: 0; }
+
+.img-padding {
+  padding: 30px 0 20px 20px; }
+
+.modal--body p:last-of-type {
+  padding-bottom: 2rem; }
+
+@media screen and (min-width: 768px) {
+  .illustration-last {
+    margin-top: 50px;
+    margin-left: 10px; }
+  .btn-flex {
+    display: flex; } }
+
+.disabled-select {
+  pointer-events: none; }
+
+.SBHeader {
+  padding: 2rem 0; }
+
+.library-header {
+  padding: 2.6rem 0; }
+
+.SBHeader h6 {
+  font-family: "HelveticaNeueLTW04-55Roman", "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: normal;
+  padding-bottom: 0; }
+
+.SBRightRail {
+  background-color: #17409c;
+  text-align: center;
+  padding: 6rem 0;
+  margin: 6rem 0; }
+
+.SBRightRail > * {
+  color: #ffffff;
+  padding: 0; }
+
+.SBRightRail .cls-1 {
+  fill: #fff; }
+
+.SBRightRail .USBIcon {
+  margin: 6rem auto 0rem;
+  width: 32px; }
+
+.SBRightRail figure {
+  margin: 2rem 0; }
+
+.SBRightRail figcaption > * {
+  padding-bottom: 0; }
+
+/* Shame Section */
+@media screen and (max-width: 768px) {
+  .SBRightRail {
+    margin-bottom: 0; } }
+
+.SBCalculator .USBError--message {
+  position: absolute;
+  right: .5rem;
+  bottom: 1.3rem;
+  margin: 0; }
+  .SBCalculator .USBError--message .USBIcon svg {
+    height: 1.8rem; }
+
+.SBCalculator .USBError--tooltip {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+  bottom: 4.8rem;
+  right: -18%;
+  border: solid 1px #ccc;
+  border-radius: 6px;
+  width: 20rem;
+  padding: 1rem;
+  display: block;
+  color: #D83B48;
+  font-size: 1.2rem; }
+  .SBCalculator .USBError--tooltip.hidden {
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transform: scale3d(0.7, 0.3, 1);
+    transform: scale3d(0.7, 0.3, 1);
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s; }
+  .SBCalculator .USBError--tooltip.visible {
+    pointer-events: auto;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0);
+    transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0); }
+  .SBCalculator .USBError--tooltip:after {
+    content: '';
+    bottom: -19px;
+    left: 50%;
+    border: solid transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: #fff;
+    border-width: 10px;
+    margin-left: -10px; }
+  .SBCalculator .USBError--tooltip:before {
+    position: absolute;
+    content: '';
+    left: calc(50% - 11px);
+    bottom: -22px;
+    border: solid transparent;
+    border-top-color: #ccc;
+    border-width: 11px; }
+
+.SBCalculator .SBCalculator--result {
+  margin: 0 auto 5rem;
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  background-color: #007cbe;
+  float: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+  .SBCalculator .SBCalculator--result hr {
+    border-top: solid 1px #fff;
+    width: 70%;
+    margin: 1rem 0; }
+  .SBCalculator .SBCalculator--result .paragraph-l,
+  .SBCalculator .SBCalculator--result .paragraph-m {
+    color: #fff;
+    padding-bottom: 0; }
+  .SBCalculator .SBCalculator--result .heading-m {
+    font-size: 3.6rem !important;
+    line-height: 1;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: flex;
+    color: #fff;
+    align-content: center;
+    letter-spacing: 1.5px; }
+    .SBCalculator .SBCalculator--result .heading-m .card-flip-container {
+      position: relative;
+      overflow: hidden;
+      perspective: 1000px;
+      transition: width 1s;
+      height: 3.6rem; }
+      .SBCalculator .SBCalculator--result .heading-m .card-flip-container,
+      .SBCalculator .SBCalculator--result .heading-m .card-flip-container .front,
+      .SBCalculator .SBCalculator--result .heading-m .card-flip-container .back {
+        background-color: #007cbe; }
+      .SBCalculator .SBCalculator--result .heading-m .card-flip-container .front,
+      .SBCalculator .SBCalculator--result .heading-m .card-flip-container .back {
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        width: auto;
+        left: 0;
+        right: 0;
+        transition: 1s ease-in-out;
+        transform-style: preserve-3d; }
+      .SBCalculator .SBCalculator--result .heading-m .card-flip-container .front {
+        transform: rotateX(0deg);
+        z-index: 2; }
+      .SBCalculator .SBCalculator--result .heading-m .card-flip-container .back {
+        transform: rotateX(180deg); }
+      .SBCalculator .SBCalculator--result .heading-m .card-flip-container .card-flip {
+        transform-origin: 100% 1.8rem;
+        transition: 1s;
+        transform-style: preserve-3d;
+        position: relative; }
+        .SBCalculator .SBCalculator--result .heading-m .card-flip-container .card-flip.animate {
+          transform: rotateX(180deg); }
+        .SBCalculator .SBCalculator--result .heading-m .card-flip-container .card-flip.invisible {
+          transform: none; }
+      .SBCalculator .SBCalculator--result .heading-m .card-flip-container .noanimate {
+        background-color: #007cbe;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: auto;
+        right: 0;
+        z-index: 10000; }
+      .SBCalculator .SBCalculator--result .heading-m .card-flip-container .invisible {
+        visibility: hidden;
+        transform: none;
+        transition: none; }
+    .SBCalculator .SBCalculator--result .heading-m svg {
+      fill: #fff;
+      height: 2rem;
+      vertical-align: top; }
+
+@media screen and (min-width: 768px) {
+  .SBCalculator .SBCalculator--form {
+    padding-right: 2rem; }
+  .SBCalculator .SBCalculator--form {
+    width: calc(100% - 29rem);
+    float: left; }
+  .SBCalculator .SBCalculator--result {
+    float: right; } }
+
+.smallBiz .USBRange .USBTooltip {
+  position: relative; }
+  .smallBiz .USBRange .USBTooltip .USBIcon {
+    width: 1.5rem; }
+
+.smallBiz .USBRange .flex-container {
+  position: relative; }
+  .smallBiz .USBRange .flex-container .USBError--Message {
+    position: absolute;
+    top: 3rem;
+    right: .5rem;
+    width: 2rem; }
+  .smallBiz .USBRange .flex-container .form-control-input.error {
+    border: solid 3px #D83B48;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483; }
+
+.smallBiz .USBRange label {
+  width: calc(100% - 15rem) !important;
+  font-weight: 500; }
+  .smallBiz .USBRange label span,
+  .smallBiz .USBRange label .USBTooltip {
+    display: inline-block; }
+  .smallBiz .USBRange label .USBTooltip {
+    margin-right: 1rem;
+    width: 0;
+    vertical-align: bottom; }
+    .smallBiz .USBRange label .USBTooltip svg {
+      fill: #007cbe; }
+    .smallBiz .USBRange label .USBTooltip .USBTooltip--content {
+      pointer-events: none;
+      width: 20rem;
+      left: -9.5rem;
+      right: 6.8rem;
+      font-weight: normal; }
+
+.smallBiz .USBRange .form-control-input {
+  margin-top: 1.5rem;
+  width: 15rem;
+  font-weight: 500;
+  margin-bottom: 0; }
+  .smallBiz .USBRange .form-control-input:not(:focus) {
+    border-color: #555; }
+
+.smallBiz .USBRange .USBRange-container {
+  margin-top: 3rem;
+  margin-bottom: 7rem; }
+  @media screen and (max-width: 767px) {
+    .smallBiz .USBRange .USBRange-container {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto; } }
+
+.SBCalculator h6 {
+  padding-bottom: 0;
+  margin-bottom: 0; }
+
+.input-range__slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #007cbe;
+  border: 1px solid #007cbe;
+  border-radius: 100%;
+  cursor: pointer;
+  display: block;
+  height: 1rem;
+  margin-left: -1.5rem;
+  margin-top: -1.5rem;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: box-shadow 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  transition: box-shadow 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: solid 3px #007cbe;
+  background-color: #fff;
+  margin-top: -2rem; }
+
+.input-range__slider:active {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3); }
+
+.input-range__slider:focus {
+  box-shadow: 0 0 0 5px rgba(63, 81, 181, 0.2); }
+
+.input-range--disabled .input-range__slider {
+  background: #cccccc;
+  border: 1px solid #cccccc;
+  box-shadow: none;
+  -webkit-transform: none;
+  transform: none; }
+
+.input-range__slider-container {
+  -webkit-transition: left 0.3s ease-out;
+  transition: left 0.3s ease-out; }
+
+.input-range__label {
+  color: #aaaaaa;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 0.8rem;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  white-space: nowrap; }
+
+.input-range__label--min,
+.input-range__label--max {
+  bottom: -3rem;
+  position: absolute; }
+  .input-range__label--min .input-range__label-container,
+  .input-range__label--max .input-range__label-container {
+    color: #555; }
+
+.input-range__label--min {
+  left: 0; }
+
+.input-range__label--max {
+  right: 0; }
+
+.input-range__label--value {
+  position: absolute;
+  top: -5.5rem; }
+  .input-range__label--value .input-range__label-container {
+    background: transparent url("../img/svg/icon_downtriangle.svg") no-repeat;
+    background-position: 45% 80%;
+    background-size: 10px auto;
+    padding-bottom: 1.5rem; }
+
+.USBError--range .input-range__label--value .input-range__label-container {
+  color: #D83B48;
+  background: transparent url("../img/svg/icon_downtriangle-error.svg") no-repeat;
+  background-position: 45% 80%;
+  background-size: 10px auto; }
+
+.input-range__label-container {
+  left: -50%;
+  font-size: 14px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #007CBD;
+  position: relative; }
+
+.input-range__label--min .input-range__label-container {
+  left: 0; }
+
+.input-range__label--max .input-range__label-container {
+  left: 0; }
+
+.input-range__track {
+  background: #eeeeee;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: block;
+  height: 1rem;
+  position: relative;
+  -webkit-transition: left 0.3s ease-out, width 0.3s ease-out;
+  transition: left 0.3s ease-out, width 0.3s ease-out; }
+
+.input-range--disabled .input-range__track {
+  background: #eeeeee; }
+
+.input-range__track--background {
+  left: 0;
+  margin-top: -0.15rem;
+  position: absolute;
+  right: 0;
+  top: 50%; }
+
+.input-range__track--active {
+  background: #007cbe; }
+
+.input-range {
+  height: 1rem;
+  position: relative;
+  width: 100%; }
+
+.slider,
+.slidervertical {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+  z-index: 100; }
+
+/* slidershell exists only
+to provide a positioning context for the range input and other elements.*/
+.slidershell {
+  border: 0 none;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  overflow: visible; }
+
+/* .slidertrack is the visible track on which the user drags the thumb button. */
+.slidertrack {
+  border: 2px outset #666;
+  border-radius: 4px;
+  position: absolute; }
+
+/* .sliderfill adds color (or a gradient as seen here) to the track as the user 
+    drags the thumb. */
+.sliderfill {
+  border: 2px solid #00767f;
+  border-radius: 4px;
+  position: absolute;
+  opacity: 0.2;
+  pointer-events: none;
+  background: #00767f;
+  background: linear-gradient(90deg, #005555, #006699); }
+
+/* .sliderthumb can be any css you like including an image. 
+    The dimensions must match those found in the rule for 
+    input[type=range]::-webkit-slider-thumb. */
+.sliderthumb {
+  width: 40px;
+  height: 40px;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/358203/thumb.png");
+  background-size: 40px 40px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border: 0 none;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  pointer-events: none; }
+
+/* .slidervalue can be styled as you see fit */
+.slidervalue {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border: 0 none;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  pointer-events: none; }
+
+/* First we have to make transparent all the default elements of the range input.
+    We use color:transparent to eliminate the default tick marks in IE. */
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 100%;
+  -webkit-appearance: none;
+  margin: 0px;
+  padding: 0px;
+  border: 0 none;
+  background: transparent;
+  color: transparent;
+  overflow: visible; }
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 100%;
+  -moz-appearance: none;
+  margin: 0px;
+  padding: 0px;
+  border: 0 none;
+  background: transparent;
+  color: transparent;
+  overflow: visible; }
+
+input[type=range] {
+  width: 100%;
+  height: 100%;
+  -webkit-appearance: none;
+  margin: 4rem 0 0;
+  padding: 1rem 2;
+  border: 0 none;
+  background: transparent;
+  color: transparent;
+  overflow: visible; }
+
+/* we need a separate rule for when the range input is to be vertical */
+input[type=range].slidervertical {
+  -webkit-appearance: slider-vertical;
+  writing-mode: bt-lr;
+  /* IE */
+  opacity: 0.01;
+  /* needed to hide the default slider-vertical appearance */ }
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: transparent;
+  border: transparent; }
+
+input[type=range]:focus {
+  outline: none; }
+
+/* Make the thumbs the same size as your custom sliderthumb. 
+    they will not be visible but they will be draggable.    */
+input[type=range]::-ms-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 0px;
+  border: 0 none;
+  background: transparent; }
+
+input[type=range]::-moz-range-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 0px;
+  border: 0 none;
+  background: transparent; }
+
+input[type=range]::-webkit-slider-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 0px;
+  border: 0 none;
+  background: transparent;
+  -webkit-appearance: none; }
+
+/* microsoft IE10+ and Edge - eliminates default fills before and after thumb */
+input[type=range]::-ms-fill-lower {
+  background: transparent;
+  border: 0 none; }
+
+input[type=range]::-ms-fill-upper {
+  background: transparent;
+  border: 0 none; }
+
+input[type=range]::-ms-tooltip {
+  display: none; }
+
+/* other rules you may need for page styling */
+.USBRange-container {
+  transition: all .5s; }
+  .USBRange-container .grow .input-range__label--max {
+    transform: scale(1.2);
+    color: #000;
+    transition: all .5s; }
+  .USBRange-container .input-range__label--max {
+    transition: all .5s; }
+
+.USBDecision {
+  position: relative; }
+  .USBDecision--leaves {
+    transition: margin .3s ease;
+    position: relative;
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
+    padding: 0;
+    list-style: none;
+    background-color: #007cbe; }
+    .USBDecision--leaves > * {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -5em;
+      width: 10em;
+      height: 10em; }
+      .USBDecision--leaves > *:nth-of-type(1) {
+        transform: rotate(0deg) translate(15.38462em) rotate(0deg); }
+      .USBDecision--leaves > *:nth-of-type(2) {
+        transform: rotate(60deg) translate(15.38462em) rotate(-60deg); }
+      .USBDecision--leaves > *:nth-of-type(3) {
+        transform: rotate(120deg) translate(15.38462em) rotate(-120deg); }
+      .USBDecision--leaves > *:nth-of-type(4) {
+        transform: rotate(180deg) translate(15.38462em) rotate(-180deg); }
+      .USBDecision--leaves > *:nth-of-type(5) {
+        transform: rotate(240deg) translate(15.38462em) rotate(-240deg); }
+      .USBDecision--leaves > *:nth-of-type(6) {
+        transform: rotate(300deg) translate(15.38462em) rotate(-300deg); }
+    .USBDecision--leaves-2 {
+      position: relative;
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      padding: 0;
+      list-style: none; }
+      .USBDecision--leaves-2 > * {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -5rem;
+        width: 10rem;
+        height: 10rem; }
+        .USBDecision--leaves-2 > *:nth-of-type(1) {
+          transform: rotate(0deg) translate(15.38462rem) rotate(0deg); }
+        .USBDecision--leaves-2 > *:nth-of-type(2) {
+          transform: rotate(180deg) translate(15.38462rem) rotate(-180deg); }
+    .USBDecision--leaves-3 {
+      position: relative;
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      padding: 0;
+      list-style: none; }
+      .USBDecision--leaves-3 > * {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -5rem;
+        width: 10rem;
+        height: 10rem; }
+        .USBDecision--leaves-3 > *:nth-of-type(1) {
+          transform: rotate(0deg) translate(15.38462rem) rotate(0deg); }
+        .USBDecision--leaves-3 > *:nth-of-type(2) {
+          transform: rotate(120deg) translate(15.38462rem) rotate(-120deg); }
+        .USBDecision--leaves-3 > *:nth-of-type(3) {
+          transform: rotate(240deg) translate(15.38462rem) rotate(-240deg); }
+    .USBDecision--leaves-4 {
+      position: relative;
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      padding: 0;
+      list-style: none; }
+      .USBDecision--leaves-4 > * {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -5rem;
+        width: 10rem;
+        height: 10rem; }
+        .USBDecision--leaves-4 > *:nth-of-type(1) {
+          transform: rotate(0deg) translate(15.38462rem) rotate(0deg); }
+        .USBDecision--leaves-4 > *:nth-of-type(2) {
+          transform: rotate(90deg) translate(15.38462rem) rotate(-90deg); }
+        .USBDecision--leaves-4 > *:nth-of-type(3) {
+          transform: rotate(180deg) translate(15.38462rem) rotate(-180deg); }
+        .USBDecision--leaves-4 > *:nth-of-type(4) {
+          transform: rotate(270deg) translate(15.38462rem) rotate(-270deg); }
+    .USBDecision--leaves-5 {
+      position: relative;
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      padding: 0;
+      list-style: none; }
+      .USBDecision--leaves-5 > * {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -5rem;
+        width: 10rem;
+        height: 10rem; }
+        .USBDecision--leaves-5 > *:nth-of-type(1) {
+          transform: rotate(0deg) translate(15.38462rem) rotate(0deg); }
+        .USBDecision--leaves-5 > *:nth-of-type(2) {
+          transform: rotate(72deg) translate(15.38462rem) rotate(-72deg); }
+        .USBDecision--leaves-5 > *:nth-of-type(3) {
+          transform: rotate(144deg) translate(15.38462rem) rotate(-144deg); }
+        .USBDecision--leaves-5 > *:nth-of-type(4) {
+          transform: rotate(216deg) translate(15.38462rem) rotate(-216deg); }
+        .USBDecision--leaves-5 > *:nth-of-type(5) {
+          transform: rotate(288deg) translate(15.38462rem) rotate(-288deg); }
+    .USBDecision--leaves-6 {
+      position: relative;
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      padding: 0;
+      list-style: none; }
+      .USBDecision--leaves-6 > * {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -5rem;
+        width: 10rem;
+        height: 10rem; }
+        .USBDecision--leaves-6 > *:nth-of-type(1) {
+          transform: rotate(0deg) translate(15.38462rem) rotate(0deg); }
+        .USBDecision--leaves-6 > *:nth-of-type(2) {
+          transform: rotate(60deg) translate(15.38462rem) rotate(-60deg); }
+        .USBDecision--leaves-6 > *:nth-of-type(3) {
+          transform: rotate(120deg) translate(15.38462rem) rotate(-120deg); }
+        .USBDecision--leaves-6 > *:nth-of-type(4) {
+          transform: rotate(180deg) translate(15.38462rem) rotate(-180deg); }
+        .USBDecision--leaves-6 > *:nth-of-type(5) {
+          transform: rotate(240deg) translate(15.38462rem) rotate(-240deg); }
+        .USBDecision--leaves-6 > *:nth-of-type(6) {
+          transform: rotate(300deg) translate(15.38462rem) rotate(-300deg); }
+  .USBDecision--leave {
+    opacity: 1;
+    display: block;
+    transition: all .5s ease;
+    border-radius: 50%;
+    background-color: #EEF7FB;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center; }
+    .USBDecision--leave p {
+      pointer-events: none;
+      font-size: 14px;
+      line-height: 1;
+      padding: 0 5px;
+      color: #007cbe; }
+  .USBDecision--question {
+    opacity: 1;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 230px;
+    left: 60px; }
+    .USBDecision--question .heading-xs {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      padding: 0;
+      width: 15rem;
+      color: #fff;
+      z-index: 10; }
+    .USBDecision--question-answered {
+      width: 150px;
+      height: 150px;
+      display: inline-block;
+      position: relative;
+      top: 0;
+      left: 0; }
+      .USBDecision--question-answered .heading-xs {
+        width: 11rem;
+        line-height: 1;
+        font-size: 1.4rem;
+        top: 20%;
+        left: 13px;
+        transform: none; }
+      .USBDecision--question-answered .USBDecision--leave {
+        width: 8rem;
+        height: 8rem; }
+      .USBDecision--question-answered .USBDecision--leaves {
+        margin: 0;
+        width: 13rem;
+        height: 13rem; }
+      .USBDecision--question-answered .USBDecision--leave:not(.USBDecision--leave-selected) {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        transform: rotate(60deg) translate(15.38462em) rotate(-60deg); }
+      .USBDecision--question-answered .USBDecision--leave-selected {
+        transform: rotate(89deg) translate(4.38462em) rotate(-88deg) !important;
+        background-color: transparent; }
+        .USBDecision--question-answered .USBDecision--leave-selected p {
+          color: white; }
+    .USBDecision--question-hidden {
+      opacity: 0;
+      position: absolute;
+      top: 1000px;
+      left: 0; }
+      .USBDecision--question-hidden .USBDecision--leave {
+        transform: rotate(89deg) translate(7.38462em) rotate(-88deg) !important; }

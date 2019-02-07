@@ -1,0 +1,94 @@
+// Want to export this component only?
+// Uncomment these out and hand off the compiled css file in css/!
+
+// @import 'Base';
+
+.USBFauxTable,
+  .USBFauxTable--row,
+  .USBFauxTable--cell {
+    display: block;
+  }
+  .USBFauxTable--row:nth-child(odd) {
+    background-color: #fff;
+  }
+  .USBFauxTable--cell:before {
+    content: attr(data-label);
+  }
+  .USBFauxTable--header .USBFauxTable--cell
+   {
+    font-size: 2.4rem;
+    background-color: #eaeae4;
+  }
+  .USBFauxTable--cell:before {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background-color: rgba(234,234,228,0.5);
+  }
+  
+  .USBFauxTable--cell:before {
+    display: block;
+    padding: 20px;
+  }
+  .USBFauxTable--header {
+    display: none;
+  }
+  @media screen and (max-width: 767px) {
+    .USBFauxTable--mobile-stacked .USBFauxTable--row:nth-child(n + 1) .USBFauxTable--cell:first-child:before {
+      display: none;
+    }
+    .USBFauxTable .USBContentBlock {
+      padding: 20px;
+    }
+    .USBFauxTable--mobile-stacked .USBFauxTable--cell {
+      position:relative;
+    }
+    .USBFauxTable--mobile-stacked .USBFauxTable--row {
+      margin-top: 6rem;
+    }
+    .USBFauxTable--mobile-stacked .USBFauxTable--row .USBFauxTable--cell:first-child .USBHeading {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      background-color: #eaeae4;
+      width: 100%;
+      padding: 20px;
+    }
+    .USBFauxTable--mobile-stacked .USBFauxTable--row .USBFauxTable--cell:first-child .USBHeading > * {
+      padding-bottom: 0;
+      margin: 0;
+    }
+  }
+  @media screen and (min-width: 768px) {
+  .USBFauxTable--cell {
+    vertical-align: top;
+    padding: 2rem 5rem;
+    outline: solid 1px #fff;
+  }
+  .USBFauxTable--header .USBFauxTable--cell h5 {
+    padding-bottom: 0;
+  }
+  .USBFauxTable--header .USBFauxTable--cell {
+    padding: 4rem 5rem;
+  }
+    .USBFauxTable--row {
+      background-color: #f7f7f4;
+    }
+    .USBFauxTable--header {
+      display: block;
+    }
+    .USBTable tr,
+    .USBFauxTable--row {
+    display: table-row;
+  }
+  .USBFauxTable {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+  .USBFauxTable--cell {
+    display: table-cell;
+  }
+  .USBFauxTable--cell:before {
+      display: none;
+    }
+  }

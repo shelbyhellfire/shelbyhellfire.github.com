@@ -1,0 +1,336 @@
+// Want to export this component only?
+// Uncomment these out and hand off the compiled css file in css/!
+
+// @import 'Base';
+$webmediumblue: #007cbe;
+$webblue: #17409C;
+$webdarkblue: #0C2074;
+$red: #D83B48;
+$gray: #555;
+$warmgray: #EAEAE4;
+$coolgray: #EEF7FB;
+$white: #fff;
+
+.mobile-menu--accordion .USBAccordion .USBPanel .chevronDown,
+.USBPanel .chevronDown {
+  display: none;
+}
+.USBAccordion.USBAccordion--mob-nav > li > .USBPanel > .USBPanel-body > .is-hidden {
+  display: block;
+}
+
+.USBPanel {
+    position: relative;
+  .USBPanel-head {
+    display: flex;
+    background-color: $webmediumblue;
+    width: 100%;
+  }
+  .USBIcon {
+    pointer-events: none;
+  }
+  .USBPanel-title {
+    pointer-events: none;
+    color: #fff;
+    padding-bottom: 0;
+    line-height: 1.5;
+    padding-left: 20px;
+  }
+  .USBPanel-body {
+    // background-color: #eaeae4;
+    // padding: 1.5rem 2rem;
+    // margin-top: 10px;
+  }
+  &.bgwhite {
+    border: solid 1px $gray;
+    .USBPanel-body {
+      background-color: $white;
+    }
+
+  }
+}
+.USBAccordion {
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style-type: none;
+    }
+  }
+  
+
+  .USBPanel {
+    margin-top: 1rem;
+    &-content {
+      margin-top: 1rem;
+    }
+    &-body {
+      background-color: $white;
+      // overflow: hidden;
+      padding: 0;
+      
+    }
+    &-head {
+      border: 0;
+      border-bottom: 1px solid $warmgray;
+      background-color: $white;
+      display: flex;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      align-items: center;
+      width: 100%;
+      -webkit-appearance: none;
+      .USBIcon {
+        width: 4rem;
+      }
+    }
+    &-title {
+      padding-left: 0;
+    }
+
+    .chevronDown {
+      width: 1.1rem;
+      margin: 0 auto;
+      display: block;
+      transform: rotate(0deg);
+      transition: all .5s linear;
+    }
+    &-title {
+      font-weight: 400;
+      color: $webmediumblue;
+      text-align: left;
+    }
+
+    &.first-load {
+      > .USBPanel-body {
+        max-height: 0;
+        opacity: 0;
+        > .is-hidden { display: none; }
+      }
+    }
+    &.is-expanded {
+      
+     
+      .chevronDown {
+        transform: rotate(-90deg);
+        transition: all .5s linear;
+      }
+      .USBPanel-title {
+        font-weight: 500;
+        // color: #0C2074;
+      }
+      &-body {
+        margin-top: 1rem;
+      }
+      > .USBPanel-body {
+        
+        max-height: 2000px;
+        opacity: 1;
+        transition: max-height 1.25s ease-in-out, opacity 1.25s ease-in-out;
+        animation-fill-mode: forwards;
+        
+        .is-hidden,
+        .is-visible {
+          display: block;
+        }
+       
+      }
+    }
+    &.is-collapsed {
+      > .USBPanel-body {
+        margin-bottom: 0;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 1.25s cubic-bezier(0, 1, 0, 1), opacity 1.25s ease-in-out;
+        > .is-hidden { display: none; }
+      }
+    }
+  }
+
+  &--warmgray .USBPanel {
+      &-head {
+        background-color: #EAEAE4;
+        border-bottom: solid 1px #fff;
+      }
+      .chevronDown {
+        // fill: #555;
+      }
+      &-title {
+        color: $webmediumblue;
+      }
+      &.is-expanded {
+        .USBPanel-head {
+          background-color: $gray;
+        }
+        .chevronDown {
+          fill: #fff;
+        }
+        .USBPanel-title {
+          color: #fff;
+        }
+      }
+  }
+  &--warmgray-mediumblue .USBPanel {
+    &-head {
+      background-color: $warmgray;
+      border-bottom: solid 1px #fff;
+    }
+    .chevronDown {
+      // fill: #555;
+    }
+    &-title {
+      color: $webmediumblue;
+    }
+    &.is-expanded {
+      .USBPanel-head {
+        background-color: $webmediumblue;
+      }
+      .chevronDown {
+        fill: #fff;
+      }
+      .USBPanel-title {
+        color: #fff;
+      }
+    }
+}
+&--warmgray-blue .USBPanel {
+  &-head {
+    background-color: $warmgray;
+    border-bottom: solid 1px #fff;
+  }
+  .chevronDown {
+    // fill: #555;
+  }
+  &-title {
+    color: $webmediumblue;
+  }
+  &.is-expanded {
+    .USBPanel-head {
+      background-color: $webblue;
+    }
+    .chevronDown {
+      fill: #fff;
+    }
+    .USBPanel-title {
+      color: #fff;
+    }
+  }
+}
+  &--coolgray-mediumblue .USBPanel {
+    &-head {
+      background-color: $coolgray;
+    }
+    &-title {
+      color: $webmediumblue;
+    }
+    .chevronDown {
+      // fill: $dkblue;
+    }
+    &.is-expanded {
+      .USBPanel-head {
+        background-color: $webmediumblue;
+      }
+      .USBPanel-title {
+        color: #fff;
+      }
+      .chevronDown {
+        fill: $white;
+      }
+    }
+  }
+  &--coolgray-blue .USBPanel {
+    &-head {
+      background-color: $coolgray;
+    }
+    &-title {
+      color: $webmediumblue;
+    }
+    .chevronDown {
+      // fill: $ltblue;
+    }
+    &.is-expanded {
+      .USBPanel-head {
+        background-color: $webblue;
+      }
+      .USBPanel-title {
+        color: #fff;
+      }
+      .chevronDown {
+        fill: $white;
+      }
+    }
+  }
+  &--warmgray-mediumblue .USBPanel {
+    &-head {
+      background-color: $warmgray;
+    }
+    &-title {
+      color: $webmediumblue;
+    }
+    .chevronDown {
+      // fill: $dkblue;
+    }
+    &.is-expanded {
+      .USBPanel-head {
+        background-color: $webmediumblue;
+      }
+      .USBPanel-title {
+        // color:$xltblue;
+      }
+      .chevronDown {
+        // fill: $xltblue;
+      }
+    }
+  }
+}
+.USBAccordion.moreopacity .USBPanel.is-collapsed > .USBPanel-body {
+  animation: accordionCollapseMoreOpac 1.25s forwards cubic-bezier(0, 1, 0, 1);
+
+}
+.USBAccordion.moreopacity .USBPanel.is-expanded > .USBPanel-body {
+  animation: accordionExpandMoreOpac 1.25s forwards ease-in-out;
+
+}
+
+
+.SBSfi {
+  .USBAccordion--coolgray-mediumblue {
+
+  .USBPanel-head {
+    width: calc(100% - 119px);
+
+  }
+  .USBModal-open {
+    height: 60px;
+    top:0;
+    right:0;
+    width: 113px;
+    background-color: $coolgray;
+  }
+  .USBPanel {
+    @media screen and (max-width: 767px) {
+      .USBPanel-head {
+        width: calc(100% - 46px);
+    
+      }
+      .USBModal-open {
+        width: 40px;
+        span {
+          display: none;
+        }
+      }
+
+      .USBIcon svg {
+        height: 2rem;
+        vertical-align: bottom;
+      }
+  }
+  }
+  .USBPanel.is-expanded .USBModal-open {
+    background-color: $webmediumblue;
+
+  }
+}
+}

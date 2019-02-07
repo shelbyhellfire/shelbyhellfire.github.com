@@ -1,0 +1,55 @@
+// Want to export this component only?
+// Uncomment these out and hand off the compiled css file in css/!
+
+// @import 'Variables';
+// @import 'Base';
+.SBHeader {
+  padding: 2rem 0;
+}
+.library-header {
+  padding: 2.6rem 0;
+}
+.SBHeader h6 {
+  font-family: "HelveticaNeueLTW04-55Roman", "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: normal;
+  padding-bottom: 0;
+}
+
+.SBRightRail {
+  background-color: #17409c;
+  text-align: center;
+  padding: 6rem 0; 
+  margin: 6rem 0;
+}
+
+.SBRightRail > * {
+  color: #ffffff;
+  padding: 0;
+}
+
+.SBRightRail .cls-1{fill:#fff;}
+
+
+.SBRightRail .USBIcon {
+  margin: 6rem auto 0rem;
+  width: 32px;
+}
+
+.SBRightRail figure {
+  margin: 2rem 0; 
+}
+.SBRightRail figcaption > * {
+  padding-bottom: 0;
+}
+
+
+/* Shame Section */
+@media screen and (max-width: 768px) { 
+
+    .SBRightRail {
+      margin-bottom: 0;
+    }
+   }
+   

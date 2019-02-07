@@ -1,0 +1,104 @@
+.SBLoanHub .USBContentBlock--next-step .USBTooltip {
+  .USBIcon {
+    position: relative !important;
+    top: .25rem;
+    left: .8rem;
+  }
+}
+.SBLoanHub .USBContentBlock--next-step .USBTooltip,
+.USBTooltip {
+    
+    height: 2rem;
+    position: relative;
+    border-radius: 9px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    cursor: default;
+    .USBIcon {
+      position: relative !important;
+      right: auto;
+      bottom: auto;
+      svg {
+        width: 1.5rem;
+      }
+    }
+    a {
+      text-align: center;
+    }
+    &--content {
+      z-index: 9999 !important;
+      display:block;
+      background-color: #fff;
+      box-shadow: 0 5px 10px rgba(0,0,0,.2);
+      display: none;
+      z-index: 1;
+      opacity: .40;
+      width: 20rem;
+      padding: 5px 20px;
+      position: absolute;
+      bottom: 3rem;
+      right: -9.5rem;
+      // right: 50%;
+      // transform: translateX(-50%); 
+      border-radius: 6px;
+      border: solid 1px #ccc;
+      font: 16px;
+
+        &:after {
+            content: '';
+            top: 100%;
+            left: 50%;
+            border: solid transparent;
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-top-color: #fff;
+            border-width: 10px;
+            margin-left: -10px;
+            pointer-events: none;
+        }
+        &:before {
+          pointer-events: none;
+          position: absolute;
+          content: '';
+          left: calc(50% - 11px);
+          top: 100%;
+          border: solid transparent;
+          border-top-color: #ccc;
+          border-width: 11px;
+        }
+      &.tooltip-visible {
+        display: block;
+        // transform: translateY(-10px);
+        opacity: 1;
+          // transition: .3s linear;
+        // animation: odsoky 1s ease-in-out infinite  alternate;
+      }
+    }
+    &--overlay {
+    
+      top: -500%;
+      left: -500%;
+      right: -500%;
+      bottom: -500%;
+  
+      &.open {
+        cursor: pointer;
+        position: fixed;
+      }
+    }
+
+
+  }
+
+  @keyframes odsoky {
+    0%{
+      transform: translateY(6px);	
+    }
+  
+    100%{
+      transform: translateY(1px);	
+    }
+  
+  }

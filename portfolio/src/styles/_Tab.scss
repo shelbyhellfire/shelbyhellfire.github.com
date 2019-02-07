@@ -1,0 +1,121 @@
+// Want to export this component only?
+// Uncomment these out and hand off the compiled css file in css/!
+
+// @import 'Variables';
+// @import 'Base';
+
+.USBTab--nav ul {
+    padding-left: 0;
+    display: flex;
+    list-style-type: none;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .USBTab--content > div[role="tabpanel"][aria-hidden="true"] {
+    display: none;
+  }
+  .USBTab--content {
+    padding: 2rem 0;
+  }
+  /* homepage specific */
+  .USBTab--homepage .USBTab--nav a {
+    width: 100%;
+    font-size: 2rem;
+    background-color: #EDEEF1;
+    border-right: 1px solid #FFF;
+    border-left: 1px solid #FFF;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    color: #737378;
+  }
+  
+  .USBTab--homepage .USBTab--nav a:hover,
+  .USBTab--homepage .USBTab--nav a[aria-selected="true"] {
+    background-color: #0c2074;
+  }
+  
+  .USBTab--homepage .USBTab--nav li:hover a,
+  .USBTab--homepage .USBTab--nav a[aria-selected="true"],
+  .USBTab--homepage .USBTab--nav a[aria-selected="true"]:focus {
+    color: #fff;
+    text-decoration: none;
+  }
+  @media screen and (min-width: 768px) {
+    .USBTab--nav li {
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+    *[className*='USBTab--btn'] {
+      display: none;
+    }
+    .USBTabs.USBTab--homepage .USBTab--nav a {
+      padding: 3rem;
+      height: 100%;
+    }
+    .USBTabs.USBTab--homepage .USBTab--nav a[aria-selected="true"]:after {
+      position: absolute;
+      bottom: -19px;
+      left: 0;
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 0px solid transparent;
+      border-right: 26px solid transparent;
+      border-top: 19px solid #0c2074;
+    }
+    .USBTabs.USBTab--homepage .USBTab--nav li:nth-child(n+5):after {
+      border-right: 0px solid transparent;
+      border-left: 26px solid transparent;
+      left: auto;
+      right: 0;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .mobile-menu--accordion .USBAccordion.USBAccordion--mob-nav > .USBPanel > .USBPanel-head > .USBIcon > .chevronDown {
+      display: block;
+    }
+  
+    /* to change stacking order */
+    .USBTabs {
+      display: table;
+      width: 100%;
+    }
+    .USBTabs .USBTab--nav {
+      display:table-footer-group;
+    }
+    .USBTabs .USBTab--nav ul {
+      justify-content: center;
+    }
+  
+    .USBTabs .USBTab--nav a,
+    .USBTabs .USBTab--nav button {
+      font-size: 0;
+      margin: 10px;
+      font-size: 0;
+      height: 16px;
+      width: 16px;
+      border-radius: 16px;
+      line-height: 16px;
+      padding: 0;
+      border: 0;
+      vertical-align: middle
+    }
+    .USBTabs .USBTab--nav button {
+      background-color: #007CBE;
+      margin-top: 5px;
+      width: 24px;
+      height: 24px;
+      border-radius: 24px;
+      line-height: 24px;
+    }
+    .USBTabs .USBTab--nav li:focus { 
+      border: 1px solid #10a6e8;
+    }
+  }
